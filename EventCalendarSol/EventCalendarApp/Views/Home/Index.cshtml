@@ -1,0 +1,13 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div class="text-center">
+    <h1 class="display-4">CalendarApp</h1>
+    @if (TempData.ContainsKey("email"))
+    {
+        <div class="alert alert-success">
+            Welcome @TempData["email"]
+        </div>
+    }
+</div>
