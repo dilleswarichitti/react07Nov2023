@@ -19,6 +19,17 @@ namespace EventCalendarApp
 
             // Add services to the container.
             builder.Services.AddControllersWithViews();
+            builder.Services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
+               .AddJwtBearer(options =>
+               {
+                   options.TokenValidationParameters = new TokenValidationParameters
+                   {
+                       ValidateIssuer = false,
+                       ValidateAudience = false,
+                       IssuerSigningKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(builder.Configuration["SecretKey"])),
+                       ValidateIssuerSigningKey = true
+                   };
+               });
             builder.Services.AddDbContext<CalendarContext>(opts =>
             {
                 opts.UseSqlServer(builder.Configuration.GetConnectionString("Conn"));
@@ -26,7 +37,9 @@ namespace EventCalendarApp
 
             builder.Services.AddScoped<IRepository<string, User>, UserRepository>();
             builder.Services.AddScoped<IUserService, UserService>();
-            builder.Services.AddScoped<ITokenService, TokenService>(); 
+            builder.Services.AddScoped<ITokenService, TokenService>();
+            builder.Services.AddScoped<IRepository<int, Event>, EventRepository>();
+            builder.Services.AddScoped<IEventService, EventService>();
             var app = builder.Build();
 
             // Configure the HTTP request pipeline.
@@ -38,6 +51,7 @@ namespace EventCalendarApp
 
             app.UseRouting();
 
+            app.UseAuthentication();
             app.UseAuthorization();
 
             app.MapControllerRoute(
