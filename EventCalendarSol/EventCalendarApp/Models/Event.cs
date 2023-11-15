@@ -1,4 +1,5 @@
-﻿using System.ComponentModel.DataAnnotations.Schema;
+﻿using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
 
 namespace EventCalendarApp.Models
 {
@@ -12,8 +13,12 @@ namespace EventCalendarApp.Models
         public DateTime ?StartTime { get; set; }
         public DateTime? EndTime { get; set; }
         public string? Location { get; set; }
-        //public List<int> CategoryIds { get; set; } 
-        //public List<int> ReminderIds { get; set; } 
-        //public bool IsRecurring { get; set; }
+        public int CategoryId { get; set; }
+        [ForeignKey("CategoryId")]
+        public Category? Category { get; set; }
+        public List<SharingEvent>? SharingEvents { get; set; }
+        public int RemainderId { get; set; }
+        [ForeignKey("RemainderId")]
+        public Reminder? Remainder { get; set; }
     }
 }

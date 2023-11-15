@@ -40,6 +40,10 @@ namespace EventCalendarApp
             builder.Services.AddScoped<ITokenService, TokenService>();
             builder.Services.AddScoped<IRepository<int, Event>, EventRepository>();
             builder.Services.AddScoped<IEventService, EventService>();
+            builder.Services.AddScoped<IRepository<int, Category>, CategoryRepository>();
+            builder.Services.AddScoped<IRepository<int, Reminder>, ReminderRepository>();
+            builder.Services.AddScoped<ICategoryService, CategoryService>();
+            builder.Services.AddScoped<IReminderService, ReminderService>();
             var app = builder.Build();
 
             // Configure the HTTP request pipeline.
