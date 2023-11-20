@@ -1,18 +1,29 @@
-﻿using Microsoft.Data.SqlClient;
-using Microsoft.EntityFrameworkCore.Metadata.Internal;
-using System.ComponentModel.DataAnnotations.Schema;
+﻿//using System.ComponentModel.DataAnnotations.Schema;
 
-namespace EventCalendarApp.Models
-{
-    public class Reminder
-    {
-        public int Id { get; set; }
-        public string Message { get; set; }
-        public DateTime? RemainderDateTime { get; set; }
-        public string NotificationType {get; set;}
-        // Foreign Key for Event
-        public int EventId { get; set; }
-        [ForeignKey("EventId")]
-        public Event? Events { get; set; } 
-    }
-}
+//namespace EventCalendarApp.Models
+//{
+//    public class Reminder
+//    {
+//        public int Id { get; set; }
+//        public string Message { get; set; }
+//        public DateTime? ReminderDateTime { get; set; }
+//        public int EventId { get; set; }
+
+//        [ForeignKey("EventId")]
+//        public Event? Event { get; set; }
+
+//        public string Email { get; set; }  // Assuming you have a User entity
+
+//        [ForeignKey("Email")]
+//        public User? User { get; set; }
+
+//        public enum NotificationType
+//        {
+//            Email,
+//            InApp,
+//            PushNotifications
+//        }
+
+//        public NotificationType PreferredNotification { get; set; }
+//    }
+//}

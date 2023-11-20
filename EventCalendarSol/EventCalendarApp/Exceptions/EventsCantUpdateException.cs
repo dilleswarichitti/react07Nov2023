@@ -1,4 +1,4 @@
-﻿/*using System.Runtime.Serialization;
+﻿using System.Runtime.Serialization;
 
 namespace EventCalendarApp.Controllers
 {
@@ -13,4 +13,4 @@ namespace EventCalendarApp.Controllers
         public override string Message => message;
 
     }
-}*/
+}

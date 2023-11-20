@@ -7,7 +7,7 @@ using Microsoft.EntityFrameworkCore;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.IdentityModel.Tokens;
 using System.Text;
-
+using EventCalendarApp.Interfaces;
 
 namespace EventCalendarApp
 {
@@ -41,9 +41,16 @@ namespace EventCalendarApp
             builder.Services.AddScoped<IRepository<int, Event>, EventRepository>();
             builder.Services.AddScoped<IEventService, EventService>();
             builder.Services.AddScoped<IRepository<int, Category>, CategoryRepository>();
-            builder.Services.AddScoped<IRepository<int, Reminder>, ReminderRepository>();
             builder.Services.AddScoped<ICategoryService, CategoryService>();
-            builder.Services.AddScoped<IReminderService, ReminderService>();
+            builder.Services.AddScoped<IRepository<int, RecurringEvent>, RecurringEventRepository>();
+            builder.Services.AddScoped<IRecurringEventService, RecurringEventService>();
+            //builder.Services.AddScoped<INotificationRepository<int, Reminder>, ReminderRepository>();
+            //builder.Services.AddScoped<IReminderService, ReminderService>();
+            //builder.Services.AddScoped<INotificationRepository<int, Notification>, NotificationRepository>();
+            //builder.Services.AddScoped<INotificationService, NotificationService>();
+            builder.Services.AddScoped<IRepository<int, SharingEvent>, SharingEventRepository>();
+            builder.Services.AddScoped<ISharingEventService, SharingEventService>();
+
             var app = builder.Build();
 
             // Configure the HTTP request pipeline.

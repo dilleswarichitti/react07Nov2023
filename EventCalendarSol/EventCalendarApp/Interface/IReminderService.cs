@@ -1,12 +1,15 @@
-﻿using EventCalendarApp.Models;
+﻿//using EventCalendarApp.Models;
+//using System.Collections.Generic;
 
-namespace EventCalendarApp.Interface
-{
-    public interface IReminderService
-    {
-        List<Reminder> GetReminders();
-        Reminder Add(Reminder reminders); 
-        //Reminder Remove(Reminder reminders);
-        //Reminder Update(Reminder reminders);
-    }
-}
+//namespace EventCalendarApp.Interface
+//{
+//    public interface IReminderService
+//    {
+//        Reminder CreateReminder(Reminder reminder);
+//        Reminder UpdateReminder(Reminder reminder);
+//        Reminder GetReminderById(int reminderId);
+//        IList<Reminder> GetRemindersByUser(string email);
+//        //object GetRemindersByUser();
+//        // Reminder DeleteReminder(int reminderId);
+//    }
+//}

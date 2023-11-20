@@ -1,22 +1,21 @@
 ﻿using EventCalendarApp.Exceptions;
 using EventCalendarApp.Interface;
 using EventCalendarApp.Models;
-using Microsoft.Extensions.Logging;
+using static EventCalendarApp.Models.Event;
 
 namespace EventCalendarApp.Services
 {
     public class EventService : IEventService
     {
         private readonly IRepository<int, Event> _eventRepository;
-
         public EventService(IRepository<int, Event> repository)
         {
             _eventRepository = repository;
         }
-        public Event Add(Event events)
+        public Event Create(Event events)
         {
-              var result = _eventRepository.Add(events);
-              return result;
+            var result = _eventRepository.Add(events);
+            return result;
         }
         public List<Event> GetEvents()
         {
@@ -27,7 +26,6 @@ namespace EventCalendarApp.Services
             }
             throw new NoEventsAvailableException();
         }
-
         public Event Remove(Event events)
         {
             var EventId = _eventRepository.GetAll().FirstOrDefault(e => e.Id == events.Id);
@@ -38,16 +36,29 @@ namespace EventCalendarApp.Services
             }
             return EventId;
         }
-
-        /*public Event Update(Event events)
+        public Event Update(Event events)
         {
             var EventId = _eventRepository.GetAll().FirstOrDefault(e => e.Id == events.Id);
             if (EventId != null)
             {
+                if (events == null)
+                {
+                    throw new ArgumentNullException("The provided event is null.");
+                }
+                // Validate start and end dates
+                if (events.Startdate > events.Enddate)
+                {
+                    throw new ArgumentException("Start date cannot be after end date.");
+                }
+                // Validate start and end times
+                if (events.StartTime > events.EndTime)
+                {
+                    throw new ArgumentException("Start time cannot be after end time.");
+                }
                 var result = _eventRepository.Update(events);
                 if (result != null) return result;
             }
             return EventId;
-        }*/
+        }
     }
 }

@@ -1,7 +1,6 @@
 ﻿using EventCalendarApp.Context;
 using EventCalendarApp.Interface;
 using EventCalendarApp.Models;
-using Microsoft.EntityFrameworkCore;
 
 namespace EventCalendarApp.Repositories
 {
@@ -28,7 +27,7 @@ namespace EventCalendarApp.Repositories
             {
                 _context.Events.Remove(events);
                 _context.SaveChanges();
-                return events; 
+                return events;
             }
             return null;
         }
@@ -46,7 +45,7 @@ namespace EventCalendarApp.Repositories
             return events;
         }
 
-        public Event Update(Event entity)
+        /*public Event Update(Event entity)
         {
             var events = GetById(entity.Id);
             if (events != null)
@@ -56,6 +55,27 @@ namespace EventCalendarApp.Repositories
                 return events;
             }
             return null;
+        }*/
+        public Event Update(Event entity)
+        {
+            var events = GetById(entity.Id);
+            if (events != null)
+            {
+                // Update properties as needed
+                events.Title = entity.Title;
+                events.Description = entity.Description;
+                events.Startdate = entity.Startdate;
+                events.Enddate = entity.Enddate;
+                events.StartTime = entity.StartTime;
+                events.EndTime = entity.EndTime;
+                events.Location = entity.Location;
+                events.IsRecurring = entity.IsRecurring;
+                _context.Events.Update(events);
+                _context.SaveChanges();
+                return events;
+            }
+            return null;
         }
+
     }
 }

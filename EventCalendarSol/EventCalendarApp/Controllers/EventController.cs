@@ -40,7 +40,7 @@ namespace EventCalendarApp.Controllers
             string errorMessage = string.Empty;
             try
             {
-                var result = _eventService.Add(events);
+                var result = _eventService.Create(events);
                 return Ok(result);
             }
             catch (Exception e)
@@ -49,7 +49,7 @@ namespace EventCalendarApp.Controllers
             }
             return BadRequest(errorMessage);
         }
-       /*[HttpPut]
+       [HttpPut]
         public ActionResult Update(Event events)
         {
             string errorMessage = string.Empty;
@@ -63,7 +63,7 @@ namespace EventCalendarApp.Controllers
                 errorMessage = e.Message;
             }
             return BadRequest(errorMessage);
-        }*/
+        }
 
         [HttpDelete]
         public ActionResult Remove(Event events)
