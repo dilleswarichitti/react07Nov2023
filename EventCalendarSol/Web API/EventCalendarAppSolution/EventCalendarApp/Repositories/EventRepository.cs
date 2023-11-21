@@ -13,26 +13,33 @@ namespace EventCalendarApp.Repositories
         {
             _context = context;
         }
-
+        /// <summary>
+        /// Add the event or to create an event
+        /// </summary>
+        /// <param name="entity">event object that has to be added</param>
+        /// <returns>entity</returns>
         public Event Add(Event entity)
         {
             _context.Events.Add(entity);
-            _context.SaveChanges();
+            _context.SaveChanges(); //this will make the change in Db
             return entity;
         }
-
+        /// <summary>
+        /// to remove event by its id
+        /// </summary>
+        /// <param name="key">the id of the event to be deleted</param>
+        /// <returns>the deleted event</returns>
         public Event Delete(int key)
         {
             var events = GetById(key);
             if (events != null)
             {
                 _context.Events.Remove(events);
-                _context.SaveChanges();
+                _context.SaveChanges();//this will delete the event in db
                 return events;
             }
             return null;
         }
-
         public IList<Event> GetAll()
         {
             if (_context.Events.Count() == 0)

@@ -45,7 +45,7 @@ namespace EventCalendarApp.Controllers
             string errorMessage = string.Empty;
             try
             {
-                var result = _eventService.Add(events);
+                var result = _eventService.Create(events);
                 return Ok(result);
             }
             catch (Exception e)

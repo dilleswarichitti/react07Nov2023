@@ -28,7 +28,6 @@ namespace ECalendarTest
         [TestCase("Test", "test123")]
         public void LoginTest(string un, string pass)
         {
-
             //Arrange
             var appSettings = @"{""SecretKey"": ""Anything will work here this is just for testing""}";
             var configurationBuilder = new ConfigurationBuilder();
@@ -44,9 +43,9 @@ namespace ECalendarTest
                 Role = "Organizer"
             });
             //Action
-            var resulut = userService.Login(new UserDTO { Email = "Test", Password = "test123", Role = "Organizer" });
+            var result = userService.Login(new UserDTO { Email = "Test", Password = "test123", Role = "Organizer" });
             //Assert
-            Assert.AreEqual("Test", resulut.Email); 
+            Assert.AreEqual("Test", result.Email); 
         }
     }
 }

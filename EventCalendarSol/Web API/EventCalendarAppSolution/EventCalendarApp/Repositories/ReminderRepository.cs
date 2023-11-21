@@ -2,10 +2,11 @@
 using EventCalendarApp.Interfaces;
 using EventCalendarApp.Models;
 using Microsoft.EntityFrameworkCore;
+using System.Linq;
 
 namespace EventCalendarApp.Repositories
 {
-    public class ReminderRepository : IRepository<int, Reminder>
+    public class ReminderRepository : INotificationRepository<int, Reminder>
     {
         private readonly CalendarContext _context;
 
@@ -13,6 +14,7 @@ namespace EventCalendarApp.Repositories
         {
             _context = context;
         }
+
         public Reminder Add(Reminder entity)
         {
             _context.Reminders.Add(entity);
@@ -22,37 +24,45 @@ namespace EventCalendarApp.Repositories
 
         public Reminder Delete(int key)
         {
-            var remainder = GetById(key);
-            if (remainder != null)
+            var reminder = GetById(key);
+            if (reminder != null)
             {
-                _context.Reminders.Remove(remainder);
+                _context.Reminders.Remove(reminder);
                 _context.SaveChanges();
-                return remainder;
+                return reminder;
             }
             return null;
         }
 
-        public IList<Reminder> GetAll()
+        /* public IList<Reminder> GetAll()
+         {
+             if (_context.Reminders.Count() == 0)
+                 return null;
+             return _context.Reminders.ToList();
+         }*/
+
+        public IList<Reminder> GetAll(Func<Reminder, bool> value)
         {
-            if (_context.Reminders.Count() == 0)
-                return null;
+            if (value != null)
+                return _context.Reminders.Where(value).ToList();
+
             return _context.Reminders.ToList();
         }
 
         public Reminder GetById(int key)
         {
-            var remainder = _context.Reminders.SingleOrDefault(r => r.Id == key);
-            return remainder;
+            var reminder = _context.Reminders.SingleOrDefault(r => r.Id == key);
+            return reminder;
         }
 
         public Reminder Update(Reminder entity)
         {
-            var remainder = GetById(entity.Id);
-            if (remainder != null)
+            var reminder = GetById(entity.Id);
+            if (reminder != null)
             {
-                _context.Entry<Reminder>(remainder).State = EntityState.Modified;
+                _context.Entry<Reminder>(reminder).State = EntityState.Modified;
                 _context.SaveChanges();
-                return remainder;
+                return reminder;
             }
             return null;
         }

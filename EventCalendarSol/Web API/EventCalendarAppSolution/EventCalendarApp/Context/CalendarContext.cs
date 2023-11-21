@@ -14,6 +14,7 @@ namespace EventCalendarApp.Context
         public DbSet<Category> Categories { get; set; }
         public DbSet<Reminder> Reminders { get; set; }
         public DbSet<SharingEvent> SharingEvents { get; set; }
+        public DbSet<Notification> Notifications { get; set; }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
