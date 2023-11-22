@@ -13,5 +13,5 @@ namespace EventCalendarApp.Exceptions
         }
         public override string Message => message;
 
-    }
-}
+    } 
+} 

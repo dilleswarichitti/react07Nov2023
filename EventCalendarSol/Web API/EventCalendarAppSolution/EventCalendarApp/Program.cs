@@ -17,9 +17,7 @@ namespace EventCalendarApp
         public static void Main(string[] args)
         {
             var builder = WebApplication.CreateBuilder(args);
-
             // Add services to the container.
-
             builder.Services.AddControllers();
             builder.Services.AddEndpointsApiExplorer();
             builder.Services.AddSwaggerGen(opt =>
@@ -74,9 +72,6 @@ namespace EventCalendarApp
             builder.Services.AddScoped<IEventService, EventService>();
             builder.Services.AddScoped<IRepository<int, Category>, CategoryRepository>();
             builder.Services.AddScoped<ICategoryService, CategoryService>();
-            builder.Services.AddScoped<INotificationRepository<int, Reminder>, ReminderRepository>();
-            //builder.Services.AddScoped<IReminderService, ReminderService>();
-            builder.Services.AddScoped<INotificationRepository<int, Notification>, NotificationRepository>();
 
             var app = builder.Build();
 

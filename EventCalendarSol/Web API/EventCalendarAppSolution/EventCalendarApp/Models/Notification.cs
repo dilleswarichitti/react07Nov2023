@@ -5,7 +5,7 @@ namespace EventCalendarApp.Models
 {
     public class Notification
     {
-        public int Id { get; set; }
+        public int Id { get; set; }//identity GUID
         public string Content { get; set; }
         public DateTime? NotificationDateTime { get; set; }
         //public int ReminderId { get; set; }

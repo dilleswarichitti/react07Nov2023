@@ -53,12 +53,30 @@ namespace EventCalendarApp.Repositories
             return events;
         }
 
+        //public Event Update(Event entity)
+        //{
+        //    var events = GetById(entity.Id);
+        //    if (events != null)
+        //    {
+        //        _context.Entry<Event>(events).State = EntityState.Modified;
+        //        _context.SaveChanges();
+        //        return events;
+        //    }
+        //    return null;
+        //}
         public Event Update(Event entity)
         {
             var events = GetById(entity.Id);
             if (events != null)
             {
-                _context.Entry<Event>(events).State = EntityState.Modified;
+                // Update properties as needed
+                events.title = entity.title;
+                events.Description = entity.Description;
+                events.StartDateTime = entity.StartDateTime;
+                events.NotificationDateTime = entity.NotificationDateTime;
+                events.Location = entity.Location;
+                events.IsRecurring = entity.IsRecurring;
+                _context.Events.Update(events);
                 _context.SaveChanges();
                 return events;
             }

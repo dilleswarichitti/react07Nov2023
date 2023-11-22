@@ -22,12 +22,12 @@ namespace EventCalendarApp.Controllers
             _logger = logger;
         }
         [HttpGet]
-        public ActionResult Get()
+        public ActionResult Get(string userId)
         {
             string errorMessage = string.Empty;
-            try
+            try 
             {
-                var result = _eventService.GetEvents();
+                var result = _eventService.GetEvents(userId);
                 _logger.LogInformation("Event listed");
                 return Ok(result);
             }
@@ -38,14 +38,14 @@ namespace EventCalendarApp.Controllers
             }
             return BadRequest(errorMessage);
         }
-        [Authorize(Roles = "organizer")]
+        //[Authorize(Roles = "organizer")]
         [HttpPost]
         public ActionResult Create(Event events)
         {
             string errorMessage = string.Empty;
             try
             {
-                var result = _eventService.Create(events);
+                var result = _eventService.Add(events);
                 return Ok(result);
             }
             catch (Exception e)

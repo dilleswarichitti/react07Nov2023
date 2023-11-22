@@ -32,7 +32,7 @@ namespace EventCalendarApp.Controllers
             }
             return BadRequest(errorMessage);
         }
-        [Authorize(Roles = "organizer")]
+        //[Authorize(Roles = "organizer")]
         [HttpPost]
         public ActionResult Create(Category category)
         {

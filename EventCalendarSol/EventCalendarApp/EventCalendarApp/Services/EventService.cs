@@ -1,5 +1,6 @@
 ﻿using EventCalendarApp.Exceptions;
 using EventCalendarApp.Interface;
+using EventCalendarApp.Interfaces;
 using EventCalendarApp.Models;
 
 namespace EventCalendarApp.Services
@@ -8,10 +9,11 @@ namespace EventCalendarApp.Services
     {
         private readonly IRepository<int, Event> _eventRepository;
         //private readonly IRepository<int, SharingEvent> _sharingEventRepository;
-        private readonly IRepository<int, Reminder> _reminderRepository;
-        private readonly IRepository<int, Notification> _notificationRepository;
+        private readonly INotificationRepository<int, Reminder> _reminderRepository;
+        private readonly INotificationRepository<int, Notification> _notificationRepository;
+
         // private readonly ICurrentUserService _currentUserService;
-        public EventService(IRepository<int, Event> eventRepository, IRepository<int, Reminder> reminderRepository, IRepository<int, Notification> notificationRepository)
+        public EventService(IRepository<int, Event> eventRepository, INotificationRepository<int, Reminder> reminderRepository, INotificationRepository<int, Notification> notificationRepository)
         {
             _eventRepository = eventRepository;
             _reminderRepository = reminderRepository;
@@ -55,8 +57,17 @@ namespace EventCalendarApp.Services
         //    // Add the SharingEvent to the repository
         //    _sharingEventRepository.Add(sharingEvent);
         //}
-        public Event Create(Event events) 
+        public Event Create(Event events)
         {
+            //if (events != null)
+            //{
+            //    if (IsCategoryIdUnique(events.Id))
+            //    {
+            //        return _eventRepository.Add(events);
+            //    }
+            //    throw new IdAlreadyExist();
+            //}
+
             //var currentUser = _currentUserService.GetCurrentUserInfo();
             // events.UserEmail = user.Email; // Associate the event with the user
             var addedEvent = _eventRepository.Add(events);
@@ -87,6 +98,12 @@ namespace EventCalendarApp.Services
             return addedEvent;
         }
         private static DateTime SetNotificationTimeLogic(DateTime eventsStartDateTime) => eventsStartDateTime.AddMinutes(-30);
+        //private bool IsCategoryIdUnique(int eventId)
+        //{
+
+        //    return !_eventRepository.GetAll().Any(e => e.Id == eventId);
+
+        //}
 
         public List<Event> GetEvents()
         {
