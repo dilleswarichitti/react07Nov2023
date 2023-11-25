@@ -11,6 +11,7 @@ namespace EventCalendarApp.Interfaces
         /// </summary>
         /// <returns></returns>
         List<IGrouping<int, Event>> GetEvents(string userId);
+        //IList<Event> GetPublicEvents(string privacy);
         Event Add(Event events);
         Event Remove(Event events);
         Event Update(Event events);

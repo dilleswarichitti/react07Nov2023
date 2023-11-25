@@ -4,6 +4,7 @@ using EventCalendarApp.Models;
 using EventCalendarApp.Repositories;
 using EventCalendarApp.Services;
 using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Cors;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 
@@ -11,6 +12,7 @@ namespace EventCalendarApp.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
+    [EnableCors("reactApp")]
     public class EventController : ControllerBase
     {
         private readonly IEventService _eventService;
@@ -38,6 +40,23 @@ namespace EventCalendarApp.Controllers
             }
             return BadRequest(errorMessage);
         }
+        //[HttpGet]
+        //public ActionResult GetPublicEvents(string privacy) 
+        //{
+        //    string errorMessage = string.Empty;
+        //    try
+        //    {
+        //        var result = _eventService.GetPublicEvents(privacy);
+        //        _logger.LogInformation("Event listed");
+        //        return Ok(result);
+        //    }
+        //    catch (NoEventsAvailableException e)
+        //    {
+        //        errorMessage = e.Message;
+        //        _logger.LogError(errorMessage);
+        //    }
+        //    return BadRequest(errorMessage);
+        //}
         //[Authorize(Roles = "organizer")]
         [HttpPost]
         public ActionResult Create(Event events)

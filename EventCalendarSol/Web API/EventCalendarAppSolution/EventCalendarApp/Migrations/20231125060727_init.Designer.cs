@@ -12,7 +12,7 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace EventCalendarApp.Migrations
 {
     [DbContext(typeof(CalendarContext))]
-    [Migration("20231122165204_init")]
+    [Migration("20231125060727_init")]
     partial class init
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -64,23 +64,27 @@ namespace EventCalendarApp.Migrations
                         .IsRequired()
                         .HasColumnType("nvarchar(450)");
 
+                    b.Property<DateTime>("EndDateTime")
+                        .HasColumnType("datetime2");
+
                     b.Property<bool?>("IsRecurring")
                         .HasColumnType("bit");
 
                     b.Property<string>("Location")
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<string>("NotificationDateTime")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
+                    b.Property<DateTime>("NotificationDateTime")
+                        .HasColumnType("datetime2");
 
                     b.Property<string>("Recurring_frequency")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("ShareEventWith")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<string>("StartDateTime")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
+                    b.Property<DateTime>("StartDateTime")
+                        .HasColumnType("datetime2");
 
                     b.Property<string>("title")
                         .IsRequired()

@@ -13,6 +13,7 @@ namespace EventCalendarApp.Models
         public int DefaultViewMode { get; set; }//Default view mode for the calendar
         public bool ShowHolidays { get; set; }// Whether to display holidays on the calendar
         public bool DarkMode { get; set; }//Enable dark mode for the calendar
+        public bool Eventaccessibility { get; set; }//event should be in public or private
         public int TimeZoneOffset { get; set; }//User's preferred time zone offset
     }
 }

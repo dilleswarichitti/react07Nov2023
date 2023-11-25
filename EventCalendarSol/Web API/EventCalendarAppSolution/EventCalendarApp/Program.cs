@@ -1,3 +1,4 @@
+using EventCalendarApp.Context;
 using EventCalendarApp.Interfaces;
 using EventCalendarApp.Models;
 using EventCalendarApp.Repositories;
@@ -6,20 +7,23 @@ using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.AspNetCore.Cors.Infrastructure;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.IdentityModel.Tokens;
-using System.Text;
-using EventCalendarApp.Context;
 using Microsoft.OpenApi.Models;
+using System.Text;
 
-namespace EventCalendarApp
+
+namespace EventCalendarApp 
 {
     public class Program
     {
         public static void Main(string[] args)
         {
             var builder = WebApplication.CreateBuilder(args);
+
             // Add services to the container.
+            //builder.Services.AddControllersWithViews();
             builder.Services.AddControllers();
             builder.Services.AddEndpointsApiExplorer();
+            #region Swagger
             builder.Services.AddSwaggerGen(opt =>
             {
                 opt.AddSecurityDefinition("Bearer", new OpenApiSecurityScheme
@@ -48,6 +52,17 @@ namespace EventCalendarApp
                      }
                  });
             });
+            #endregion
+            #region CORS
+            builder.Services.AddCors(options =>
+            {
+                options.AddPolicy("reactApp", opts =>
+                {
+                    opts.AllowAnyMethod().AllowAnyHeader().AllowAnyOrigin();
+                });
+            });
+            #endregion
+            #region Uitility
             builder.Services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
                 .AddJwtBearer(options =>
                 {
@@ -65,6 +80,11 @@ namespace EventCalendarApp
                 opts.UseSqlServer(builder.Configuration.GetConnectionString("Conn"));
             });
 
+            builder.Logging.AddLog4Net();
+            #endregion
+
+            #region UserDerfinedServices
+
             builder.Services.AddScoped<IRepository<string, User>, UserRepository>();
             builder.Services.AddScoped<IUserService, UserService>();
             builder.Services.AddScoped<ITokenService, TokenService>();
@@ -72,7 +92,7 @@ namespace EventCalendarApp
             builder.Services.AddScoped<IEventService, EventService>();
             builder.Services.AddScoped<IRepository<int, Category>, CategoryRepository>();
             builder.Services.AddScoped<ICategoryService, CategoryService>();
-
+            #endregion
             var app = builder.Build();
 
             // Configure the HTTP request pipeline.
@@ -80,17 +100,19 @@ namespace EventCalendarApp
             {
                 app.UseSwagger();
                 app.UseSwaggerUI();
+                //app.UseExceptionHandler("/Home/Error");
             }
             app.UseStaticFiles();
+
             app.UseRouting();
 
-            app.UseHttpsRedirection();
-
+            app.UseCors("reactApp");
             app.UseAuthentication();
             app.UseAuthorization();
-
-
             app.MapControllers();
+            //app.MapControllerRoute(
+            //    name: "default",
+            //    pattern: "{controller=Home}/{action=Index}/{id?}");
 
             app.Run();
         }
