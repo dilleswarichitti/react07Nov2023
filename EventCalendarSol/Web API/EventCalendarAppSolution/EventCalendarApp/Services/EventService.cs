@@ -51,32 +51,33 @@ namespace EventCalendarApp.Services
         }
         public void SendNotificationEmail(string recipientEmail, string subject, string body)
         {
+            try
+            {
+                string email = "dilleswarichitti@gmail.com";
+                string password = "diduihcfpjbeckca";
 
-            string email = "dilleswarichitti@gmail.com";
-            string password = "diduihcfpjbeckca";
+                // Create the email message
+                MailMessage mail = new MailMessage();
+                mail.From = new MailAddress(email);
+                mail.To.Add(recipientEmail);
+                mail.Subject = subject;
+                mail.Body = body;
 
-            // Recipient email
-            string toEmail = recipientEmail;
-            //string toSharedEventWith = recipientEmail;
+                // Set up SMTP client
+                SmtpClient smtpClient = new SmtpClient("smtp.gmail.com");
+                smtpClient.Port = 587;
+                smtpClient.Credentials = new NetworkCredential(email, password);
+                smtpClient.EnableSsl = true;
+                smtpClient.UseDefaultCredentials = false;
 
-            // Create the email message
-            MailMessage mail = new MailMessage();
-            mail.From = new MailAddress(email);
-            mail.To.Add(toEmail);
-            //mail.To.Add(toSharedEventWith);
-            mail.Subject = subject;
-            mail.Body = body;
-
-            // Set up SMTP client
-            SmtpClient smtpClient = new SmtpClient("smtp.gmail.com");
-            smtpClient.Port = 587;
-            smtpClient.Credentials = new NetworkCredential(email, password);
-            smtpClient.EnableSsl = true;
-            smtpClient.UseDefaultCredentials = false;
-
-            // Send the email
-            smtpClient.Send(mail);
-
+                // Send the email
+                smtpClient.Send(mail);
+            }
+            catch (Exception ex)
+            {
+                // Log the exception or handle it appropriately
+                Console.WriteLine($"Error sending email: {ex.Message}");
+            }
         }
         /// <summary>
         /// Share an event with specified email addresses
@@ -88,7 +89,6 @@ namespace EventCalendarApp.Services
         {
             // Retrieve the event to be shared
             var eventToShare = _eventRepository.GetById(eventId);
-
             if (eventToShare != null)
             {
                 // Customize the email subject and body for sharing

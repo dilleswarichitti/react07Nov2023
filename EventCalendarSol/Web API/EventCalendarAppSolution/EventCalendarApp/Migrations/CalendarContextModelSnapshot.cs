@@ -78,7 +78,6 @@ namespace EventCalendarApp.Migrations
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("ShareEventWith")
-                        .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<DateTime>("StartDateTime")

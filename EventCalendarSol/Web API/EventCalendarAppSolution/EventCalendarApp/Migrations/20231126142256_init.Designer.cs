@@ -12,7 +12,7 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace EventCalendarApp.Migrations
 {
     [DbContext(typeof(CalendarContext))]
-    [Migration("20231125060727_init")]
+    [Migration("20231126142256_init")]
     partial class init
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -80,7 +80,6 @@ namespace EventCalendarApp.Migrations
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("ShareEventWith")
-                        .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<DateTime>("StartDateTime")

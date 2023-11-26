@@ -576,3 +576,211 @@ FROM [Events] AS [e]
 SELECT [e].[Id], [e].[CategoryId], [e].[Description], [e].[Email], [e].[EndDateTime], [e].[IsRecurring], [e].[Location], [e].[NotificationDateTime], [e].[Recurring_frequency], [e].[ShareEventWith], [e].[StartDateTime], [e].[title]
 FROM [Events] AS [e]
 2023-11-25 19:33:44,748 [.NET ThreadPool Worker] INFO EventCalendarApp.Controllers.EventController.Get[33] - Event listed
+2023-11-25 22:24:53,773 [.NET ThreadPool Worker] INFO Microsoft.EntityFrameworkCore.Infrastructure.?[?] - Entity Framework Core 6.0.24 initialized 'CalendarContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.24' with options: None
+2023-11-25 22:24:54,094 [.NET ThreadPool Worker] INFO Microsoft.EntityFrameworkCore.Database.Command.?[?] - Executed DbCommand (216ms) [Parameters=[@p0='?' (Size = 4000), @p1='?' (Size = 4000)], CommandType='Text', CommandTimeout='30']
+SET NOCOUNT ON;
+INSERT INTO [Categories] ([color], [name])
+VALUES (@p0, @p1);
+SELECT [id]
+FROM [Categories]
+WHERE @@ROWCOUNT = 1 AND [id] = scope_identity();
+2023-11-25 22:25:11,591 [.NET ThreadPool Worker] INFO Microsoft.EntityFrameworkCore.Infrastructure.?[?] - Entity Framework Core 6.0.24 initialized 'CalendarContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.24' with options: None
+2023-11-25 22:25:11,604 [.NET ThreadPool Worker] INFO Microsoft.EntityFrameworkCore.Database.Command.?[?] - Executed DbCommand (4ms) [Parameters=[@p0='?' (Size = 4000), @p1='?' (Size = 4000)], CommandType='Text', CommandTimeout='30']
+SET NOCOUNT ON;
+INSERT INTO [Categories] ([color], [name])
+VALUES (@p0, @p1);
+SELECT [id]
+FROM [Categories]
+WHERE @@ROWCOUNT = 1 AND [id] = scope_identity();
+2023-11-26 10:10:15,878 [1] INFO Microsoft.Hosting.Lifetime.?[?] - Now listening on: https://localhost:7117
+2023-11-26 10:10:16,104 [1] INFO Microsoft.Hosting.Lifetime.?[?] - Now listening on: http://localhost:5089
+2023-11-26 10:10:16,116 [1] INFO Microsoft.Hosting.Lifetime.OnApplicationStarted[0] - Application started. Press Ctrl+C to shut down.
+2023-11-26 10:10:16,122 [1] INFO Microsoft.Hosting.Lifetime.OnApplicationStarted[0] - Hosting environment: Development
+2023-11-26 10:10:16,124 [1] INFO Microsoft.Hosting.Lifetime.OnApplicationStarted[0] - Content root path: C:\TRAINING\project\EventCalendarSol\Web API\EventCalendarAppSolution\EventCalendarApp\
+2023-11-26 10:10:26,496 [.NET ThreadPool Worker] INFO Microsoft.EntityFrameworkCore.Infrastructure.?[?] - Entity Framework Core 6.0.24 initialized 'CalendarContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.24' with options: None
+2023-11-26 10:10:28,528 [.NET ThreadPool Worker] INFO Microsoft.EntityFrameworkCore.Database.Command.?[?] - Executed DbCommand (103ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT COUNT(*)
+FROM [Categories] AS [c]
+2023-11-26 10:10:28,646 [.NET ThreadPool Worker] INFO Microsoft.EntityFrameworkCore.Database.Command.?[?] - Executed DbCommand (7ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [c].[id], [c].[color], [c].[name]
+FROM [Categories] AS [c]
+2023-11-26 10:10:28,731 [.NET ThreadPool Worker] INFO Microsoft.EntityFrameworkCore.Infrastructure.?[?] - Entity Framework Core 6.0.24 initialized 'CalendarContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.24' with options: None
+2023-11-26 10:10:28,743 [.NET ThreadPool Worker] INFO Microsoft.EntityFrameworkCore.Database.Command.?[?] - Executed DbCommand (1ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT COUNT(*)
+FROM [Categories] AS [c]
+2023-11-26 10:10:28,749 [.NET ThreadPool Worker] INFO Microsoft.EntityFrameworkCore.Database.Command.?[?] - Executed DbCommand (1ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [c].[id], [c].[color], [c].[name]
+FROM [Categories] AS [c]
+2023-11-26 15:07:25,096 [.NET ThreadPool Worker] INFO Microsoft.EntityFrameworkCore.Infrastructure.?[?] - Entity Framework Core 6.0.24 initialized 'CalendarContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.24' with options: None
+2023-11-26 15:07:26,458 [.NET ThreadPool Worker] INFO Microsoft.EntityFrameworkCore.Database.Command.?[?] - Executed DbCommand (154ms) [Parameters=[@p0='?' (Size = 450), @p1='?' (Size = 4000), @p2='?' (Size = 8000) (DbType = Binary), @p3='?' (Size = 4000), @p4='?' (Size = 8000) (DbType = Binary), @p5='?' (Size = 4000)], CommandType='Text', CommandTimeout='30']
+SET NOCOUNT ON;
+INSERT INTO [Users] ([Email], [FirstName], [Key], [LastName], [Password], [Role])
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5);
+2023-11-26 15:17:32,227 [.NET ThreadPool Worker] INFO Microsoft.EntityFrameworkCore.Infrastructure.?[?] - Entity Framework Core 6.0.24 initialized 'CalendarContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.24' with options: None
+2023-11-26 15:17:32,409 [.NET ThreadPool Worker] INFO Microsoft.EntityFrameworkCore.Database.Command.?[?] - Executed DbCommand (52ms) [Parameters=[@__key_0='?' (Size = 450)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(2) [u].[Email], [u].[FirstName], [u].[Key], [u].[LastName], [u].[Password], [u].[Role]
+FROM [Users] AS [u]
+WHERE [u].[Email] = @__key_0
+2023-11-26 15:18:12,317 [1] INFO Microsoft.Hosting.Lifetime.?[?] - Now listening on: https://localhost:7117
+2023-11-26 15:18:12,673 [1] INFO Microsoft.Hosting.Lifetime.?[?] - Now listening on: http://localhost:5089
+2023-11-26 15:18:12,683 [1] INFO Microsoft.Hosting.Lifetime.OnApplicationStarted[0] - Application started. Press Ctrl+C to shut down.
+2023-11-26 15:18:12,690 [1] INFO Microsoft.Hosting.Lifetime.OnApplicationStarted[0] - Hosting environment: Development
+2023-11-26 15:18:12,693 [1] INFO Microsoft.Hosting.Lifetime.OnApplicationStarted[0] - Content root path: C:\TRAINING\project\EventCalendarSol\Web API\EventCalendarAppSolution\EventCalendarApp\
+2023-11-26 15:18:34,706 [1] INFO Microsoft.Hosting.Lifetime.?[?] - Now listening on: https://localhost:7117
+2023-11-26 15:18:34,775 [1] INFO Microsoft.Hosting.Lifetime.?[?] - Now listening on: http://localhost:5089
+2023-11-26 15:18:34,786 [1] INFO Microsoft.Hosting.Lifetime.OnApplicationStarted[0] - Application started. Press Ctrl+C to shut down.
+2023-11-26 15:18:34,791 [1] INFO Microsoft.Hosting.Lifetime.OnApplicationStarted[0] - Hosting environment: Development
+2023-11-26 15:18:34,795 [1] INFO Microsoft.Hosting.Lifetime.OnApplicationStarted[0] - Content root path: C:\TRAINING\project\EventCalendarSol\Web API\EventCalendarAppSolution\EventCalendarApp\
+2023-11-26 15:18:43,642 [.NET ThreadPool Worker] INFO Microsoft.EntityFrameworkCore.Infrastructure.?[?] - Entity Framework Core 6.0.24 initialized 'CalendarContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.24' with options: None
+2023-11-26 15:18:46,051 [.NET ThreadPool Worker] INFO Microsoft.EntityFrameworkCore.Database.Command.?[?] - Executed DbCommand (193ms) [Parameters=[@__key_0='?' (Size = 450)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(2) [u].[Email], [u].[FirstName], [u].[Key], [u].[LastName], [u].[Password], [u].[Role]
+FROM [Users] AS [u]
+WHERE [u].[Email] = @__key_0
+2023-11-26 15:18:53,608 [.NET ThreadPool Worker] INFO Microsoft.EntityFrameworkCore.Infrastructure.?[?] - Entity Framework Core 6.0.24 initialized 'CalendarContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.24' with options: None
+2023-11-26 15:18:53,638 [.NET ThreadPool Worker] INFO Microsoft.EntityFrameworkCore.Database.Command.?[?] - Executed DbCommand (9ms) [Parameters=[@__key_0='?' (Size = 450)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(2) [u].[Email], [u].[FirstName], [u].[Key], [u].[LastName], [u].[Password], [u].[Role]
+FROM [Users] AS [u]
+WHERE [u].[Email] = @__key_0
+2023-11-26 15:44:19,679 [1] INFO Microsoft.Hosting.Lifetime.?[?] - Now listening on: https://localhost:7117
+2023-11-26 15:44:19,770 [1] INFO Microsoft.Hosting.Lifetime.?[?] - Now listening on: http://localhost:5089
+2023-11-26 15:44:19,778 [1] INFO Microsoft.Hosting.Lifetime.OnApplicationStarted[0] - Application started. Press Ctrl+C to shut down.
+2023-11-26 15:44:19,783 [1] INFO Microsoft.Hosting.Lifetime.OnApplicationStarted[0] - Hosting environment: Development
+2023-11-26 15:44:19,784 [1] INFO Microsoft.Hosting.Lifetime.OnApplicationStarted[0] - Content root path: C:\TRAINING\project\EventCalendarSol\Web API\EventCalendarAppSolution\EventCalendarApp\
+2023-11-26 15:44:56,097 [.NET ThreadPool Worker] INFO Microsoft.EntityFrameworkCore.Infrastructure.?[?] - Entity Framework Core 6.0.24 initialized 'CalendarContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.24' with options: None
+2023-11-26 15:44:57,173 [.NET ThreadPool Worker] INFO Microsoft.EntityFrameworkCore.Database.Command.?[?] - Executed DbCommand (79ms) [Parameters=[@__key_0='?' (Size = 450)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(2) [u].[Email], [u].[FirstName], [u].[Key], [u].[LastName], [u].[Password], [u].[Role]
+FROM [Users] AS [u]
+WHERE [u].[Email] = @__key_0
+2023-11-26 19:52:32,666 [1] INFO Microsoft.EntityFrameworkCore.Infrastructure.?[?] - Entity Framework Core 6.0.24 initialized 'CalendarContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.24' with options: None
+2023-11-26 19:52:56,438 [1] INFO Microsoft.EntityFrameworkCore.Infrastructure.?[?] - Entity Framework Core 6.0.24 initialized 'CalendarContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.24' with options: None
+2023-11-26 19:53:23,266 [1] INFO Microsoft.EntityFrameworkCore.Infrastructure.?[?] - Entity Framework Core 6.0.24 initialized 'CalendarContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.24' with options: None
+2023-11-26 19:53:24,666 [1] INFO Microsoft.EntityFrameworkCore.Database.Command.?[?] - Executed DbCommand (1,028ms) [Parameters=[], CommandType='Text', CommandTimeout='60']
+CREATE DATABASE [dbCalendarApp];
+2023-11-26 19:53:24,942 [1] INFO Microsoft.EntityFrameworkCore.Database.Command.?[?] - Executed DbCommand (267ms) [Parameters=[], CommandType='Text', CommandTimeout='60']
+IF SERVERPROPERTY('EngineEdition') <> 5
+BEGIN
+    ALTER DATABASE [dbCalendarApp] SET READ_COMMITTED_SNAPSHOT ON;
+END;
+2023-11-26 19:53:24,969 [1] INFO Microsoft.EntityFrameworkCore.Database.Command.?[?] - Executed DbCommand (7ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT 1
+2023-11-26 19:53:25,098 [1] INFO Microsoft.EntityFrameworkCore.Database.Command.?[?] - Executed DbCommand (10ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+CREATE TABLE [__EFMigrationsHistory] (
+    [MigrationId] nvarchar(150) NOT NULL,
+    [ProductVersion] nvarchar(32) NOT NULL,
+    CONSTRAINT [PK___EFMigrationsHistory] PRIMARY KEY ([MigrationId])
+);
+2023-11-26 19:53:25,100 [1] INFO Microsoft.EntityFrameworkCore.Database.Command.?[?] - Executed DbCommand (1ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT 1
+2023-11-26 19:53:25,128 [1] INFO Microsoft.EntityFrameworkCore.Database.Command.?[?] - Executed DbCommand (18ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT OBJECT_ID(N'[__EFMigrationsHistory]');
+2023-11-26 19:53:25,136 [1] INFO Microsoft.EntityFrameworkCore.Database.Command.?[?] - Executed DbCommand (5ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [MigrationId], [ProductVersion]
+FROM [__EFMigrationsHistory]
+ORDER BY [MigrationId];
+2023-11-26 19:53:25,153 [1] INFO Microsoft.EntityFrameworkCore.Migrations.?[?] - Applying migration '20231126142256_init'.
+2023-11-26 19:53:25,194 [1] INFO Microsoft.EntityFrameworkCore.Database.Command.?[?] - Executed DbCommand (8ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+CREATE TABLE [Categories] (
+    [id] int NOT NULL IDENTITY,
+    [name] nvarchar(max) NOT NULL,
+    [color] nvarchar(max) NOT NULL,
+    CONSTRAINT [PK_Categories] PRIMARY KEY ([id])
+);
+2023-11-26 19:53:25,476 [1] INFO Microsoft.EntityFrameworkCore.Database.Command.?[?] - Executed DbCommand (3ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+CREATE TABLE [Users] (
+    [Email] nvarchar(450) NOT NULL,
+    [FirstName] nvarchar(max) NOT NULL,
+    [LastName] nvarchar(max) NOT NULL,
+    [Password] varbinary(max) NOT NULL,
+    [Role] nvarchar(max) NOT NULL,
+    [Key] varbinary(max) NOT NULL,
+    CONSTRAINT [PK_Users] PRIMARY KEY ([Email])
+);
+2023-11-26 19:53:25,484 [1] INFO Microsoft.EntityFrameworkCore.Database.Command.?[?] - Executed DbCommand (7ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+CREATE TABLE [Events] (
+    [Id] int NOT NULL IDENTITY,
+    [title] nvarchar(max) NOT NULL,
+    [Description] nvarchar(max) NOT NULL,
+    [StartDateTime] datetime2 NOT NULL,
+    [EndDateTime] datetime2 NOT NULL,
+    [NotificationDateTime] datetime2 NOT NULL,
+    [Location] nvarchar(max) NULL,
+    [IsRecurring] bit NULL,
+    [Recurring_frequency] nvarchar(max) NULL,
+    [ShareEventWith] nvarchar(max) NULL,
+    [CategoryId] int NOT NULL,
+    [Email] nvarchar(450) NOT NULL,
+    CONSTRAINT [PK_Events] PRIMARY KEY ([Id]),
+    CONSTRAINT [FK_Events_Categories_CategoryId] FOREIGN KEY ([CategoryId]) REFERENCES [Categories] ([id]),
+    CONSTRAINT [FK_Events_Users_Email] FOREIGN KEY ([Email]) REFERENCES [Users] ([Email]) ON DELETE CASCADE
+);
+2023-11-26 19:53:27,146 [1] INFO Microsoft.EntityFrameworkCore.Database.Command.?[?] - Executed DbCommand (7ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+CREATE INDEX [IX_Events_CategoryId] ON [Events] ([CategoryId]);
+2023-11-26 19:53:27,148 [1] INFO Microsoft.EntityFrameworkCore.Database.Command.?[?] - Executed DbCommand (1ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+CREATE INDEX [IX_Events_Email] ON [Events] ([Email]);
+2023-11-26 19:53:27,154 [1] INFO Microsoft.EntityFrameworkCore.Database.Command.?[?] - Executed DbCommand (5ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+INSERT INTO [__EFMigrationsHistory] ([MigrationId], [ProductVersion])
+VALUES (N'20231126142256_init', N'6.0.24');
+2023-11-26 19:53:46,311 [1] INFO Microsoft.Hosting.Lifetime.?[?] - Now listening on: https://localhost:7117
+2023-11-26 19:53:46,406 [1] INFO Microsoft.Hosting.Lifetime.?[?] - Now listening on: http://localhost:5089
+2023-11-26 19:53:46,414 [1] INFO Microsoft.Hosting.Lifetime.OnApplicationStarted[0] - Application started. Press Ctrl+C to shut down.
+2023-11-26 19:53:46,419 [1] INFO Microsoft.Hosting.Lifetime.OnApplicationStarted[0] - Hosting environment: Development
+2023-11-26 19:53:46,421 [1] INFO Microsoft.Hosting.Lifetime.OnApplicationStarted[0] - Content root path: C:\TRAINING\project\EventCalendarSol\Web API\EventCalendarAppSolution\EventCalendarApp\
+2023-11-26 19:56:44,529 [.NET ThreadPool Worker] INFO Microsoft.EntityFrameworkCore.Infrastructure.?[?] - Entity Framework Core 6.0.24 initialized 'CalendarContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.24' with options: None
+2023-11-26 19:56:47,267 [.NET ThreadPool Worker] INFO Microsoft.EntityFrameworkCore.Database.Command.?[?] - Executed DbCommand (318ms) [Parameters=[@p0='?' (Size = 450), @p1='?' (Size = 4000), @p2='?' (Size = 8000) (DbType = Binary), @p3='?' (Size = 4000), @p4='?' (Size = 8000) (DbType = Binary), @p5='?' (Size = 4000)], CommandType='Text', CommandTimeout='30']
+SET NOCOUNT ON;
+INSERT INTO [Users] ([Email], [FirstName], [Key], [LastName], [Password], [Role])
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5);
+2023-11-26 19:57:50,453 [.NET ThreadPool Worker] INFO Microsoft.EntityFrameworkCore.Infrastructure.?[?] - Entity Framework Core 6.0.24 initialized 'CalendarContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.24' with options: None
+2023-11-26 19:57:50,475 [.NET ThreadPool Worker] INFO Microsoft.EntityFrameworkCore.Database.Command.?[?] - Executed DbCommand (4ms) [Parameters=[@p0='?' (Size = 450), @p1='?' (Size = 4000), @p2='?' (Size = 8000) (DbType = Binary), @p3='?' (Size = 4000), @p4='?' (Size = 8000) (DbType = Binary), @p5='?' (Size = 4000)], CommandType='Text', CommandTimeout='30']
+SET NOCOUNT ON;
+INSERT INTO [Users] ([Email], [FirstName], [Key], [LastName], [Password], [Role])
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5);
+2023-11-26 19:58:31,493 [.NET ThreadPool Worker] INFO Microsoft.EntityFrameworkCore.Infrastructure.?[?] - Entity Framework Core 6.0.24 initialized 'CalendarContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.24' with options: None
+2023-11-26 19:58:31,693 [.NET ThreadPool Worker] INFO Microsoft.EntityFrameworkCore.Database.Command.?[?] - Executed DbCommand (67ms) [Parameters=[@p0='?' (Size = 4000), @p1='?' (Size = 4000)], CommandType='Text', CommandTimeout='30']
+SET NOCOUNT ON;
+INSERT INTO [Categories] ([color], [name])
+VALUES (@p0, @p1);
+SELECT [id]
+FROM [Categories]
+WHERE @@ROWCOUNT = 1 AND [id] = scope_identity();
+2023-11-26 19:58:48,707 [.NET ThreadPool Worker] INFO Microsoft.EntityFrameworkCore.Infrastructure.?[?] - Entity Framework Core 6.0.24 initialized 'CalendarContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.24' with options: None
+2023-11-26 19:58:48,721 [.NET ThreadPool Worker] INFO Microsoft.EntityFrameworkCore.Database.Command.?[?] - Executed DbCommand (5ms) [Parameters=[@p0='?' (Size = 4000), @p1='?' (Size = 4000)], CommandType='Text', CommandTimeout='30']
+SET NOCOUNT ON;
+INSERT INTO [Categories] ([color], [name])
+VALUES (@p0, @p1);
+SELECT [id]
+FROM [Categories]
+WHERE @@ROWCOUNT = 1 AND [id] = scope_identity();
+2023-11-26 19:59:50,825 [.NET ThreadPool Worker] INFO Microsoft.EntityFrameworkCore.Infrastructure.?[?] - Entity Framework Core 6.0.24 initialized 'CalendarContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.24' with options: None
+2023-11-26 19:59:51,058 [.NET ThreadPool Worker] INFO Microsoft.EntityFrameworkCore.Database.Command.?[?] - Executed DbCommand (103ms) [Parameters=[@p0='?' (DbType = Int32), @p1='?' (Size = 4000), @p2='?' (Size = 450), @p3='?' (DbType = DateTime2), @p4='?' (DbType = Boolean), @p5='?' (Size = 4000), @p6='?' (DbType = DateTime2), @p7='?' (Size = 4000), @p8='?' (Size = 4000), @p9='?' (DbType = DateTime2), @p10='?' (Size = 4000)], CommandType='Text', CommandTimeout='30']
+SET NOCOUNT ON;
+INSERT INTO [Events] ([CategoryId], [Description], [Email], [EndDateTime], [IsRecurring], [Location], [NotificationDateTime], [Recurring_frequency], [ShareEventWith], [StartDateTime], [title])
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7, @p8, @p9, @p10);
+SELECT [Id]
+FROM [Events]
+WHERE @@ROWCOUNT = 1 AND [Id] = scope_identity();
+2023-11-26 20:00:25,356 [.NET ThreadPool Worker] INFO Microsoft.EntityFrameworkCore.Infrastructure.?[?] - Entity Framework Core 6.0.24 initialized 'CalendarContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.24' with options: None
+2023-11-26 20:00:26,737 [.NET ThreadPool Worker] INFO Microsoft.EntityFrameworkCore.Database.Command.?[?] - Executed DbCommand (3ms) [Parameters=[@__key_0='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(2) [e].[Id], [e].[CategoryId], [e].[Description], [e].[Email], [e].[EndDateTime], [e].[IsRecurring], [e].[Location], [e].[NotificationDateTime], [e].[Recurring_frequency], [e].[ShareEventWith], [e].[StartDateTime], [e].[title]
+FROM [Events] AS [e]
+WHERE [e].[Id] = @__key_0
+2023-11-26 20:10:20,066 [1] INFO Microsoft.Hosting.Lifetime.?[?] - Now listening on: https://localhost:7117
+2023-11-26 20:10:20,113 [1] INFO Microsoft.Hosting.Lifetime.?[?] - Now listening on: http://localhost:5089
+2023-11-26 20:10:20,121 [1] INFO Microsoft.Hosting.Lifetime.OnApplicationStarted[0] - Application started. Press Ctrl+C to shut down.
+2023-11-26 20:10:20,125 [1] INFO Microsoft.Hosting.Lifetime.OnApplicationStarted[0] - Hosting environment: Development
+2023-11-26 20:10:20,127 [1] INFO Microsoft.Hosting.Lifetime.OnApplicationStarted[0] - Content root path: C:\TRAINING\project\EventCalendarSol\Web API\EventCalendarAppSolution\EventCalendarApp\
+2023-11-26 20:11:02,456 [.NET ThreadPool Worker] INFO Microsoft.EntityFrameworkCore.Infrastructure.?[?] - Entity Framework Core 6.0.24 initialized 'CalendarContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.24' with options: None
+2023-11-26 20:11:04,857 [.NET ThreadPool Worker] INFO Microsoft.EntityFrameworkCore.Database.Command.?[?] - Executed DbCommand (181ms) [Parameters=[@__key_0='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(2) [e].[Id], [e].[CategoryId], [e].[Description], [e].[Email], [e].[EndDateTime], [e].[IsRecurring], [e].[Location], [e].[NotificationDateTime], [e].[Recurring_frequency], [e].[ShareEventWith], [e].[StartDateTime], [e].[title]
+FROM [Events] AS [e]
+WHERE [e].[Id] = @__key_0
+2023-11-26 20:11:33,514 [1] INFO Microsoft.Hosting.Lifetime.?[?] - Now listening on: https://localhost:7117
+2023-11-26 20:11:33,560 [1] INFO Microsoft.Hosting.Lifetime.?[?] - Now listening on: http://localhost:5089
+2023-11-26 20:11:33,568 [1] INFO Microsoft.Hosting.Lifetime.OnApplicationStarted[0] - Application started. Press Ctrl+C to shut down.
+2023-11-26 20:11:33,572 [1] INFO Microsoft.Hosting.Lifetime.OnApplicationStarted[0] - Hosting environment: Development
+2023-11-26 20:11:33,574 [1] INFO Microsoft.Hosting.Lifetime.OnApplicationStarted[0] - Content root path: C:\TRAINING\project\EventCalendarSol\Web API\EventCalendarAppSolution\EventCalendarApp\
+2023-11-26 20:12:06,617 [.NET ThreadPool Worker] INFO Microsoft.EntityFrameworkCore.Infrastructure.?[?] - Entity Framework Core 6.0.24 initialized 'CalendarContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.24' with options: None
+2023-11-26 20:12:09,700 [.NET ThreadPool Worker] INFO Microsoft.EntityFrameworkCore.Database.Command.?[?] - Executed DbCommand (312ms) [Parameters=[@__key_0='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(2) [e].[Id], [e].[CategoryId], [e].[Description], [e].[Email], [e].[EndDateTime], [e].[IsRecurring], [e].[Location], [e].[NotificationDateTime], [e].[Recurring_frequency], [e].[ShareEventWith], [e].[StartDateTime], [e].[title]
+FROM [Events] AS [e]
+WHERE [e].[Id] = @__key_0

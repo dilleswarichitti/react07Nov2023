@@ -73,6 +73,18 @@ namespace EventCalendarApp.Controllers
             }
             return BadRequest(errorMessage);
         }
+        [HttpPost("ShareEvent/{eventId}")]
+        public IActionResult ShareEvent(int eventId, [FromBody] List<string> recipientEmails)
+        {
+            var isShared = _eventService.ShareEvent(eventId, recipientEmails);
+
+            if (isShared)
+            {
+                return Ok("Event shared successfully.");
+            }
+
+            return NotFound("Event not found or unable to share.");
+        }
         [HttpPut]
          public ActionResult Update(Event events)
          {

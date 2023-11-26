@@ -1,6 +1,7 @@
 import logo from './logo.svg';
 import './App.css';
-import AddCategory from './components/AddCategory';
+import Login from './components/Login';
+import Register from './components/Register';
 //import GetEvents from './components/GetEvents';
 
 function App() {
@@ -19,7 +20,7 @@ function App() {
       <div>
       </div>   */}
       <div>
-        <AddCategory/>
+        <Register/>
       </div>
     </div>
 );

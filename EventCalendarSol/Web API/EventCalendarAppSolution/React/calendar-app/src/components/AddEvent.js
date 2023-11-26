@@ -80,15 +80,13 @@ function AddEvent(){
                 <br/>
             <div className="form-group">
             <label for="recurring_frequency">Recurring_frequency</label>
-            <select
-              id="recurring_frequency"
-              className="form-control"
-              value={recurring_frequency}
+            <select id="recurring_frequency" className="form-control" value={recurring_frequency}
               onChange={(e) => setRecurring_frequency(e.target.value)}
             >
               <option value="daily">Daily</option>
               <option value="weekly">Weekly</option>
               <option value="monthly">Monthly</option>
+              <option value="custom">Custom</option>
             </select>
             </div>
             </div>
