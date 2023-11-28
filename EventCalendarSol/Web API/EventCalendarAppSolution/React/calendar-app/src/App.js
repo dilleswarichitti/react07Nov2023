@@ -1,29 +1,28 @@
-import logo from './logo.svg';
+
 import './App.css';
-import Login from './components/Login';
+import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import Register from './components/Register';
-//import GetEvents from './components/GetEvents';
+import Events from './components/Events';
+import Categories from './components/Categories';
+import Menu from './components/Menu';
+import Protected from './Protected';
+import AddEvent from './components/AddEvent';
 
 function App() {
+
   return (
-    <div className="App">
-     {/* <div className="container text-center">
-        <div className="row">
-          <div className="col">
-            <GetEvents/> 
-          </div>
-          <div className="col">
-            <AddEvent/>
-          </div>
-        </div>
+    <div>
+      <BrowserRouter>
+      <Menu/>
+        <Routes>
+          <Route path="/" element={<Register/>} />
+          <Route path="events" element={<Events/>} />
+          <Route path="categories" element={<Categories/>} />
+          <Route path="AddEvent" element={<Protected><AddEvent/></Protected>}/>
+        </Routes>  
+      </BrowserRouter>
     </div>
-      <div>
-      </div>   */}
-      <div>
-        <Register/>
-      </div>
-    </div>
-);
+  );
 }
 
 export default App;

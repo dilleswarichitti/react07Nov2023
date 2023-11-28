@@ -24,7 +24,6 @@ namespace EventCalendarApp.Services
         /// <returns>returns event</returns>
         public Event Add(Event events)
         {
-            //var result = _eventRepository.Add(events);
             //ScheduleAndSendEmail(DateTime.Parse(result.NotificationDateTime), result);
             //// ScheduleAndSendEmail(DateTime.Parse(result.StartDateTime).Min(-5), result);
             //return result;
@@ -44,7 +43,7 @@ namespace EventCalendarApp.Services
                 // Your email sending logic here
                 string to = events.Email;
                 string subject = "Event Scheduled Email";
-                string body = ($"Dear All \n Greetings!!! \nYou have '{events.title}' starts from '{events.StartDateTime}' and ended at '{events.EndDateTime}' \n Don't miss it ");
+                string body = ($"Dear All \n Greetings!!! \nYou have '{events.Title}' starts from '{events.StartDateTime}' and ended at '{events.EndDateTime}' \n Don't miss it ");
 
                 SendNotificationEmail(to, subject, body);
             }, null, delayMilliseconds, Timeout.Infinite);
@@ -92,8 +91,8 @@ namespace EventCalendarApp.Services
             if (eventToShare != null)
             {
                 // Customize the email subject and body for sharing
-                string subject = "Shared Event: " + eventToShare.title;
-                string body = $"Dear Recipient,\n\nYou have been invited to the event '{eventToShare.title}' scheduled for {eventToShare.StartDateTime}. Don't miss it!";
+                string subject = "Shared Event: " + eventToShare.Title;
+                string body = $"Dear Recipient,\n\nYou have been invited to the event '{eventToShare.Title}' scheduled for {eventToShare.StartDateTime}. Don't miss it!";
 
                 // Loop through recipient emails and send individual emails
                 foreach (var recipientEmail in recipientEmails)
@@ -122,15 +121,15 @@ namespace EventCalendarApp.Services
             }
             throw new NoEventsAvailableException();
         }
-        //public IList<Event> GetPublicEvents(string privacy)
-        //{
-        //    var events = _eventRepository.GetAll().Where(e =>e.privacy == "public").ToList();
-        //    if (events != null)
-        //    {
-        //        return events;
-        //    }
-        //    throw new NoEventsAvailableException();
-        //}
+        public IList<Event> GetPublicEvents(string access) 
+        {
+            var events = _eventRepository.GetAll().Where(e => e.Access == access).ToList();
+            if (events != null)
+            {
+                return events;
+            }
+            throw new NoEventsAvailableException();
+        }
 
         /// <summary>
         /// removing the events from repository

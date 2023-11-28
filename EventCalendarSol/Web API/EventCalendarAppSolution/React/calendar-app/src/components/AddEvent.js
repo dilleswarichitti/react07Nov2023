@@ -10,7 +10,8 @@ function AddEvent(){
     const[location,setLocation]=useState("");
     const [isrecurring,setIsRecurring] = useState(false);
     const[recurring_frequency,setRecurring_frequency] = useState("");
-    const[shareeventwith,setShareEventWith] = useState("")
+    const[shareeventwith,setShareEventWith]=useState("");
+    const[access,setAccess]=useState("");
     const[categoryId,setCategoryId] = useState("");
     const[email,setEmail]=useState("");
 
@@ -26,7 +27,8 @@ function AddEvent(){
         "location" : location,
         "isrecurring":isrecurring,
         "recurring_frequency" : recurring_frequency,
-        "shareeventwith":shareeventwith,
+        "shareeventwith": shareeventwith,
+        "access": access,
         "categoryId":categoryId,
         "email":email
         }
@@ -94,6 +96,9 @@ function AddEvent(){
             <br/>
             <label className="form-control"  for="pshareeventwith">ShareEventWith</label>
             <input id="pshareeventwith" type="text" className="form-control" value={shareeventwith} onChange={(e)=>{setShareEventWith(e.target.value)}}/>
+            <br/>
+            <label className="form-control"  for="paccess">Access</label>
+            <input id="paccess" type="text" className="form-control" value={access} onChange={(e)=>{setAccess(e.target.value)}}/>
             <br/>
             <label className="form-control"  for="pcategoryId">CategoryId</label>
             <input id="pcategoryId" type="number" className="form-control" value={categoryId} onChange={(e)=>{setCategoryId(e.target.value)}}/>

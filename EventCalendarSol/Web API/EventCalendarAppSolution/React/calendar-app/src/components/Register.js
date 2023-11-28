@@ -5,9 +5,9 @@ import axios from "axios";
 function Register(){
     const roles =["User","Admin"];
     const [email,setEmail] = useState("");
-    const [password,setPassword] = useState("");
     const [firstname,setFirstName] = useState("");
     const [lastname,setLastName] = useState("");
+    const [password,setPassword] = useState("");
     const [role,setRole] = useState("");
     var [emailError,setEmailError]=useState("");
     var checkUSerData = ()=>{
@@ -32,15 +32,14 @@ function Register(){
             return;
         }
         
-        axios.post("https://localhost:7117/api/User",{
+        axios.post("https://localhost:7117/api/User/Login",{
             email: email,
-            firstname:firstname,
-            lastname:lastname,
-            role:	role,
             password:password
     })
         .then((userData)=>{
-            console.log(userData)
+            var token = userData.data.token;
+            localStorage.setItem("token",token);
+
         })
         .catch((err)=>{
             console.log(err)

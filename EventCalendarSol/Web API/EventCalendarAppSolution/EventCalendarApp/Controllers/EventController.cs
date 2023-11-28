@@ -40,23 +40,23 @@ namespace EventCalendarApp.Controllers
             }
             return BadRequest(errorMessage);
         }
-        //[HttpGet]
-        //public ActionResult GetPublicEvents(string privacy) 
-        //{
-        //    string errorMessage = string.Empty;
-        //    try
-        //    {
-        //        var result = _eventService.GetPublicEvents(privacy);
-        //        _logger.LogInformation("Event listed");
-        //        return Ok(result);
-        //    }
-        //    catch (NoEventsAvailableException e)
-        //    {
-        //        errorMessage = e.Message;
-        //        _logger.LogError(errorMessage);
-        //    }
-        //    return BadRequest(errorMessage);
-        //}
+        [HttpGet("access")]
+        public ActionResult GetPublicEvents(string Access) 
+        {
+            string errorMessage = string.Empty;
+            try
+            {
+                var result = _eventService.GetPublicEvents(Access); 
+                _logger.LogInformation("Event listed");
+                return Ok(result);
+            }
+            catch (NoEventsAvailableException e)
+            {
+                errorMessage = e.Message;
+                _logger.LogError(errorMessage);
+            }
+            return BadRequest(errorMessage);
+        }
         //[Authorize(Roles = "organizer")]
         [HttpPost]
         public ActionResult Create(Event events)
@@ -73,7 +73,7 @@ namespace EventCalendarApp.Controllers
             }
             return BadRequest(errorMessage);
         }
-        [HttpPost("ShareEvent/{eventId}")]
+        [HttpPost("ShareEvent")]
         public IActionResult ShareEvent(int eventId, [FromBody] List<string> recipientEmails)
         {
             var isShared = _eventService.ShareEvent(eventId, recipientEmails);

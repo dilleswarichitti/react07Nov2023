@@ -10,6 +10,7 @@ function Event(){
         isrecurring:false,
         recurring_frequency:"",
         shareeventwith:"ayeshajasmeen79@gmail.com",
+        access:"public",
         categoryId:1,
         email:"dilluchitti@gmail.com"
     }
@@ -34,6 +35,8 @@ function Event(){
             Event recurring_frequency : {event.recurring_frequency}
             <br/>
             Event shareeventwith : {event.shareeventwith}
+            <br/>
+            Event access : {event.access}
             <br/>
             Event categoryId : {event.categoryId}
             <br/>

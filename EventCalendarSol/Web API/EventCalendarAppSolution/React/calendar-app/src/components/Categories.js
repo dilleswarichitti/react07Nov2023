@@ -34,7 +34,6 @@ function Categories(){
                   Category Name: {category.name}
                   <br />
                   Category Color: {category.color}
-                  
                 </div>
               ))}
             </div>
