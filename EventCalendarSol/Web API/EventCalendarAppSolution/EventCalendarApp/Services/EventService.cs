@@ -102,7 +102,6 @@ namespace EventCalendarApp.Services
 
                 return true; // Sharing successful
             }
-
             return false; // Event not found
         }
         /// <summary>
