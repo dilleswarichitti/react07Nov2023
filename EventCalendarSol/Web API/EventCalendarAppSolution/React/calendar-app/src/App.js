@@ -1,26 +1,28 @@
-
 import './App.css';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import Register from './components/Register';
 import Events from './components/Events';
 import Categories from './components/Categories';
 import Menu from './components/Menu';
-import Protected from './Protected';
-import AddEvent from './components/AddEvent';
+import Login from './components/Login';
+import MyCalendar from './components/MyCalendar';
+import DisplayEvents from './components/DisplayEvents';
 
 function App() {
 
   return (
     <div>
-      <BrowserRouter>
+    {/* <BrowserRouter>
       <Menu/>
         <Routes>
           <Route path="/" element={<Register/>} />
+          <Route path="login" element={<Login/>} />
+          <Route path="mycalendar" element={<MyCalendar/>} />
           <Route path="events" element={<Events/>} />
           <Route path="categories" element={<Categories/>} />
-          <Route path="AddEvent" element={<Protected><AddEvent/></Protected>}/>
         </Routes>  
-      </BrowserRouter>
+      </BrowserRouter> */}
+      <DisplayEvents/>
     </div>
   );
 }

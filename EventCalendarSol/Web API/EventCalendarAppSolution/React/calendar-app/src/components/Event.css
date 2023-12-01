@@ -5,4 +5,7 @@
     height: 500px;
     color: rgb(109, 14, 49);
     font-size: 20px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
 }

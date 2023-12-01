@@ -3,7 +3,7 @@ import './Register.css';
 import axios from "axios";
 
 function Register(){
-    const roles =["User","Admin"];
+    const roles =["User","Organizer"];
     const [email,setEmail] = useState("");
     const [firstname,setFirstName] = useState("");
     const [lastname,setLastName] = useState("");
@@ -32,14 +32,15 @@ function Register(){
             return;
         }
         
-        axios.post("https://localhost:7117/api/User/Login",{
+        axios.post("https://localhost:7117/api/User",{
             email: email,
+            firstname:firstname,
+            lastname:lastname,
+            role:	role,
             password:password
     })
         .then((userData)=>{
-            var token = userData.data.token;
-            localStorage.setItem("token",token);
-
+            console.log(userData)
         })
         .catch((err)=>{
             console.log(err)
