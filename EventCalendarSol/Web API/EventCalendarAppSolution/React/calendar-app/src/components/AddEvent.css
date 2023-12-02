@@ -6,6 +6,8 @@
   border-radius: 5px;
   text-align: center;
   background-color: aliceblue;
+  overflow-y: scroll;
+  max-height: 500px;
 }
 
 h1 {

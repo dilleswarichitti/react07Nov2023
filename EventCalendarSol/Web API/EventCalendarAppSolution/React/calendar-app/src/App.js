@@ -7,6 +7,7 @@ import Menu from './components/Menu';
 import Login from './components/Login';
 import MyCalendar from './components/MyCalendar';
 import DisplayEvents from './components/DisplayEvents';
+import ParentComponent from './components/ParentComponent';
 
 function App() {
 
@@ -22,7 +23,7 @@ function App() {
           <Route path="categories" element={<Categories/>} />
         </Routes>  
       </BrowserRouter> */}
-      <DisplayEvents/>
+      <Events/>
     </div>
   );
 }
