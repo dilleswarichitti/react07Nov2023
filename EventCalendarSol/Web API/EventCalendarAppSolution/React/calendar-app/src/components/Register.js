@@ -1,6 +1,7 @@
 import { useState } from "react";
 import './Register.css';
 import axios from "axios";
+import { useNavigate } from "react-router-dom";
 
 function Register(){
     const roles =["User","Organizer"];
@@ -9,6 +10,8 @@ function Register(){
     const [lastname,setLastName] = useState("");
     const [password,setPassword] = useState("");
     const [role,setRole] = useState("");
+    const navigate =useNavigate();
+
     var [emailError,setEmailError]=useState("");
     var checkUSerData = ()=>{
         if(email=='')
@@ -36,19 +39,23 @@ function Register(){
             email: email,
             firstname:firstname,
             lastname:lastname,
-            role:	role,
+            role:role,
             password:password
     })
         .then((userData)=>{
-            console.log(userData)
+            var token = userData.data.token;
+            localStorage.setItem("token",token);
+            localStorage.setItem("email",email);
+            navigate("/events");
+            window.location.reload();
         })
         .catch((err)=>{
             console.log(err)
         })
     }
-    
     return(
-        <form className="registerForm">
+        <div>
+            <form className="registerForm">
             <label className="form-control">Email</label>
             <input type="text" className="form-control" value={email}
                     onChange={(e)=>{setEmail(e.target.value)}}/>
@@ -77,6 +84,11 @@ function Register(){
             <button className="btn btn-primary button" onClick={signUp}>Sign Up</button>
             <button className="btn btn-danger button">Cancel</button>
         </form>
+        {/* <div class="text-center fs-6">
+        or <Link to="/login">Login</Link>
+       </div> */}
+        {/* <p>Already have an account? <a href="/Login">Login</a>.</p> */}
+        </div>
     );
 }
 

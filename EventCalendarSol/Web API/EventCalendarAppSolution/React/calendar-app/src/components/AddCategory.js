@@ -2,13 +2,13 @@ import { useState } from "react";
 import './AddEvent.css';
 
 function AddCategory(){
-    const [name,setName]= useState("");
+    const [category,setCategory]= useState("");
     const [color,setColor] = useState("");
-    var category;
+    var Category;
     var clickAdd = ()=>{
         alert('You clicked the button');
-       category={
-        "name":name,
+       Category={
+        "category":category,
         "color":color
         }
         console.log(category);
@@ -32,8 +32,8 @@ function AddCategory(){
         <div className="inputcontainer">
             <h1>Category</h1>
             <br/>
-            <label className="form-control" for="pname">Name</label>
-            <input id="pname" type="text" className="form-control" value={name} onChange={(e)=>{setName(e.target.value)}}/>
+            <label className="form-control" for="pname">category</label>
+            <input id="pcategory" type="text" className="form-control" value={category} onChange={(e)=>{setCategory(e.target.value)}}/>
             <br/>
             <label className="form-control" for="pcolor">Color</label>
             <input id="pcolor" type="color" className="form-control" value={color} onChange={(e) => {setColor(e.target.value)}}/>

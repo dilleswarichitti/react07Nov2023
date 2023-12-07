@@ -12,7 +12,7 @@ function AddEvent(){
     const[recurring_frequency,setRecurring_frequency] = useState("");
     const[shareeventwith,setShareEventWith]=useState("");
     const[access,setAccess]=useState("");
-    const[categoryId,setCategoryId] = useState("");
+    const[category,setCategory] = useState("");
     const[email,setEmail]=useState("");
 
     var event;
@@ -29,20 +29,22 @@ function AddEvent(){
         "recurring_frequency" : recurring_frequency,
         "shareeventwith": shareeventwith,
         "access": access,
-        "categoryId":categoryId,
-        "email":email
+        "category":category,
+        "email": localStorage.getItem("email")
         }
         console.log(event);
         fetch('https://localhost:7117/api/Event',{
             method:'POST',
             headers:{
                 'Accept':'application/json',
-                'Content-Type':'application/json'
+                'Content-Type':'application/json',
+                'Authorization':'Bearer ' +localStorage.getItem("token")
             },
             body:JSON.stringify(event)
         }).then(
             ()=>{
                 alert("Event Added");
+                window.location.reload();
             }
         ).catch((e)=>{
             console.log(e)
@@ -98,14 +100,18 @@ function AddEvent(){
             <input id="pshareeventwith" type="text" className="form-control" value={shareeventwith} onChange={(e)=>{setShareEventWith(e.target.value)}}/>
             <br/>
             <label className="form-control"  for="paccess">Access</label>
-            <input id="paccess" type="text" className="form-control" value={access} onChange={(e)=>{setAccess(e.target.value)}}/>
+            <select className="form-select" value={access} onChange={(e) => setAccess(e.target.value)}>
+            <option value="public">Public</option>
+            <option value="private">Private</option>
+            </select>
             <br/>
-            <label className="form-control"  for="pcategoryId">CategoryId</label>
-            <input id="pcategoryId" type="number" className="form-control" value={categoryId} onChange={(e)=>{setCategoryId(e.target.value)}}/>
-            <br/>
-            <label className="form-control"  for="pemail">Email</label>
-            <input id="pemail" type="text" className="form-control" value={email} onChange={(e)=>{setEmail(e.target.value)}}/>
-            <br/>
+            <label className="form-control"  for="pcategory">Category</label>
+            <select className="form-select" value={category} onChange={(e)=>{setCategory(e.target.value)}}>
+            <option value="work">Work</option>
+            <option value="family">Family</option>
+            <option value="personal">Personal</option>
+            </select>
+            <br/> 
             <button onClick={clickAdd} className="btn btn-primary">Add Event</button>
         </div>
     );

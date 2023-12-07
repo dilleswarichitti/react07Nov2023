@@ -1,26 +1,26 @@
 import { useState } from "react";
 import './AddEvent.css';
+import axios from "axios";
 
-function PutEvents(){
-    const [Id,setId] = useState("");
-    const [title,setTitle] = useState("");
-    const [description,setDescription] = useState("");
-    const [startdatetime,setStartDateTime] = useState("");
-    const [enddatetime,setEndDateTime] = useState("");
-    const [notificationdatetime,setNotificationDateTime] = useState("");
-    const[location,setLocation]=useState("");
+function PutEvents({event}){
+    const[Id,setId]=useState(event.id);
+    const [title,setTitle] = useState(event.title);
+    const [description,setDescription] = useState(event.description);
+    const [startdatetime,setStartDateTime] = useState(event.startDateTime);
+    const [enddatetime,setEndDateTime] = useState(event.endDateTime);
+    const [notificationdatetime,setNotificationDateTime] = useState(event.notificationDateTime);
+    const[location,setLocation]=useState(event.location);
     const [isrecurring,setIsRecurring] = useState(false);
-    const[recurring_frequency,setRecurring_frequency] = useState("");
-    const[shareeventwith,setShareEventWith]=useState("");
-    const[access,setAccess]=useState("");
-    const[categoryId,setCategoryId] = useState("");
-    const[email,setEmail]=useState("");
+    const[recurring_frequency,setRecurring_frequency] = useState(event.recurring_frequency);
+    const[access,setAccess]=useState(event.access);
+    const[category,setCategory] = useState(event.category);
 
     var event;
     var clickAdd = ()=>{
+        console.log(event)
         alert('You clicked the button');
        event={
-        "Id":Id,
+        "Id":event.id,
         "title":title,
         "description":description,
         "startdatetime":startdatetime,
@@ -29,10 +29,9 @@ function PutEvents(){
         "location" : location,
         "isrecurring":isrecurring,
         "recurring_frequency" : recurring_frequency,
-        "shareeventwith": shareeventwith,
-        "access": access,
-        "categoryId":categoryId,
-        "email":email
+        "category":category,
+        "access":access,
+        "email": localStorage.getItem("email")
         }
         console.log(event);
         fetch('https://localhost:7117/api/Event',{
@@ -45,19 +44,36 @@ function PutEvents(){
         }).then(
             ()=>{
                 alert("Event Updated");
+                window.location.reload();
             }
         ).catch((e)=>{
             console.log(e)
         })
     }
+    const Delete=()=>{
+        console.log(Id)
+        axios.delete('https://localhost:7117/api/event',{
+            params:{
+                Id:event.id
+            }
+        })
+        .then((response)=>{
+            console.log(response);
+            alert("Event Deleted...!");
+        })
+        .catch((err)=>{
+            alert("could not delete");
+            console.log(err);
+        })
+    } 
 
     return(
         <div className="inputcontainer">
             <h1>Event</h1>
             <br/>
-            <label className="form-control" for="pId">Id</label>
+            {/*<label className="form-control" for="pId">Id</label>
             <input id="pId" type="number" className="form-control" value={Id} onChange={(e)=>{setId(e.target.value)}}/>
-            <br/>
+            <br/>*/}
             <label className="form-control" for="ptitle">Title</label>
             <input id="ptitle" type="text" className="form-control" value={title} onChange={(e)=>{setTitle(e.target.value)}}/>
             <br/>
@@ -101,19 +117,21 @@ function PutEvents(){
             </div>
             )}
             <br/>
-            <label className="form-control"  for="pshareeventwith">ShareEventWith</label>
-            <input id="pshareeventwith" type="text" className="form-control" value={shareeventwith} onChange={(e)=>{setShareEventWith(e.target.value)}}/>
-            <br/>
             <label className="form-control"  for="paccess">Access</label>
-            <input id="paccess" type="text" className="form-control" value={access} onChange={(e)=>{setAccess(e.target.value)}}/>
+            <select className="form-select" value={access} onChange={(e) => setAccess(e.target.value)}>
+            <option value="public">Public</option>
+            <option value="private">Private</option>
+            </select>
             <br/>
-            <label className="form-control"  for="pcategoryId">CategoryId</label>
-            <input id="pcategoryId" type="number" className="form-control" value={categoryId} onChange={(e)=>{setCategoryId(e.target.value)}}/>
-            <br/>
-            <label className="form-control"  for="pemail">Email</label>
-            <input id="pemail" type="text" className="form-control" value={email} onChange={(e)=>{setEmail(e.target.value)}}/>
-            <br/>
+            <label className="form-control"  for="pcategory">Category</label>
+            <select className="form-select" value={category} onChange={(e)=>{setCategory(e.target.value)}}>
+            <option value="work">Work</option>
+            <option value="family">Family</option>
+            <option value="personal">Personal</option>
+            </select>
+            <br/> 
             <button onClick={clickAdd} className="btn btn-primary">Update Event</button>
+            <button onClick={Delete} className="btn btn-danger">Delete Event</button>
        </div>
     );
 }

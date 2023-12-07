@@ -1,5 +1,8 @@
-﻿using EventCalendarApp.Interfaces;
+﻿using EventCalendarApp.Exceptions;
+using EventCalendarApp.Interfaces;
+using EventCalendarApp.Models;
 using EventCalendarApp.Models.DTOs;
+using EventCalendarApp.Services;
 using Microsoft.AspNetCore.Cors;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
@@ -53,6 +56,21 @@ namespace EventCalendarApp.Controllers
 
             //ViewData["Message"] = "Invalid username or password";
             return Unauthorized("Invalid username or password");
+        }
+        [HttpGet]
+        public ActionResult GetUser(string email)
+        {
+            string errorMessage = string.Empty;
+            try
+            {
+                var result = _userService.GetUser(email);
+                return Ok(result);
+            }
+            catch (NoUsersAvailableException e)
+            {
+                errorMessage = e.Message;
+            }
+            return BadRequest(errorMessage);
         }
     }
 }

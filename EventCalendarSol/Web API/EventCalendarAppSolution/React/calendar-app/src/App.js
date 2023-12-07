@@ -6,24 +6,24 @@ import Categories from './components/Categories';
 import Menu from './components/Menu';
 import Login from './components/Login';
 import MyCalendar from './components/MyCalendar';
-import DisplayEvents from './components/DisplayEvents';
-import ParentComponent from './components/ParentComponent';
+import AddCategory from './components/AddCategory';
+import UserProfile from './components/UserProfile';
 
 function App() {
 
   return (
     <div>
-    {/* <BrowserRouter>
-      <Menu/>
+      
+     <BrowserRouter>
+     <Menu/>
+     {localStorage.getItem("token")? <Menu/> : <Register/>} 
         <Routes>
-          <Route path="/" element={<Register/>} />
-          <Route path="login" element={<Login/>} />
-          <Route path="mycalendar" element={<MyCalendar/>} />
+          <Route path="register" element={<Register/>} /> 
+          <Route path="login" element={<Login/>} /> 
           <Route path="events" element={<Events/>} />
-          <Route path="categories" element={<Categories/>} />
+          <Route path="profile" element={<UserProfile/>} />
         </Routes>  
-      </BrowserRouter> */}
-      <Events/>
+      </BrowserRouter>
     </div>
   );
 }

@@ -29,11 +29,11 @@ function Categories(){
           <hr />
           {checkCategories ? (
             <div>
-              {categoryList.map((category) => (
-                <div key={category.id} className="alert alert-info">
-                  Category Name: {category.name}
+              {categoryList.map((Category) => (
+                <div key={Category.cat} className="alert alert-info">
+                  Category category: {Category.category}
                   <br />
-                  Category Color: {category.color}
+                  Category Color: {Category.color}
                 </div>
               ))}
             </div>

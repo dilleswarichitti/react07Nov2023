@@ -70,8 +70,6 @@ C:\TRAINING\Web API\EventCalendarAppSolution\EventCalendarApp\obj\Debug\net6.0\E
 C:\TRAINING\Web API\EventCalendarAppSolution\EventCalendarApp\obj\Debug\net6.0\EventCalendarApp.genruntimeconfig.cache
 C:\TRAINING\Web API\EventCalendarAppSolution\EventCalendarApp\obj\Debug\net6.0\ref\EventCalendarApp.dll
 C:\TRAINING\Web API\EventCalendarAppSolution\EventCalendarApp\bin\Debug\net6.0\log4net.config
-C:\TRAINING\project\EventCalendarSol\Web API\EventCalendarAppSolution\EventCalendarApp\bin\Debug\net6.0\appsettings.Development.json
-C:\TRAINING\project\EventCalendarSol\Web API\EventCalendarAppSolution\EventCalendarApp\bin\Debug\net6.0\appsettings.json
 C:\TRAINING\project\EventCalendarSol\Web API\EventCalendarAppSolution\EventCalendarApp\bin\Debug\net6.0\EventCalendarApp.exe
 C:\TRAINING\project\EventCalendarSol\Web API\EventCalendarAppSolution\EventCalendarApp\bin\Debug\net6.0\log4net.config
 C:\TRAINING\project\EventCalendarSol\Web API\EventCalendarAppSolution\EventCalendarApp\bin\Debug\net6.0\EventCalendarApp.deps.json
@@ -142,3 +140,5 @@ C:\TRAINING\project\EventCalendarSol\Web API\EventCalendarAppSolution\EventCalen
 C:\TRAINING\project\EventCalendarSol\Web API\EventCalendarAppSolution\EventCalendarApp\obj\Debug\net6.0\EventCalendarApp.pdb
 C:\TRAINING\project\EventCalendarSol\Web API\EventCalendarAppSolution\EventCalendarApp\obj\Debug\net6.0\EventCalendarApp.genruntimeconfig.cache
 C:\TRAINING\project\EventCalendarSol\Web API\EventCalendarAppSolution\EventCalendarApp\obj\Debug\net6.0\ref\EventCalendarApp.dll
+C:\TRAINING\project\EventCalendarSol\Web API\EventCalendarAppSolution\EventCalendarApp\bin\Debug\net6.0\appsettings.Development.json
+C:\TRAINING\project\EventCalendarSol\Web API\EventCalendarAppSolution\EventCalendarApp\bin\Debug\net6.0\appsettings.json

@@ -1,13 +1,17 @@
 import axios from "axios";
-import { useState } from "react";
+import { useState,useEffect } from "react";
 import MyCalendar from './MyCalendar';
 
-function Events() {
-  const [email, setEmail] = useState("");
-  const [eventList, setEventList] = useState([]);
 
-  const getEvents = (event) => {
-    event.preventDefault();
+function Events() {
+  const [email, setEmail] = useState(localStorage.getItem("email"));
+  const [eventList, setEventList] = useState([]);
+  useEffect(()=>{
+    getEvents();
+  },[])
+
+  const getEvents = () => {
+    
     console.log(email);
     axios.get('https://localhost:7117/api/Event', {
       params: {
@@ -24,12 +28,12 @@ function Events() {
     });
   }
 
-  var checkEvents = eventList.length > 0 ? true : false;
+  //var checkEvents = eventList.length > 0 ? true : false;
 
   return (
     <div className="searchBox">
       <h1 className="alert alert-success">Events</h1>
-      <form>
+      {/* <form>
         <br />
         <div class="row">
           <input id="pemail" type="text" class="form-control" value={email} onChange={(e) => { setEmail(e.target.value) }} />
@@ -37,23 +41,18 @@ function Events() {
         <div class="row">
           <button className="btn btn-success" onClick={getEvents}>Get All Events</button>
         </div>
-      </form>
+      </form> */}
 
-      {checkEvents ? (
+      {/*{checkEvents ? (
         <div>
-          {eventList.map((group) => (
-            <div key={group.key} className="group-container">
-              <h5>Category ID: {group.key}</h5>
-              <div>
-                <MyCalendar events={group}/>
-              </div>
-            </div>
-          ))}
+          <MyCalendar events={eventList}/>
         </div>
       ) : (
         <div>No events available yet</div>
-      )}
-
+      )}*/}
+      <div>
+          <MyCalendar events={eventList}/>
+        </div>
     </div>
   );
 }

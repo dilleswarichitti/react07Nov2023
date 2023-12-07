@@ -10,20 +10,6 @@ namespace EventCalendarApp.Migrations
         protected override void Up(MigrationBuilder migrationBuilder)
         {
             migrationBuilder.CreateTable(
-                name: "Categories",
-                columns: table => new
-                {
-                    id = table.Column<int>(type: "int", nullable: false)
-                        .Annotation("SqlServer:Identity", "1, 1"),
-                    name = table.Column<string>(type: "nvarchar(max)", nullable: false),
-                    color = table.Column<string>(type: "nvarchar(max)", nullable: false)
-                },
-                constraints: table =>
-                {
-                    table.PrimaryKey("PK_Categories", x => x.id);
-                });
-
-            migrationBuilder.CreateTable(
                 name: "Users",
                 columns: table => new
                 {
@@ -55,17 +41,12 @@ namespace EventCalendarApp.Migrations
                     Recurring_frequency = table.Column<string>(type: "nvarchar(max)", nullable: true),
                     ShareEventWith = table.Column<string>(type: "nvarchar(max)", nullable: true),
                     Access = table.Column<string>(type: "nvarchar(max)", nullable: true),
-                    CategoryId = table.Column<int>(type: "int", nullable: false),
+                    Category = table.Column<string>(type: "nvarchar(max)", nullable: false),
                     Email = table.Column<string>(type: "nvarchar(450)", nullable: false)
                 },
                 constraints: table =>
                 {
                     table.PrimaryKey("PK_Events", x => x.Id);
-                    table.ForeignKey(
-                        name: "FK_Events_Categories_CategoryId",
-                        column: x => x.CategoryId,
-                        principalTable: "Categories",
-                        principalColumn: "id");
                     table.ForeignKey(
                         name: "FK_Events_Users_Email",
                         column: x => x.Email,
@@ -73,11 +54,6 @@ namespace EventCalendarApp.Migrations
                         principalColumn: "Email",
                         onDelete: ReferentialAction.Cascade);
                 });
-
-            migrationBuilder.CreateIndex(
-                name: "IX_Events_CategoryId",
-                table: "Events",
-                column: "CategoryId");
 
             migrationBuilder.CreateIndex(
                 name: "IX_Events_Email",
@@ -89,9 +65,6 @@ namespace EventCalendarApp.Migrations
         {
             migrationBuilder.DropTable(
                 name: "Events");
-
-            migrationBuilder.DropTable(
-                name: "Categories");
 
             migrationBuilder.DropTable(
                 name: "Users");

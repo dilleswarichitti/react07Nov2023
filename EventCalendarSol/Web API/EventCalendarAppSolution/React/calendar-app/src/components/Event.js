@@ -15,33 +15,33 @@ function Event(){
         email:"dilluchitti@gmail.com"
     }
     return(
-        // <div className="event">
-        //     <h1>Event</h1>
-        //     <br/>
-        //     Event title : {event.title}
-        //     <br/>
-        //     Event description : {event.description}
-        //     <br/>
-        //     Event startdatetime : {event.startdatetime}
-        //     <br/>
-        //     Event enddatetime : {event.enddatetime}
-        //     <br/>
-        //     Event notificationdatetime : {event.notificationdatetime}
-        //     <br/>
-        //     Event location : {event.location}
-        //     <br/>
-        //     Event IsRecurring : {event.IsRecurring}
-        //     <br/>
-        //     Event recurring_frequency : {event.recurring_frequency}
-        //     <br/>
-        //     Event shareeventwith : {event.shareeventwith}
-        //     <br/>
-        //     Event access : {event.access}
-        //     <br/>
-        //     Event categoryId : {event.categoryId}
-        //     <br/>
-        //     Event email : {event.email}
-        // </div>
+        <div className="event">
+            <h1>Event</h1>
+            <br/>
+            Event title : {event.title}
+            <br/>
+            Event description : {event.description}
+            <br/>
+            Event startdatetime : {event.startdatetime}
+            <br/>
+            Event enddatetime : {event.enddatetime}
+            <br/>
+            Event notificationdatetime : {event.notificationdatetime}
+            <br/>
+            Event location : {event.location}
+            <br/>
+            Event IsRecurring : {event.IsRecurring}
+            <br/>
+            Event recurring_frequency : {event.recurring_frequency}
+            <br/>
+            Event shareeventwith : {event.shareeventwith}
+            <br/>
+            Event access : {event.access}
+            <br/>
+            Event categoryId : {event.categoryId}
+            <br/>
+            Event email : {event.email}
+        </div>
     );
 }
 export default Event;

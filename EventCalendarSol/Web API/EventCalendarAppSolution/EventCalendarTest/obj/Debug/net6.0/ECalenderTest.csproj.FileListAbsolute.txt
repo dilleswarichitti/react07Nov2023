@@ -2,8 +2,6 @@ C:\TRAINING\project\EventCalendarSol\Web API\EventCalendarAppSolution\EventCalen
 C:\TRAINING\project\EventCalendarSol\Web API\EventCalendarAppSolution\EventCalendarTest\bin\Debug\net6.0\testhost.dll
 C:\TRAINING\project\EventCalendarSol\Web API\EventCalendarAppSolution\EventCalendarTest\bin\Debug\net6.0\EventCalendarApp.deps.json
 C:\TRAINING\project\EventCalendarSol\Web API\EventCalendarAppSolution\EventCalendarTest\bin\Debug\net6.0\EventCalendarApp.runtimeconfig.json
-C:\TRAINING\project\EventCalendarSol\Web API\EventCalendarAppSolution\EventCalendarTest\bin\Debug\net6.0\appsettings.Development.json
-C:\TRAINING\project\EventCalendarSol\Web API\EventCalendarAppSolution\EventCalendarTest\bin\Debug\net6.0\appsettings.json
 C:\TRAINING\project\EventCalendarSol\Web API\EventCalendarAppSolution\EventCalendarTest\bin\Debug\net6.0\EventCalendarApp.exe
 C:\TRAINING\project\EventCalendarSol\Web API\EventCalendarAppSolution\EventCalendarTest\bin\Debug\net6.0\testhost.exe
 C:\TRAINING\project\EventCalendarSol\Web API\EventCalendarAppSolution\EventCalendarTest\bin\Debug\net6.0\NUnit3.TestAdapter.dll
@@ -148,3 +146,5 @@ C:\TRAINING\project\EventCalendarSol\Web API\EventCalendarAppSolution\EventCalen
 C:\TRAINING\project\EventCalendarSol\Web API\EventCalendarAppSolution\EventCalendarTest\obj\Debug\net6.0\ECalenderTest.pdb
 C:\TRAINING\project\EventCalendarSol\Web API\EventCalendarAppSolution\EventCalendarTest\obj\Debug\net6.0\ECalenderTest.genruntimeconfig.cache
 C:\TRAINING\project\EventCalendarSol\Web API\EventCalendarAppSolution\EventCalendarTest\obj\Debug\net6.0\ref\ECalenderTest.dll
+C:\TRAINING\project\EventCalendarSol\Web API\EventCalendarAppSolution\EventCalendarTest\bin\Debug\net6.0\appsettings.Development.json
+C:\TRAINING\project\EventCalendarSol\Web API\EventCalendarAppSolution\EventCalendarTest\bin\Debug\net6.0\appsettings.json

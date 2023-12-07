@@ -5,7 +5,7 @@ VisualStudioVersion = 17.7.34202.233
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EventCalendarApp", "EventCalendarApp\EventCalendarApp.csproj", "{16E45BE2-E478-4FA5-BC98-FF963C7FF86F}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ECalenderTest", "EventCalendarTest\ECalenderTest.csproj", "{85610A45-2265-4970-BC4A-A5C775738CE6}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ECalenderTest", "EventCalendarTest\ECalenderTest.csproj", "{85610A45-2265-4970-BC4A-A5C775738CE6}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
