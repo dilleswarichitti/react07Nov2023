@@ -4,7 +4,7 @@ import axios from "axios";
 import { useNavigate } from "react-router-dom";
 
 function Register(){
-    const roles =["User","Organizer"];
+    const roles =["User"];
     const [email,setEmail] = useState("");
     const [firstname,setFirstName] = useState("");
     const [lastname,setLastName] = useState("");
@@ -16,13 +16,11 @@ function Register(){
     var checkUSerData = ()=>{
         if(email=='')
         {
-            setEmailError("Username cannot be empty");
+            setEmailError("Email cannot be empty");
             return false;
         }
            
         if(password=='')
-            return false;
-        if(role=='Select Role')
             return false;
         return true;
     }
@@ -39,14 +37,14 @@ function Register(){
             email: email,
             firstname:firstname,
             lastname:lastname,
-            role:role,
+            role:"User",
             password:password
     })
         .then((userData)=>{
             var token = userData.data.token;
             localStorage.setItem("token",token);
             localStorage.setItem("email",email);
-            navigate("/events");
+            navigate("/login");
             window.location.reload();
         })
         .catch((err)=>{
@@ -54,6 +52,7 @@ function Register(){
         })
     }
     return(
+        <div className="login">
         <div>
             <form className="registerForm">
             <label className="form-control">Email</label>
@@ -73,22 +72,14 @@ function Register(){
             <input type="text" className="form-control" value={lastname}
                     onChange={(e)=>{setLastName(e.target.value)}}/>
              <br/>
-            <label className="form-control">Role</label>
-            <select className="form-select" onChange={(e)=>{setRole(e.target.value)}}>
-                <option value="select">Select Role</option>
-                {roles.map((r)=>
-                    <option value={r} key={r}>{r}</option>
-                )}
-            </select>
-            <br/>
             <button className="btn btn-primary button" onClick={signUp}>Sign Up</button>
             <button className="btn btn-danger button">Cancel</button>
-        </form>
-        {/* <div class="text-center fs-6">
-        or <Link to="/login">Login</Link>
-       </div> */}
-        {/* <p>Already have an account? <a href="/Login">Login</a>.</p> */}
-        </div>
+            <br/>
+            <br/>
+            <p>Already have an account?  <a href="/Login">Login</a>.</p>
+            </form>
+            </div>
+            </div>
     );
 }
 

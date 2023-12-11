@@ -1,6 +1,7 @@
 import axios from "axios";
 import { useState,useEffect } from "react";
 import MyCalendar from './MyCalendar';
+ import './Events.css';
 
 
 function Events() {
@@ -32,7 +33,6 @@ function Events() {
 
   return (
     <div className="searchBox">
-      <h1 className="alert alert-success">Events</h1>
       {/* <form>
         <br />
         <div class="row">

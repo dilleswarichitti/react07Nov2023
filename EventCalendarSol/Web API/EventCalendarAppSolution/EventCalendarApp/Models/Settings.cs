@@ -1,15 +1,15 @@
-﻿namespace EventCalendarApp.Models
+﻿using System.ComponentModel.DataAnnotations;
+
+namespace EventCalendarApp.Models
 {
     public class Settings
     {
-        public string TimeZone { get; set; }
-        public bool ReceiveNotifications { get; set; }
-        public bool ShowEventsOnLogin { get; set; }
-        public bool ReceiveEventReminders { get; set; }
-        public bool KeepProfilePrivate { get; set; }
-        public bool ShowFullName { get; set; }
-        public bool TwoFactorAuthentication { get; set; }
+        [Key]
+        public string Email {  get; set; }
         public string? Theme { get; set; }
         public string? DefaultCalendarView { get; set; }
+        public bool NotificationEnabled { get; set; }
+        public int DefaultReminder { get; set; }
+        public string FirstDayOfWeek { get; set; }
     }
 }

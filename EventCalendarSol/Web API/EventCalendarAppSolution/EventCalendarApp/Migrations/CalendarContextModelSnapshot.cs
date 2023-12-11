@@ -45,8 +45,9 @@ namespace EventCalendarApp.Migrations
                         .IsRequired()
                         .HasColumnType("nvarchar(450)");
 
-                    b.Property<DateTime>("EndDateTime")
-                        .HasColumnType("datetime2");
+                    b.Property<string>("EndDateTime")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
 
                     b.Property<bool?>("IsRecurring")
                         .HasColumnType("bit");
@@ -54,8 +55,9 @@ namespace EventCalendarApp.Migrations
                     b.Property<string>("Location")
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<DateTime>("NotificationDateTime")
-                        .HasColumnType("datetime2");
+                    b.Property<string>("NotificationDateTime")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("Recurring_frequency")
                         .HasColumnType("nvarchar(max)");
@@ -63,8 +65,9 @@ namespace EventCalendarApp.Migrations
                     b.Property<string>("ShareEventWith")
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<DateTime>("StartDateTime")
-                        .HasColumnType("datetime2");
+                    b.Property<string>("StartDateTime")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("Title")
                         .IsRequired()
@@ -75,6 +78,32 @@ namespace EventCalendarApp.Migrations
                     b.HasIndex("Email");
 
                     b.ToTable("Events");
+                });
+
+            modelBuilder.Entity("EventCalendarApp.Models.Settings", b =>
+                {
+                    b.Property<string>("Email")
+                        .HasColumnType("nvarchar(450)");
+
+                    b.Property<string>("DefaultCalendarView")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<int>("DefaultReminder")
+                        .HasColumnType("int");
+
+                    b.Property<string>("FirstDayOfWeek")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<bool>("NotificationEnabled")
+                        .HasColumnType("bit");
+
+                    b.Property<string>("Theme")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.HasKey("Email");
+
+                    b.ToTable("Settings");
                 });
 
             modelBuilder.Entity("EventCalendarApp.Models.User", b =>

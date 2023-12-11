@@ -71,25 +71,25 @@ function PutEvents({event}){
         <div className="inputcontainer">
             <h1>Event</h1>
             <br/>
-            {/*<label className="form-control" for="pId">Id</label>
+            {/*<label className="form-control" htmlFor="pId">Id</label>
             <input id="pId" type="number" className="form-control" value={Id} onChange={(e)=>{setId(e.target.value)}}/>
             <br/>*/}
-            <label className="form-control" for="ptitle">Title</label>
+            <label className="form-control" htmlFor="ptitle">Title</label>
             <input id="ptitle" type="text" className="form-control" value={title} onChange={(e)=>{setTitle(e.target.value)}}/>
             <br/>
             <label className="form-control" htmlFor="pdescription">Description</label>
             <textarea id="pdescription" className="form-control" value={description} onChange={(e) => {setDescription(e.target.value)}}/>
             <br/>
-            <label className="form-control"  for="pstartdatetime">StartDateTime</label>
+            <label className="form-control"  htmlFor="pstartdatetime">StartDateTime</label>
             <input id="pstartdatetime" type="datetime-local" className="form-control" value={startdatetime} onChange={(e)=>{setStartDateTime(e.target.value)}}/>
             <br/>
-            <label className="form-control"  for="penddatetime">EndDateTime</label>
+            <label className="form-control"  htmlFor="penddatetime">EndDateTime</label>
             <input id="penddatetime" type="datetime-local" className="form-control" value={enddatetime} onChange={(e)=>{setEndDateTime(e.target.value)}}/>
             <br/>  
-            <label className="form-control"  for="notificationdatetime">NotificationDateTime</label>
+            <label className="form-control"  htmlFor="notificationdatetime">NotificationDateTime</label>
             <input id="notificationdatetime" type="datetime-local" className="form-control" value={notificationdatetime} onChange={(e)=>{setNotificationDateTime(e.target.value)}}/>
             <br/>
-            <label className="form-control"  for="plocation">Location</label>
+            <label className="form-control"  htmlFor="plocation">Location</label>
             <input id="plocation" type="text" className="form-control" value={location} onChange={(e)=>{setLocation(e.target.value)}}/>
             <br/>
             <label className="form-boolean">IsRecurring</label><br/>
@@ -117,13 +117,13 @@ function PutEvents({event}){
             </div>
             )}
             <br/>
-            <label className="form-control"  for="paccess">Access</label>
+            <label className="form-control"  htmlFor="paccess">Access</label>
             <select className="form-select" value={access} onChange={(e) => setAccess(e.target.value)}>
             <option value="public">Public</option>
             <option value="private">Private</option>
             </select>
             <br/>
-            <label className="form-control"  for="pcategory">Category</label>
+            <label className="form-control"  htmlFor="pcategory">Category</label>
             <select className="form-select" value={category} onChange={(e)=>{setCategory(e.target.value)}}>
             <option value="work">Work</option>
             <option value="family">Family</option>

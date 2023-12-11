@@ -1,11 +1,26 @@
+.pad{
+  padding: 10px;
+}
+.line{
+  background: #ffffff;
+  border-bottom: 2px solid #000000;
+}
 /* Add this CSS to your stylesheet */
 
+
 .navbar {
-    background-color: #f8f9fa; /* Light background color */
-  }
+  background-color: #c6b4c4; /* Set your desired background color */
+}
+.navbar-brand {
+  color: #fff; /* Set your desired text color */
+}
   
   .navbar-nav {
-    margin-left: auto;
+    margin-left: 10px;
+  }
+  
+  .navbar-toggler {
+    background-color: #e11515; /* Set your desired color for the toggle button */
   }
   
   .nav-item {
@@ -22,7 +37,7 @@
   }
   
   .nav-link:hover {
-    background-color:pink; /* Button color on hover */
+    color: #e74c3c; /* Set your desired text color on hover */
   }
   .dropdown-item{
     color: #716f6f; /* Text color */
@@ -36,3 +51,4 @@
     background-color:pink; /* Button color on hover */
   }
   /* Add additional styling based on your design requirements */
+  

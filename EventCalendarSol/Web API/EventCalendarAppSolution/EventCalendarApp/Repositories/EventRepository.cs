@@ -20,6 +20,7 @@ namespace EventCalendarApp.Repositories
         /// <returns>entity</returns>
         public Event Add(Event entity)
         {
+
             _context.Events.Add(entity);
             _context.SaveChanges(); //this will make the change in Db
             return entity;

@@ -90,8 +90,6 @@ namespace EventCalendarApp
             builder.Services.AddScoped<ITokenService, TokenService>();
             builder.Services.AddScoped<IRepository<int, Event>, EventRepository>();
             builder.Services.AddScoped<IEventService, EventService>();
-            //builder.Services.AddScoped<IRepository<int, Category>, CategoryRepository>();
-            //builder.Services.AddScoped<ICategoryService, CategoryService>();
             #endregion
             var app = builder.Build();
 
