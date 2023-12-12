@@ -116,8 +116,7 @@ namespace EventCalendarApp.Services
         {
             try
             {
-
-                var events = _eventRepository.GetAll().Where(c => c.Email == userId || c.Access.ToLower()=="public").ToList();
+                var events = _eventRepository.GetAll().Where(c => c.Email == userId ).ToList();
                 //var category = events.GroupBy(c => c.CategoryId).ToList();
                 if (events != null)
                 {
@@ -142,7 +141,6 @@ namespace EventCalendarApp.Services
             }
             throw new NoEventsAvailableException();
         }
-
         /// <summary>
         /// removing the events from repository
         /// </summary>

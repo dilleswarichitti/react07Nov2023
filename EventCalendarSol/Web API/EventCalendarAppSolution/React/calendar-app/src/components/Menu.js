@@ -4,10 +4,9 @@ import './Menu.css';
 function Menu(){
   const logout=()=>{
     localStorage.clear();
-   // navigate('/Home');
     window.location.reload();
-
  }
+
     return (
       <nav className="navbar fixed-top navbar-expand-sm navbar-light line pad ">
             <Link className="navbar-brand pad" to="/Home">My Calendar</Link>

@@ -12,6 +12,6 @@ namespace EventCalendarApp.Context
         public DbSet<User> Users { get; set; }
         public DbSet<Event> Events { get; set; }
        // public DbSet<Category> Categories { get; set; }
-        public DbSet<Settings> Settings { get; set; }
+        //public DbSet<Settings> Settings { get; set; }
     }
 }

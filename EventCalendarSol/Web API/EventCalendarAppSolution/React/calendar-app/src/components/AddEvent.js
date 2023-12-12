@@ -84,9 +84,9 @@ function AddEvent(){
                 <br/>
             <div className="form-group">
             <label for="recurring_frequency">Recurring_frequency</label>
-            <select id="recurring_frequency" className="form-control" value={recurring_frequency}
-              onChange={(e) => setRecurring_frequency(e.target.value)}
-            >
+            <select id="recurring_frequency" className="form-select" value={recurring_frequency}
+              onChange={(e) => setRecurring_frequency(e.target.value)}>
+              <option> Choose Recurrence--- </option>
               <option value="everyday">EveryDay</option>
               <option value="everyweek">EveryWeek</option>
               <option value="everymonth">EveryMonth</option>
@@ -101,12 +101,14 @@ function AddEvent(){
             <br/>
             <label className="form-control"  htmlFor="paccess">Access</label>
             <select className="form-select" value={access} onChange={(e) => setAccess(e.target.value)}>
+            <option> Choose Access--- </option>  
             <option value="public">Public</option>
             <option value="private">Private</option>
             </select>
             <br/>
             <label className="form-control"  htmlFor="pcategory">Category</label>
             <select className="form-select" value={category} onChange={(e)=>{setCategory(e.target.value)}}>
+            <option> Choose Category--- </option>  
             <option value="work">Work</option>
             <option value="family">Family</option>
             <option value="personal">Personal</option>

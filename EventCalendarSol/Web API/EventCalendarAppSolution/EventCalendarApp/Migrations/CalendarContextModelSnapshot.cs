@@ -80,32 +80,6 @@ namespace EventCalendarApp.Migrations
                     b.ToTable("Events");
                 });
 
-            modelBuilder.Entity("EventCalendarApp.Models.Settings", b =>
-                {
-                    b.Property<string>("Email")
-                        .HasColumnType("nvarchar(450)");
-
-                    b.Property<string>("DefaultCalendarView")
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<int>("DefaultReminder")
-                        .HasColumnType("int");
-
-                    b.Property<string>("FirstDayOfWeek")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<bool>("NotificationEnabled")
-                        .HasColumnType("bit");
-
-                    b.Property<string>("Theme")
-                        .HasColumnType("nvarchar(max)");
-
-                    b.HasKey("Email");
-
-                    b.ToTable("Settings");
-                });
-
             modelBuilder.Entity("EventCalendarApp.Models.User", b =>
                 {
                     b.Property<string>("Email")

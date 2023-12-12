@@ -38,7 +38,7 @@ return(
         <button className="btn btn-danger button">Cancel</button>
         <br/>
         <br/>
-        <p> New User? Register Here <a href="/">Register</a></p>
+        <strong> New User? Register Here <a href="/">Register</a></strong>
         </form>
        </div> 
     </div>

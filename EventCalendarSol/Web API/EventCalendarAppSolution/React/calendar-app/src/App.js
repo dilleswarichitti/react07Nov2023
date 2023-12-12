@@ -2,10 +2,8 @@ import './App.css';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import Register from './components/Register';
 import Events from './components/Events';
-import Categories from './components/Categories';
 import Menu from './components/Menu';
 import Login from './components/Login';
-import MyCalendar from './components/MyCalendar';
 import UserProfile from './components/UserProfile';
 import GetAccess from './components/GetAccess';
 

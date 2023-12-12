@@ -17,7 +17,7 @@ namespace EventCalendarApp.Repositories
         /// Add the event or to create an event
         /// </summary>
         /// <param name="entity">event object that has to be added</param>
-        /// <returns>entity</returns>
+        /// <returns>Added event</returns>
         public Event Add(Event entity)
         {
 
@@ -41,6 +41,10 @@ namespace EventCalendarApp.Repositories
             }
             return null;
         }
+        /// <summary>
+        ///to retrieve lits of events
+        /// </summary>
+        /// <returns>evnts to the list</returns>
         public IList<Event> GetAll()
         {
             try
@@ -54,24 +58,21 @@ namespace EventCalendarApp.Repositories
                 return null;
             }
         }
-
+        /// <summary>
+        /// Retrieves the list of events based on Id
+        /// </summary>
+        /// <param name="key">events to be retrieved</param>
+        /// <returns>events of that specified id</returns>
         public Event GetById(int key)
         {
             var events = _context.Events.SingleOrDefault(e => e.Id == key);
             return events;
         }
-
-        //public Event Update(Event entity)
-        //{
-        //    var events = GetById(entity.Id);
-        //    if (events != null)
-        //    {
-        //        _context.Entry<Event>(events).State = EntityState.Modified;
-        //        _context.SaveChanges();
-        //        return events;
-        //    }
-        //    return null;
-        //}
+        /// <summary>
+        /// Updating an exsisting event based on id
+        /// </summary>
+        /// <param name="entity">event to be updated</param>
+        /// <returns>updated event</returns>
         public Event Update(Event entity)
         {
             var events = GetById(entity.Id);

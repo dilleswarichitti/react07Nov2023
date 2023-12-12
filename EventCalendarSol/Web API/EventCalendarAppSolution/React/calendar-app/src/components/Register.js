@@ -76,7 +76,7 @@ function Register(){
             <button className="btn btn-danger button">Cancel</button>
             <br/>
             <br/>
-            <p>Already have an account?  <a href="/Login">Login</a>.</p>
+            <strong>Already have an account?  <a href="/Login">Login</a>.</strong>
             </form>
             </div>
             </div>

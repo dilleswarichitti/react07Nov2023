@@ -8,7 +8,6 @@ import AddEvent from './AddEvent';
 import PutEvent from './PutEvents';
 import './MyCalendar.css';
 
-
 const localizer = momentLocalizer(moment);
 
 function MyCalendar({ events }) {
@@ -84,10 +83,9 @@ function MyCalendar({ events }) {
 
   const eventStyle = (event) => {
     const colorMap = {
-      work: '#12eff3',
+      work: '#10296d',
       family: '#ed0249',
-      personal: '#41d60a',
-
+      personal: '#6f48eb',
     };
 
     const formattedStartDate = formatDate(event.startDateTime);
