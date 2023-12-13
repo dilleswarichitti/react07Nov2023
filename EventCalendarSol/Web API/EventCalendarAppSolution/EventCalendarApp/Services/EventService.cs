@@ -16,7 +16,6 @@ namespace EventCalendarApp.Services
         public EventService(IRepository<int, Event> eventRepository)
         {
             _eventRepository = eventRepository;
-
         }
         /// <summary>
         /// add the event to the database
@@ -29,6 +28,7 @@ namespace EventCalendarApp.Services
             var result = _eventRepository.Add(events);
             // Assuming ScheduleAndSendEmail has a signature like: void ScheduleAndSendEmail(DateTime notificationDateTime, EventResult result)
             ScheduleAndSendEmail(result.NotificationDateTime, result);
+            ShareEvent(result.Id, new List<string> { events.ShareEventWith });
             return result;
         }
         public void ScheduleAndSendEmail(string targetTime, Event events)
@@ -132,12 +132,21 @@ namespace EventCalendarApp.Services
                 return null;
             }
         }
-        public IList<Event> GetPublicEvents(string access)
+        public IList<Event> GetPublicEvents(string access)  
         {
             var events = _eventRepository.GetAll().Where(e => e.Access == access).ToList();
             if (events != null)
             {
                 return events;
+            }
+            throw new NoEventsAvailableException();
+        }
+        public List<Event> GetEvents()  
+        {
+            var events = _eventRepository.GetAll();
+            if (events!= null)
+            {
+                return events.ToList();
             }
             throw new NoEventsAvailableException();
         }

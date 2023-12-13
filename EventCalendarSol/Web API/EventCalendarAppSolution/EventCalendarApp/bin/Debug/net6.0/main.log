@@ -28111,3 +28111,1283 @@ FROM [Events] AS [e]
 SELECT [e].[Id], [e].[Access], [e].[Category], [e].[Description], [e].[Email], [e].[EndDateTime], [e].[IsRecurring], [e].[Location], [e].[NotificationDateTime], [e].[Recurring_frequency], [e].[ShareEventWith], [e].[StartDateTime], [e].[Title]
 FROM [Events] AS [e]
 2023-12-11 21:33:07,923 [.NET ThreadPool Worker] INFO EventCalendarApp.Controllers.EventController.Get[34] - Event listed
+2023-12-12 05:48:32,084 [1] INFO Microsoft.Hosting.Lifetime.?[?] - Now listening on: https://localhost:7117
+2023-12-12 05:48:32,191 [1] INFO Microsoft.Hosting.Lifetime.?[?] - Now listening on: http://localhost:5089
+2023-12-12 05:48:32,198 [1] INFO Microsoft.Hosting.Lifetime.OnApplicationStarted[0] - Application started. Press Ctrl+C to shut down.
+2023-12-12 05:48:32,204 [1] INFO Microsoft.Hosting.Lifetime.OnApplicationStarted[0] - Hosting environment: Development
+2023-12-12 05:48:32,206 [1] INFO Microsoft.Hosting.Lifetime.OnApplicationStarted[0] - Content root path: C:\TRAINING\project\EventCalendarSol\Web API\EventCalendarAppSolution\EventCalendarApp\
+2023-12-12 05:48:44,738 [.NET ThreadPool Worker] INFO Microsoft.EntityFrameworkCore.Infrastructure.?[?] - Entity Framework Core 6.0.24 initialized 'CalendarContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.24' with options: None
+2023-12-12 05:48:48,433 [.NET ThreadPool Worker] INFO Microsoft.EntityFrameworkCore.Database.Command.?[?] - Executed DbCommand (236ms) [Parameters=[@__key_0='?' (Size = 450)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(2) [u].[Email], [u].[FirstName], [u].[Key], [u].[LastName], [u].[Password], [u].[Role]
+FROM [Users] AS [u]
+WHERE [u].[Email] = @__key_0
+2023-12-12 05:48:56,165 [.NET ThreadPool Worker] INFO Microsoft.EntityFrameworkCore.Infrastructure.?[?] - Entity Framework Core 6.0.24 initialized 'CalendarContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.24' with options: None
+2023-12-12 05:48:56,199 [.NET ThreadPool Worker] INFO Microsoft.EntityFrameworkCore.Database.Command.?[?] - Executed DbCommand (12ms) [Parameters=[@__key_0='?' (Size = 450)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(2) [u].[Email], [u].[FirstName], [u].[Key], [u].[LastName], [u].[Password], [u].[Role]
+FROM [Users] AS [u]
+WHERE [u].[Email] = @__key_0
+2023-12-12 05:48:56,391 [.NET ThreadPool Worker] INFO Microsoft.EntityFrameworkCore.Infrastructure.?[?] - Entity Framework Core 6.0.24 initialized 'CalendarContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.24' with options: None
+2023-12-12 05:48:56,528 [.NET ThreadPool Worker] INFO Microsoft.EntityFrameworkCore.Database.Command.?[?] - Executed DbCommand (72ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT COUNT(*)
+FROM [Events] AS [e]
+2023-12-12 05:48:56,591 [.NET ThreadPool Worker] INFO Microsoft.EntityFrameworkCore.Database.Command.?[?] - Executed DbCommand (35ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [e].[Id], [e].[Access], [e].[Category], [e].[Description], [e].[Email], [e].[EndDateTime], [e].[IsRecurring], [e].[Location], [e].[NotificationDateTime], [e].[Recurring_frequency], [e].[ShareEventWith], [e].[StartDateTime], [e].[Title]
+FROM [Events] AS [e]
+2023-12-12 05:48:56,686 [.NET ThreadPool Worker] INFO Microsoft.EntityFrameworkCore.Infrastructure.?[?] - Entity Framework Core 6.0.24 initialized 'CalendarContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.24' with options: None
+2023-12-12 05:48:56,717 [.NET ThreadPool Worker] INFO EventCalendarApp.Controllers.EventController.Get[34] - Event listed
+2023-12-12 05:48:56,742 [.NET ThreadPool Worker] INFO Microsoft.EntityFrameworkCore.Database.Command.?[?] - Executed DbCommand (8ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT COUNT(*)
+FROM [Events] AS [e]
+2023-12-12 05:48:56,755 [.NET ThreadPool Worker] INFO Microsoft.EntityFrameworkCore.Database.Command.?[?] - Executed DbCommand (5ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [e].[Id], [e].[Access], [e].[Category], [e].[Description], [e].[Email], [e].[EndDateTime], [e].[IsRecurring], [e].[Location], [e].[NotificationDateTime], [e].[Recurring_frequency], [e].[ShareEventWith], [e].[StartDateTime], [e].[Title]
+FROM [Events] AS [e]
+2023-12-12 05:48:56,771 [.NET ThreadPool Worker] INFO EventCalendarApp.Controllers.EventController.Get[34] - Event listed
+2023-12-12 05:48:56,795 [.NET ThreadPool Worker] INFO Microsoft.EntityFrameworkCore.Infrastructure.?[?] - Entity Framework Core 6.0.24 initialized 'CalendarContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.24' with options: None
+2023-12-12 05:48:56,806 [.NET ThreadPool Worker] INFO Microsoft.EntityFrameworkCore.Database.Command.?[?] - Executed DbCommand (2ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT COUNT(*)
+FROM [Events] AS [e]
+2023-12-12 05:48:56,818 [.NET ThreadPool Worker] INFO Microsoft.EntityFrameworkCore.Database.Command.?[?] - Executed DbCommand (2ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [e].[Id], [e].[Access], [e].[Category], [e].[Description], [e].[Email], [e].[EndDateTime], [e].[IsRecurring], [e].[Location], [e].[NotificationDateTime], [e].[Recurring_frequency], [e].[ShareEventWith], [e].[StartDateTime], [e].[Title]
+FROM [Events] AS [e]
+2023-12-12 05:48:56,828 [.NET ThreadPool Worker] INFO EventCalendarApp.Controllers.EventController.Get[34] - Event listed
+2023-12-12 05:49:36,885 [.NET ThreadPool Worker] INFO Microsoft.EntityFrameworkCore.Infrastructure.?[?] - Entity Framework Core 6.0.24 initialized 'CalendarContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.24' with options: None
+2023-12-12 05:49:36,893 [.NET ThreadPool Worker] INFO Microsoft.EntityFrameworkCore.Database.Command.?[?] - Executed DbCommand (2ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT COUNT(*)
+FROM [Events] AS [e]
+2023-12-12 05:49:36,906 [.NET ThreadPool Worker] INFO Microsoft.EntityFrameworkCore.Database.Command.?[?] - Executed DbCommand (3ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [e].[Id], [e].[Access], [e].[Category], [e].[Description], [e].[Email], [e].[EndDateTime], [e].[IsRecurring], [e].[Location], [e].[NotificationDateTime], [e].[Recurring_frequency], [e].[ShareEventWith], [e].[StartDateTime], [e].[Title]
+FROM [Events] AS [e]
+2023-12-12 05:49:36,912 [.NET ThreadPool Worker] INFO EventCalendarApp.Controllers.EventController.Get[34] - Event listed
+2023-12-12 05:49:36,959 [.NET ThreadPool Worker] INFO Microsoft.EntityFrameworkCore.Infrastructure.?[?] - Entity Framework Core 6.0.24 initialized 'CalendarContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.24' with options: None
+2023-12-12 05:49:36,978 [.NET ThreadPool Worker] INFO Microsoft.EntityFrameworkCore.Database.Command.?[?] - Executed DbCommand (0ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT COUNT(*)
+FROM [Events] AS [e]
+2023-12-12 05:49:36,983 [.NET ThreadPool Worker] INFO Microsoft.EntityFrameworkCore.Database.Command.?[?] - Executed DbCommand (1ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [e].[Id], [e].[Access], [e].[Category], [e].[Description], [e].[Email], [e].[EndDateTime], [e].[IsRecurring], [e].[Location], [e].[NotificationDateTime], [e].[Recurring_frequency], [e].[ShareEventWith], [e].[StartDateTime], [e].[Title]
+FROM [Events] AS [e]
+2023-12-12 05:49:36,991 [.NET ThreadPool Worker] INFO EventCalendarApp.Controllers.EventController.Get[34] - Event listed
+2023-12-12 05:51:11,295 [.NET ThreadPool Worker] INFO Microsoft.EntityFrameworkCore.Infrastructure.?[?] - Entity Framework Core 6.0.24 initialized 'CalendarContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.24' with options: None
+2023-12-12 05:51:11,308 [.NET ThreadPool Worker] INFO Microsoft.EntityFrameworkCore.Database.Command.?[?] - Executed DbCommand (5ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT COUNT(*)
+FROM [Events] AS [e]
+2023-12-12 05:51:11,316 [.NET ThreadPool Worker] INFO Microsoft.EntityFrameworkCore.Database.Command.?[?] - Executed DbCommand (2ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [e].[Id], [e].[Access], [e].[Category], [e].[Description], [e].[Email], [e].[EndDateTime], [e].[IsRecurring], [e].[Location], [e].[NotificationDateTime], [e].[Recurring_frequency], [e].[ShareEventWith], [e].[StartDateTime], [e].[Title]
+FROM [Events] AS [e]
+2023-12-12 05:51:11,324 [.NET ThreadPool Worker] INFO EventCalendarApp.Controllers.EventController.Get[34] - Event listed
+2023-12-12 05:51:11,338 [.NET ThreadPool Worker] INFO Microsoft.EntityFrameworkCore.Infrastructure.?[?] - Entity Framework Core 6.0.24 initialized 'CalendarContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.24' with options: None
+2023-12-12 05:51:11,348 [.NET ThreadPool Worker] INFO Microsoft.EntityFrameworkCore.Database.Command.?[?] - Executed DbCommand (3ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT COUNT(*)
+FROM [Events] AS [e]
+2023-12-12 05:51:11,361 [.NET ThreadPool Worker] INFO Microsoft.EntityFrameworkCore.Database.Command.?[?] - Executed DbCommand (2ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [e].[Id], [e].[Access], [e].[Category], [e].[Description], [e].[Email], [e].[EndDateTime], [e].[IsRecurring], [e].[Location], [e].[NotificationDateTime], [e].[Recurring_frequency], [e].[ShareEventWith], [e].[StartDateTime], [e].[Title]
+FROM [Events] AS [e]
+2023-12-12 05:51:11,368 [.NET ThreadPool Worker] INFO EventCalendarApp.Controllers.EventController.Get[34] - Event listed
+2023-12-12 05:51:26,751 [.NET ThreadPool Worker] INFO Microsoft.EntityFrameworkCore.Infrastructure.?[?] - Entity Framework Core 6.0.24 initialized 'CalendarContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.24' with options: None
+2023-12-12 05:51:26,765 [.NET ThreadPool Worker] INFO Microsoft.EntityFrameworkCore.Database.Command.?[?] - Executed DbCommand (3ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT COUNT(*)
+FROM [Events] AS [e]
+2023-12-12 05:51:26,775 [.NET ThreadPool Worker] INFO Microsoft.EntityFrameworkCore.Database.Command.?[?] - Executed DbCommand (2ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [e].[Id], [e].[Access], [e].[Category], [e].[Description], [e].[Email], [e].[EndDateTime], [e].[IsRecurring], [e].[Location], [e].[NotificationDateTime], [e].[Recurring_frequency], [e].[ShareEventWith], [e].[StartDateTime], [e].[Title]
+FROM [Events] AS [e]
+2023-12-12 05:51:26,784 [.NET ThreadPool Worker] INFO EventCalendarApp.Controllers.EventController.Get[34] - Event listed
+2023-12-12 05:51:26,800 [.NET ThreadPool Worker] INFO Microsoft.EntityFrameworkCore.Infrastructure.?[?] - Entity Framework Core 6.0.24 initialized 'CalendarContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.24' with options: None
+2023-12-12 05:51:26,818 [.NET ThreadPool Worker] INFO Microsoft.EntityFrameworkCore.Database.Command.?[?] - Executed DbCommand (1ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT COUNT(*)
+FROM [Events] AS [e]
+2023-12-12 05:51:26,824 [.NET ThreadPool Worker] INFO Microsoft.EntityFrameworkCore.Database.Command.?[?] - Executed DbCommand (0ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [e].[Id], [e].[Access], [e].[Category], [e].[Description], [e].[Email], [e].[EndDateTime], [e].[IsRecurring], [e].[Location], [e].[NotificationDateTime], [e].[Recurring_frequency], [e].[ShareEventWith], [e].[StartDateTime], [e].[Title]
+FROM [Events] AS [e]
+2023-12-12 05:51:26,832 [.NET ThreadPool Worker] INFO EventCalendarApp.Controllers.EventController.Get[34] - Event listed
+2023-12-12 05:51:30,589 [.NET ThreadPool Worker] INFO Microsoft.EntityFrameworkCore.Infrastructure.?[?] - Entity Framework Core 6.0.24 initialized 'CalendarContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.24' with options: None
+2023-12-12 05:51:30,598 [.NET ThreadPool Worker] INFO Microsoft.EntityFrameworkCore.Database.Command.?[?] - Executed DbCommand (2ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT COUNT(*)
+FROM [Events] AS [e]
+2023-12-12 05:51:30,606 [.NET ThreadPool Worker] INFO Microsoft.EntityFrameworkCore.Database.Command.?[?] - Executed DbCommand (1ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [e].[Id], [e].[Access], [e].[Category], [e].[Description], [e].[Email], [e].[EndDateTime], [e].[IsRecurring], [e].[Location], [e].[NotificationDateTime], [e].[Recurring_frequency], [e].[ShareEventWith], [e].[StartDateTime], [e].[Title]
+FROM [Events] AS [e]
+2023-12-12 05:51:30,613 [.NET ThreadPool Worker] INFO EventCalendarApp.Controllers.EventController.Get[34] - Event listed
+2023-12-12 05:51:30,651 [.NET ThreadPool Worker] INFO Microsoft.EntityFrameworkCore.Infrastructure.?[?] - Entity Framework Core 6.0.24 initialized 'CalendarContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.24' with options: None
+2023-12-12 05:51:30,660 [.NET ThreadPool Worker] INFO Microsoft.EntityFrameworkCore.Database.Command.?[?] - Executed DbCommand (0ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT COUNT(*)
+FROM [Events] AS [e]
+2023-12-12 05:51:30,666 [.NET ThreadPool Worker] INFO Microsoft.EntityFrameworkCore.Database.Command.?[?] - Executed DbCommand (0ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [e].[Id], [e].[Access], [e].[Category], [e].[Description], [e].[Email], [e].[EndDateTime], [e].[IsRecurring], [e].[Location], [e].[NotificationDateTime], [e].[Recurring_frequency], [e].[ShareEventWith], [e].[StartDateTime], [e].[Title]
+FROM [Events] AS [e]
+2023-12-12 05:51:30,673 [.NET ThreadPool Worker] INFO EventCalendarApp.Controllers.EventController.Get[34] - Event listed
+2023-12-12 05:52:12,823 [.NET ThreadPool Worker] INFO Microsoft.EntityFrameworkCore.Infrastructure.?[?] - Entity Framework Core 6.0.24 initialized 'CalendarContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.24' with options: None
+2023-12-12 05:52:12,866 [.NET ThreadPool Worker] INFO Microsoft.EntityFrameworkCore.Database.Command.?[?] - Executed DbCommand (3ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT COUNT(*)
+FROM [Events] AS [e]
+2023-12-12 05:52:12,876 [.NET ThreadPool Worker] INFO Microsoft.EntityFrameworkCore.Database.Command.?[?] - Executed DbCommand (3ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [e].[Id], [e].[Access], [e].[Category], [e].[Description], [e].[Email], [e].[EndDateTime], [e].[IsRecurring], [e].[Location], [e].[NotificationDateTime], [e].[Recurring_frequency], [e].[ShareEventWith], [e].[StartDateTime], [e].[Title]
+FROM [Events] AS [e]
+2023-12-12 05:52:12,884 [.NET ThreadPool Worker] INFO EventCalendarApp.Controllers.EventController.Get[34] - Event listed
+2023-12-12 05:52:12,903 [.NET ThreadPool Worker] INFO Microsoft.EntityFrameworkCore.Infrastructure.?[?] - Entity Framework Core 6.0.24 initialized 'CalendarContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.24' with options: None
+2023-12-12 05:52:12,913 [.NET ThreadPool Worker] INFO Microsoft.EntityFrameworkCore.Database.Command.?[?] - Executed DbCommand (0ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT COUNT(*)
+FROM [Events] AS [e]
+2023-12-12 05:52:12,921 [.NET ThreadPool Worker] INFO Microsoft.EntityFrameworkCore.Database.Command.?[?] - Executed DbCommand (2ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [e].[Id], [e].[Access], [e].[Category], [e].[Description], [e].[Email], [e].[EndDateTime], [e].[IsRecurring], [e].[Location], [e].[NotificationDateTime], [e].[Recurring_frequency], [e].[ShareEventWith], [e].[StartDateTime], [e].[Title]
+FROM [Events] AS [e]
+2023-12-12 05:52:12,926 [.NET ThreadPool Worker] INFO EventCalendarApp.Controllers.EventController.Get[34] - Event listed
+2023-12-12 05:52:43,194 [.NET ThreadPool Worker] INFO Microsoft.EntityFrameworkCore.Infrastructure.?[?] - Entity Framework Core 6.0.24 initialized 'CalendarContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.24' with options: None
+2023-12-12 05:52:43,209 [.NET ThreadPool Worker] INFO Microsoft.EntityFrameworkCore.Database.Command.?[?] - Executed DbCommand (6ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT COUNT(*)
+FROM [Events] AS [e]
+2023-12-12 05:52:43,240 [.NET ThreadPool Worker] INFO Microsoft.EntityFrameworkCore.Database.Command.?[?] - Executed DbCommand (5ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [e].[Id], [e].[Access], [e].[Category], [e].[Description], [e].[Email], [e].[EndDateTime], [e].[IsRecurring], [e].[Location], [e].[NotificationDateTime], [e].[Recurring_frequency], [e].[ShareEventWith], [e].[StartDateTime], [e].[Title]
+FROM [Events] AS [e]
+2023-12-12 05:52:43,276 [.NET ThreadPool Worker] INFO EventCalendarApp.Controllers.EventController.Get[34] - Event listed
+2023-12-12 05:52:43,290 [.NET ThreadPool Worker] INFO Microsoft.EntityFrameworkCore.Infrastructure.?[?] - Entity Framework Core 6.0.24 initialized 'CalendarContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.24' with options: None
+2023-12-12 05:52:43,391 [.NET ThreadPool Worker] INFO Microsoft.EntityFrameworkCore.Database.Command.?[?] - Executed DbCommand (1ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT COUNT(*)
+FROM [Events] AS [e]
+2023-12-12 05:52:43,421 [.NET ThreadPool Worker] INFO Microsoft.EntityFrameworkCore.Database.Command.?[?] - Executed DbCommand (5ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [e].[Id], [e].[Access], [e].[Category], [e].[Description], [e].[Email], [e].[EndDateTime], [e].[IsRecurring], [e].[Location], [e].[NotificationDateTime], [e].[Recurring_frequency], [e].[ShareEventWith], [e].[StartDateTime], [e].[Title]
+FROM [Events] AS [e]
+2023-12-12 05:52:43,437 [.NET ThreadPool Worker] INFO EventCalendarApp.Controllers.EventController.Get[34] - Event listed
+2023-12-12 05:56:30,458 [.NET ThreadPool Worker] INFO Microsoft.EntityFrameworkCore.Infrastructure.?[?] - Entity Framework Core 6.0.24 initialized 'CalendarContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.24' with options: None
+2023-12-12 05:56:30,472 [.NET ThreadPool Worker] INFO Microsoft.EntityFrameworkCore.Database.Command.?[?] - Executed DbCommand (6ms) [Parameters=[@__key_0='?' (Size = 450)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(2) [u].[Email], [u].[FirstName], [u].[Key], [u].[LastName], [u].[Password], [u].[Role]
+FROM [Users] AS [u]
+WHERE [u].[Email] = @__key_0
+2023-12-12 05:56:30,571 [.NET ThreadPool Worker] INFO Microsoft.EntityFrameworkCore.Infrastructure.?[?] - Entity Framework Core 6.0.24 initialized 'CalendarContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.24' with options: None
+2023-12-12 05:56:30,594 [.NET ThreadPool Worker] INFO Microsoft.EntityFrameworkCore.Database.Command.?[?] - Executed DbCommand (4ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT COUNT(*)
+FROM [Events] AS [e]
+2023-12-12 05:56:30,602 [.NET ThreadPool Worker] INFO Microsoft.EntityFrameworkCore.Database.Command.?[?] - Executed DbCommand (2ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [e].[Id], [e].[Access], [e].[Category], [e].[Description], [e].[Email], [e].[EndDateTime], [e].[IsRecurring], [e].[Location], [e].[NotificationDateTime], [e].[Recurring_frequency], [e].[ShareEventWith], [e].[StartDateTime], [e].[Title]
+FROM [Events] AS [e]
+2023-12-12 05:56:30,608 [.NET ThreadPool Worker] INFO EventCalendarApp.Controllers.EventController.Get[34] - Event listed
+2023-12-12 05:56:30,631 [.NET ThreadPool Worker] INFO Microsoft.EntityFrameworkCore.Infrastructure.?[?] - Entity Framework Core 6.0.24 initialized 'CalendarContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.24' with options: None
+2023-12-12 05:56:30,641 [.NET ThreadPool Worker] INFO Microsoft.EntityFrameworkCore.Database.Command.?[?] - Executed DbCommand (1ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT COUNT(*)
+FROM [Events] AS [e]
+2023-12-12 05:56:30,648 [.NET ThreadPool Worker] INFO Microsoft.EntityFrameworkCore.Database.Command.?[?] - Executed DbCommand (1ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [e].[Id], [e].[Access], [e].[Category], [e].[Description], [e].[Email], [e].[EndDateTime], [e].[IsRecurring], [e].[Location], [e].[NotificationDateTime], [e].[Recurring_frequency], [e].[ShareEventWith], [e].[StartDateTime], [e].[Title]
+FROM [Events] AS [e]
+2023-12-12 05:56:30,659 [.NET ThreadPool Worker] INFO EventCalendarApp.Controllers.EventController.Get[34] - Event listed
+2023-12-12 05:56:31,219 [.NET ThreadPool Worker] INFO Microsoft.EntityFrameworkCore.Infrastructure.?[?] - Entity Framework Core 6.0.24 initialized 'CalendarContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.24' with options: None
+2023-12-12 05:56:31,240 [.NET ThreadPool Worker] INFO Microsoft.EntityFrameworkCore.Database.Command.?[?] - Executed DbCommand (0ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT COUNT(*)
+FROM [Events] AS [e]
+2023-12-12 05:56:31,246 [.NET ThreadPool Worker] INFO Microsoft.EntityFrameworkCore.Database.Command.?[?] - Executed DbCommand (0ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [e].[Id], [e].[Access], [e].[Category], [e].[Description], [e].[Email], [e].[EndDateTime], [e].[IsRecurring], [e].[Location], [e].[NotificationDateTime], [e].[Recurring_frequency], [e].[ShareEventWith], [e].[StartDateTime], [e].[Title]
+FROM [Events] AS [e]
+2023-12-12 05:56:31,253 [.NET ThreadPool Worker] INFO EventCalendarApp.Controllers.EventController.Get[34] - Event listed
+2023-12-12 05:56:31,271 [.NET ThreadPool Worker] INFO Microsoft.EntityFrameworkCore.Infrastructure.?[?] - Entity Framework Core 6.0.24 initialized 'CalendarContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.24' with options: None
+2023-12-12 05:56:31,294 [.NET ThreadPool Worker] INFO Microsoft.EntityFrameworkCore.Database.Command.?[?] - Executed DbCommand (0ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT COUNT(*)
+FROM [Events] AS [e]
+2023-12-12 05:56:31,303 [.NET ThreadPool Worker] INFO Microsoft.EntityFrameworkCore.Database.Command.?[?] - Executed DbCommand (3ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [e].[Id], [e].[Access], [e].[Category], [e].[Description], [e].[Email], [e].[EndDateTime], [e].[IsRecurring], [e].[Location], [e].[NotificationDateTime], [e].[Recurring_frequency], [e].[ShareEventWith], [e].[StartDateTime], [e].[Title]
+FROM [Events] AS [e]
+2023-12-12 05:56:31,310 [.NET ThreadPool Worker] INFO EventCalendarApp.Controllers.EventController.Get[34] - Event listed
+2023-12-12 05:56:48,312 [.NET ThreadPool Worker] INFO Microsoft.EntityFrameworkCore.Infrastructure.?[?] - Entity Framework Core 6.0.24 initialized 'CalendarContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.24' with options: None
+2023-12-12 05:56:48,323 [.NET ThreadPool Worker] INFO Microsoft.EntityFrameworkCore.Database.Command.?[?] - Executed DbCommand (3ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT COUNT(*)
+FROM [Events] AS [e]
+2023-12-12 05:56:48,332 [.NET ThreadPool Worker] INFO Microsoft.EntityFrameworkCore.Database.Command.?[?] - Executed DbCommand (2ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [e].[Id], [e].[Access], [e].[Category], [e].[Description], [e].[Email], [e].[EndDateTime], [e].[IsRecurring], [e].[Location], [e].[NotificationDateTime], [e].[Recurring_frequency], [e].[ShareEventWith], [e].[StartDateTime], [e].[Title]
+FROM [Events] AS [e]
+2023-12-12 05:56:48,340 [.NET ThreadPool Worker] INFO EventCalendarApp.Controllers.EventController.GetPublicEvents[51] - Event listed
+2023-12-12 05:57:08,978 [.NET ThreadPool Worker] INFO Microsoft.EntityFrameworkCore.Infrastructure.?[?] - Entity Framework Core 6.0.24 initialized 'CalendarContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.24' with options: None
+2023-12-12 05:57:08,987 [.NET ThreadPool Worker] INFO Microsoft.EntityFrameworkCore.Database.Command.?[?] - Executed DbCommand (0ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT COUNT(*)
+FROM [Events] AS [e]
+2023-12-12 05:57:08,994 [.NET ThreadPool Worker] INFO Microsoft.EntityFrameworkCore.Database.Command.?[?] - Executed DbCommand (1ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [e].[Id], [e].[Access], [e].[Category], [e].[Description], [e].[Email], [e].[EndDateTime], [e].[IsRecurring], [e].[Location], [e].[NotificationDateTime], [e].[Recurring_frequency], [e].[ShareEventWith], [e].[StartDateTime], [e].[Title]
+FROM [Events] AS [e]
+2023-12-12 05:57:09,002 [.NET ThreadPool Worker] INFO EventCalendarApp.Controllers.EventController.GetPublicEvents[51] - Event listed
+2023-12-12 05:57:23,323 [.NET ThreadPool Worker] INFO Microsoft.EntityFrameworkCore.Infrastructure.?[?] - Entity Framework Core 6.0.24 initialized 'CalendarContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.24' with options: None
+2023-12-12 05:57:23,331 [.NET ThreadPool Worker] INFO Microsoft.EntityFrameworkCore.Database.Command.?[?] - Executed DbCommand (1ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT COUNT(*)
+FROM [Events] AS [e]
+2023-12-12 05:57:23,343 [.NET ThreadPool Worker] INFO Microsoft.EntityFrameworkCore.Database.Command.?[?] - Executed DbCommand (1ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [e].[Id], [e].[Access], [e].[Category], [e].[Description], [e].[Email], [e].[EndDateTime], [e].[IsRecurring], [e].[Location], [e].[NotificationDateTime], [e].[Recurring_frequency], [e].[ShareEventWith], [e].[StartDateTime], [e].[Title]
+FROM [Events] AS [e]
+2023-12-12 05:57:23,355 [.NET ThreadPool Worker] INFO EventCalendarApp.Controllers.EventController.GetPublicEvents[51] - Event listed
+2023-12-12 05:57:49,422 [.NET ThreadPool Worker] INFO Microsoft.EntityFrameworkCore.Infrastructure.?[?] - Entity Framework Core 6.0.24 initialized 'CalendarContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.24' with options: None
+2023-12-12 05:57:49,432 [.NET ThreadPool Worker] INFO Microsoft.EntityFrameworkCore.Database.Command.?[?] - Executed DbCommand (3ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT COUNT(*)
+FROM [Events] AS [e]
+2023-12-12 05:57:49,442 [.NET ThreadPool Worker] INFO Microsoft.EntityFrameworkCore.Database.Command.?[?] - Executed DbCommand (2ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [e].[Id], [e].[Access], [e].[Category], [e].[Description], [e].[Email], [e].[EndDateTime], [e].[IsRecurring], [e].[Location], [e].[NotificationDateTime], [e].[Recurring_frequency], [e].[ShareEventWith], [e].[StartDateTime], [e].[Title]
+FROM [Events] AS [e]
+2023-12-12 05:57:49,450 [.NET ThreadPool Worker] INFO EventCalendarApp.Controllers.EventController.GetPublicEvents[51] - Event listed
+2023-12-12 05:58:02,303 [.NET ThreadPool Worker] INFO Microsoft.EntityFrameworkCore.Infrastructure.?[?] - Entity Framework Core 6.0.24 initialized 'CalendarContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.24' with options: None
+2023-12-12 05:58:02,319 [.NET ThreadPool Worker] INFO Microsoft.EntityFrameworkCore.Database.Command.?[?] - Executed DbCommand (0ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT COUNT(*)
+FROM [Events] AS [e]
+2023-12-12 05:58:02,328 [.NET ThreadPool Worker] INFO Microsoft.EntityFrameworkCore.Database.Command.?[?] - Executed DbCommand (1ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [e].[Id], [e].[Access], [e].[Category], [e].[Description], [e].[Email], [e].[EndDateTime], [e].[IsRecurring], [e].[Location], [e].[NotificationDateTime], [e].[Recurring_frequency], [e].[ShareEventWith], [e].[StartDateTime], [e].[Title]
+FROM [Events] AS [e]
+2023-12-12 05:58:02,336 [.NET ThreadPool Worker] INFO EventCalendarApp.Controllers.EventController.GetPublicEvents[51] - Event listed
+2023-12-12 05:58:05,302 [.NET ThreadPool Worker] INFO Microsoft.EntityFrameworkCore.Infrastructure.?[?] - Entity Framework Core 6.0.24 initialized 'CalendarContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.24' with options: None
+2023-12-12 05:58:05,318 [.NET ThreadPool Worker] INFO Microsoft.EntityFrameworkCore.Database.Command.?[?] - Executed DbCommand (4ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT COUNT(*)
+FROM [Users] AS [u]
+2023-12-12 05:58:05,334 [.NET ThreadPool Worker] INFO Microsoft.EntityFrameworkCore.Database.Command.?[?] - Executed DbCommand (3ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [u].[Email], [u].[FirstName], [u].[Key], [u].[LastName], [u].[Password], [u].[Role]
+FROM [Users] AS [u]
+2023-12-12 05:58:05,369 [.NET ThreadPool Worker] INFO Microsoft.EntityFrameworkCore.Infrastructure.?[?] - Entity Framework Core 6.0.24 initialized 'CalendarContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.24' with options: None
+2023-12-12 05:58:05,376 [.NET ThreadPool Worker] INFO Microsoft.EntityFrameworkCore.Database.Command.?[?] - Executed DbCommand (1ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT COUNT(*)
+FROM [Users] AS [u]
+2023-12-12 05:58:05,381 [.NET ThreadPool Worker] INFO Microsoft.EntityFrameworkCore.Database.Command.?[?] - Executed DbCommand (1ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [u].[Email], [u].[FirstName], [u].[Key], [u].[LastName], [u].[Password], [u].[Role]
+FROM [Users] AS [u]
+2023-12-12 06:00:58,172 [.NET ThreadPool Worker] INFO Microsoft.EntityFrameworkCore.Infrastructure.?[?] - Entity Framework Core 6.0.24 initialized 'CalendarContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.24' with options: None
+2023-12-12 06:00:58,181 [.NET ThreadPool Worker] INFO Microsoft.EntityFrameworkCore.Database.Command.?[?] - Executed DbCommand (3ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT COUNT(*)
+FROM [Users] AS [u]
+2023-12-12 06:00:58,191 [.NET ThreadPool Worker] INFO Microsoft.EntityFrameworkCore.Database.Command.?[?] - Executed DbCommand (2ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [u].[Email], [u].[FirstName], [u].[Key], [u].[LastName], [u].[Password], [u].[Role]
+FROM [Users] AS [u]
+2023-12-12 06:00:58,204 [.NET ThreadPool Worker] INFO Microsoft.EntityFrameworkCore.Infrastructure.?[?] - Entity Framework Core 6.0.24 initialized 'CalendarContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.24' with options: None
+2023-12-12 06:00:58,208 [.NET ThreadPool Worker] INFO Microsoft.EntityFrameworkCore.Database.Command.?[?] - Executed DbCommand (0ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT COUNT(*)
+FROM [Users] AS [u]
+2023-12-12 06:00:58,216 [.NET ThreadPool Worker] INFO Microsoft.EntityFrameworkCore.Database.Command.?[?] - Executed DbCommand (1ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [u].[Email], [u].[FirstName], [u].[Key], [u].[LastName], [u].[Password], [u].[Role]
+FROM [Users] AS [u]
+2023-12-12 06:23:46,390 [1] INFO Microsoft.Hosting.Lifetime.?[?] - Now listening on: https://localhost:7117
+2023-12-12 06:23:46,526 [1] INFO Microsoft.Hosting.Lifetime.?[?] - Now listening on: http://localhost:5089
+2023-12-12 06:23:46,534 [1] INFO Microsoft.Hosting.Lifetime.OnApplicationStarted[0] - Application started. Press Ctrl+C to shut down.
+2023-12-12 06:23:46,539 [1] INFO Microsoft.Hosting.Lifetime.OnApplicationStarted[0] - Hosting environment: Development
+2023-12-12 06:23:46,541 [1] INFO Microsoft.Hosting.Lifetime.OnApplicationStarted[0] - Content root path: C:\TRAINING\project\EventCalendarSol\Web API\EventCalendarAppSolution\EventCalendarApp\
+2023-12-12 06:28:35,070 [.NET ThreadPool Worker] INFO Microsoft.EntityFrameworkCore.Infrastructure.?[?] - Entity Framework Core 6.0.24 initialized 'CalendarContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.24' with options: None
+2023-12-12 06:28:37,719 [.NET ThreadPool Worker] INFO Microsoft.EntityFrameworkCore.Database.Command.?[?] - Executed DbCommand (229ms) [Parameters=[@__key_0='?' (Size = 450)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(2) [u].[Email], [u].[FirstName], [u].[Key], [u].[LastName], [u].[Password], [u].[Role]
+FROM [Users] AS [u]
+WHERE [u].[Email] = @__key_0
+2023-12-12 06:28:50,921 [.NET ThreadPool Worker] INFO Microsoft.EntityFrameworkCore.Infrastructure.?[?] - Entity Framework Core 6.0.24 initialized 'CalendarContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.24' with options: None
+2023-12-12 06:28:50,954 [.NET ThreadPool Worker] INFO Microsoft.EntityFrameworkCore.Database.Command.?[?] - Executed DbCommand (9ms) [Parameters=[@__key_0='?' (Size = 450)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(2) [u].[Email], [u].[FirstName], [u].[Key], [u].[LastName], [u].[Password], [u].[Role]
+FROM [Users] AS [u]
+WHERE [u].[Email] = @__key_0
+2023-12-12 06:29:22,952 [.NET ThreadPool Worker] INFO Microsoft.EntityFrameworkCore.Infrastructure.?[?] - Entity Framework Core 6.0.24 initialized 'CalendarContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.24' with options: None
+2023-12-12 06:29:23,564 [.NET ThreadPool Worker] INFO Microsoft.EntityFrameworkCore.Database.Command.?[?] - Executed DbCommand (110ms) [Parameters=[@p0='?' (Size = 4000), @p1='?' (Size = 4000), @p2='?' (Size = 4000), @p3='?' (Size = 450), @p4='?' (Size = 4000), @p5='?' (DbType = Boolean), @p6='?' (Size = 4000), @p7='?' (Size = 4000), @p8='?' (Size = 4000), @p9='?' (Size = 4000), @p10='?' (Size = 4000), @p11='?' (Size = 4000)], CommandType='Text', CommandTimeout='30']
+SET NOCOUNT ON;
+INSERT INTO [Events] ([Access], [Category], [Description], [Email], [EndDateTime], [IsRecurring], [Location], [NotificationDateTime], [Recurring_frequency], [ShareEventWith], [StartDateTime], [Title])
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7, @p8, @p9, @p10, @p11);
+SELECT [Id]
+FROM [Events]
+WHERE @@ROWCOUNT = 1 AND [Id] = scope_identity();
+2023-12-12 06:29:23,782 [.NET ThreadPool Worker] INFO Microsoft.EntityFrameworkCore.Database.Command.?[?] - Executed DbCommand (3ms) [Parameters=[@__key_0='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(2) [e].[Id], [e].[Access], [e].[Category], [e].[Description], [e].[Email], [e].[EndDateTime], [e].[IsRecurring], [e].[Location], [e].[NotificationDateTime], [e].[Recurring_frequency], [e].[ShareEventWith], [e].[StartDateTime], [e].[Title]
+FROM [Events] AS [e]
+WHERE [e].[Id] = @__key_0
+2023-12-12 06:32:07,312 [.NET ThreadPool Worker] INFO Microsoft.EntityFrameworkCore.Infrastructure.?[?] - Entity Framework Core 6.0.24 initialized 'CalendarContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.24' with options: None
+2023-12-12 06:32:07,329 [.NET ThreadPool Worker] INFO Microsoft.EntityFrameworkCore.Database.Command.?[?] - Executed DbCommand (8ms) [Parameters=[@p0='?' (Size = 4000), @p1='?' (Size = 4000), @p2='?' (Size = 4000), @p3='?' (Size = 450), @p4='?' (Size = 4000), @p5='?' (DbType = Boolean), @p6='?' (Size = 4000), @p7='?' (Size = 4000), @p8='?' (Size = 4000), @p9='?' (Size = 4000), @p10='?' (Size = 4000), @p11='?' (Size = 4000)], CommandType='Text', CommandTimeout='30']
+SET NOCOUNT ON;
+INSERT INTO [Events] ([Access], [Category], [Description], [Email], [EndDateTime], [IsRecurring], [Location], [NotificationDateTime], [Recurring_frequency], [ShareEventWith], [StartDateTime], [Title])
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7, @p8, @p9, @p10, @p11);
+SELECT [Id]
+FROM [Events]
+WHERE @@ROWCOUNT = 1 AND [Id] = scope_identity();
+2023-12-12 06:32:07,345 [.NET ThreadPool Worker] INFO Microsoft.EntityFrameworkCore.Database.Command.?[?] - Executed DbCommand (3ms) [Parameters=[@__key_0='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(2) [e].[Id], [e].[Access], [e].[Category], [e].[Description], [e].[Email], [e].[EndDateTime], [e].[IsRecurring], [e].[Location], [e].[NotificationDateTime], [e].[Recurring_frequency], [e].[ShareEventWith], [e].[StartDateTime], [e].[Title]
+FROM [Events] AS [e]
+WHERE [e].[Id] = @__key_0
+2023-12-12 06:33:59,319 [.NET ThreadPool Worker] INFO Microsoft.EntityFrameworkCore.Infrastructure.?[?] - Entity Framework Core 6.0.24 initialized 'CalendarContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.24' with options: None
+2023-12-12 06:33:59,330 [.NET ThreadPool Worker] INFO Microsoft.EntityFrameworkCore.Database.Command.?[?] - Executed DbCommand (3ms) [Parameters=[@__key_0='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(2) [e].[Id], [e].[Access], [e].[Category], [e].[Description], [e].[Email], [e].[EndDateTime], [e].[IsRecurring], [e].[Location], [e].[NotificationDateTime], [e].[Recurring_frequency], [e].[ShareEventWith], [e].[StartDateTime], [e].[Title]
+FROM [Events] AS [e]
+WHERE [e].[Id] = @__key_0
+2023-12-12 06:37:26,456 [1] INFO Microsoft.Hosting.Lifetime.?[?] - Now listening on: https://localhost:7117
+2023-12-12 06:37:26,521 [1] INFO Microsoft.Hosting.Lifetime.?[?] - Now listening on: http://localhost:5089
+2023-12-12 06:37:26,532 [1] INFO Microsoft.Hosting.Lifetime.OnApplicationStarted[0] - Application started. Press Ctrl+C to shut down.
+2023-12-12 06:37:26,539 [1] INFO Microsoft.Hosting.Lifetime.OnApplicationStarted[0] - Hosting environment: Development
+2023-12-12 06:37:26,542 [1] INFO Microsoft.Hosting.Lifetime.OnApplicationStarted[0] - Content root path: C:\TRAINING\project\EventCalendarSol\Web API\EventCalendarAppSolution\EventCalendarApp\
+2023-12-12 06:40:43,121 [1] INFO Microsoft.Hosting.Lifetime.?[?] - Now listening on: https://localhost:7117
+2023-12-12 06:40:43,168 [1] INFO Microsoft.Hosting.Lifetime.?[?] - Now listening on: http://localhost:5089
+2023-12-12 06:40:43,175 [1] INFO Microsoft.Hosting.Lifetime.OnApplicationStarted[0] - Application started. Press Ctrl+C to shut down.
+2023-12-12 06:40:43,179 [1] INFO Microsoft.Hosting.Lifetime.OnApplicationStarted[0] - Hosting environment: Development
+2023-12-12 06:40:43,180 [1] INFO Microsoft.Hosting.Lifetime.OnApplicationStarted[0] - Content root path: C:\TRAINING\project\EventCalendarSol\Web API\EventCalendarAppSolution\EventCalendarApp\
+2023-12-12 06:40:58,350 [.NET ThreadPool Worker] INFO Microsoft.EntityFrameworkCore.Infrastructure.?[?] - Entity Framework Core 6.0.24 initialized 'CalendarContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.24' with options: None
+2023-12-12 06:41:00,568 [.NET ThreadPool Worker] INFO Microsoft.EntityFrameworkCore.Database.Command.?[?] - Executed DbCommand (127ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT COUNT(*)
+FROM [Users] AS [u]
+2023-12-12 06:41:00,861 [.NET ThreadPool Worker] INFO Microsoft.EntityFrameworkCore.Database.Command.?[?] - Executed DbCommand (12ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [u].[Email], [u].[FirstName], [u].[Key], [u].[LastName], [u].[Password], [u].[Role]
+FROM [Users] AS [u]
+2023-12-12 06:41:06,300 [.NET ThreadPool Worker] INFO Microsoft.EntityFrameworkCore.Infrastructure.?[?] - Entity Framework Core 6.0.24 initialized 'CalendarContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.24' with options: None
+2023-12-12 06:41:06,645 [.NET ThreadPool Worker] INFO Microsoft.EntityFrameworkCore.Database.Command.?[?] - Executed DbCommand (104ms) [Parameters=[@__key_0='?' (Size = 450)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(2) [u].[Email], [u].[FirstName], [u].[Key], [u].[LastName], [u].[Password], [u].[Role]
+FROM [Users] AS [u]
+WHERE [u].[Email] = @__key_0
+2023-12-12 06:41:07,392 [.NET ThreadPool Worker] INFO Microsoft.EntityFrameworkCore.Infrastructure.?[?] - Entity Framework Core 6.0.24 initialized 'CalendarContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.24' with options: None
+2023-12-12 06:41:07,442 [.NET ThreadPool Worker] INFO Microsoft.EntityFrameworkCore.Database.Command.?[?] - Executed DbCommand (2ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT COUNT(*)
+FROM [Events] AS [e]
+2023-12-12 06:41:07,465 [.NET ThreadPool Worker] INFO Microsoft.EntityFrameworkCore.Database.Command.?[?] - Executed DbCommand (3ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [e].[Id], [e].[Access], [e].[Category], [e].[Description], [e].[Email], [e].[EndDateTime], [e].[IsRecurring], [e].[Location], [e].[NotificationDateTime], [e].[Recurring_frequency], [e].[ShareEventWith], [e].[StartDateTime], [e].[Title]
+FROM [Events] AS [e]
+2023-12-12 06:41:07,562 [.NET ThreadPool Worker] INFO EventCalendarApp.Controllers.EventController.Get[34] - Event listed
+2023-12-12 06:41:07,595 [.NET ThreadPool Worker] INFO Microsoft.EntityFrameworkCore.Infrastructure.?[?] - Entity Framework Core 6.0.24 initialized 'CalendarContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.24' with options: None
+2023-12-12 06:41:07,608 [.NET ThreadPool Worker] INFO Microsoft.EntityFrameworkCore.Database.Command.?[?] - Executed DbCommand (3ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT COUNT(*)
+FROM [Events] AS [e]
+2023-12-12 06:41:07,625 [.NET ThreadPool Worker] INFO Microsoft.EntityFrameworkCore.Database.Command.?[?] - Executed DbCommand (2ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [e].[Id], [e].[Access], [e].[Category], [e].[Description], [e].[Email], [e].[EndDateTime], [e].[IsRecurring], [e].[Location], [e].[NotificationDateTime], [e].[Recurring_frequency], [e].[ShareEventWith], [e].[StartDateTime], [e].[Title]
+FROM [Events] AS [e]
+2023-12-12 06:41:07,635 [.NET ThreadPool Worker] INFO EventCalendarApp.Controllers.EventController.Get[34] - Event listed
+2023-12-12 06:41:07,656 [.NET ThreadPool Worker] INFO Microsoft.EntityFrameworkCore.Infrastructure.?[?] - Entity Framework Core 6.0.24 initialized 'CalendarContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.24' with options: None
+2023-12-12 06:41:07,666 [.NET ThreadPool Worker] INFO Microsoft.EntityFrameworkCore.Database.Command.?[?] - Executed DbCommand (2ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT COUNT(*)
+FROM [Events] AS [e]
+2023-12-12 06:41:07,677 [.NET ThreadPool Worker] INFO Microsoft.EntityFrameworkCore.Database.Command.?[?] - Executed DbCommand (2ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [e].[Id], [e].[Access], [e].[Category], [e].[Description], [e].[Email], [e].[EndDateTime], [e].[IsRecurring], [e].[Location], [e].[NotificationDateTime], [e].[Recurring_frequency], [e].[ShareEventWith], [e].[StartDateTime], [e].[Title]
+FROM [Events] AS [e]
+2023-12-12 06:41:07,687 [.NET ThreadPool Worker] INFO EventCalendarApp.Controllers.EventController.Get[34] - Event listed
+2023-12-12 06:43:05,662 [.NET ThreadPool Worker] INFO Microsoft.EntityFrameworkCore.Infrastructure.?[?] - Entity Framework Core 6.0.24 initialized 'CalendarContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.24' with options: None
+2023-12-12 06:43:06,126 [.NET ThreadPool Worker] INFO Microsoft.EntityFrameworkCore.Database.Command.?[?] - Executed DbCommand (12ms) [Parameters=[@p0='?' (Size = 4000), @p1='?' (Size = 4000), @p2='?' (Size = 4000), @p3='?' (Size = 450), @p4='?' (Size = 4000), @p5='?' (DbType = Boolean), @p6='?' (Size = 4000), @p7='?' (Size = 4000), @p8='?' (Size = 4000), @p9='?' (Size = 4000), @p10='?' (Size = 4000), @p11='?' (Size = 4000)], CommandType='Text', CommandTimeout='30']
+SET NOCOUNT ON;
+INSERT INTO [Events] ([Access], [Category], [Description], [Email], [EndDateTime], [IsRecurring], [Location], [NotificationDateTime], [Recurring_frequency], [ShareEventWith], [StartDateTime], [Title])
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7, @p8, @p9, @p10, @p11);
+SELECT [Id]
+FROM [Events]
+WHERE @@ROWCOUNT = 1 AND [Id] = scope_identity();
+2023-12-12 06:43:06,342 [.NET ThreadPool Worker] INFO Microsoft.EntityFrameworkCore.Database.Command.?[?] - Executed DbCommand (3ms) [Parameters=[@__key_0='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(2) [e].[Id], [e].[Access], [e].[Category], [e].[Description], [e].[Email], [e].[EndDateTime], [e].[IsRecurring], [e].[Location], [e].[NotificationDateTime], [e].[Recurring_frequency], [e].[ShareEventWith], [e].[StartDateTime], [e].[Title]
+FROM [Events] AS [e]
+WHERE [e].[Id] = @__key_0
+2023-12-12 06:43:13,307 [.NET ThreadPool Worker] INFO Microsoft.EntityFrameworkCore.Infrastructure.?[?] - Entity Framework Core 6.0.24 initialized 'CalendarContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.24' with options: None
+2023-12-12 06:43:13,313 [.NET ThreadPool Worker] INFO Microsoft.EntityFrameworkCore.Database.Command.?[?] - Executed DbCommand (1ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT COUNT(*)
+FROM [Events] AS [e]
+2023-12-12 06:43:13,330 [.NET ThreadPool Worker] INFO Microsoft.EntityFrameworkCore.Database.Command.?[?] - Executed DbCommand (2ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [e].[Id], [e].[Access], [e].[Category], [e].[Description], [e].[Email], [e].[EndDateTime], [e].[IsRecurring], [e].[Location], [e].[NotificationDateTime], [e].[Recurring_frequency], [e].[ShareEventWith], [e].[StartDateTime], [e].[Title]
+FROM [Events] AS [e]
+2023-12-12 06:43:13,342 [.NET ThreadPool Worker] INFO EventCalendarApp.Controllers.EventController.Get[34] - Event listed
+2023-12-12 06:43:13,351 [.NET ThreadPool Worker] INFO Microsoft.EntityFrameworkCore.Infrastructure.?[?] - Entity Framework Core 6.0.24 initialized 'CalendarContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.24' with options: None
+2023-12-12 06:43:13,358 [.NET ThreadPool Worker] INFO Microsoft.EntityFrameworkCore.Database.Command.?[?] - Executed DbCommand (0ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT COUNT(*)
+FROM [Events] AS [e]
+2023-12-12 06:43:13,362 [.NET ThreadPool Worker] INFO Microsoft.EntityFrameworkCore.Database.Command.?[?] - Executed DbCommand (0ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [e].[Id], [e].[Access], [e].[Category], [e].[Description], [e].[Email], [e].[EndDateTime], [e].[IsRecurring], [e].[Location], [e].[NotificationDateTime], [e].[Recurring_frequency], [e].[ShareEventWith], [e].[StartDateTime], [e].[Title]
+FROM [Events] AS [e]
+2023-12-12 06:43:13,367 [.NET ThreadPool Worker] INFO EventCalendarApp.Controllers.EventController.Get[34] - Event listed
+2023-12-12 06:43:28,514 [.NET ThreadPool Worker] INFO Microsoft.EntityFrameworkCore.Infrastructure.?[?] - Entity Framework Core 6.0.24 initialized 'CalendarContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.24' with options: None
+2023-12-12 06:43:28,520 [.NET ThreadPool Worker] INFO Microsoft.EntityFrameworkCore.Database.Command.?[?] - Executed DbCommand (2ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT COUNT(*)
+FROM [Users] AS [u]
+2023-12-12 06:43:28,529 [.NET ThreadPool Worker] INFO Microsoft.EntityFrameworkCore.Database.Command.?[?] - Executed DbCommand (2ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [u].[Email], [u].[FirstName], [u].[Key], [u].[LastName], [u].[Password], [u].[Role]
+FROM [Users] AS [u]
+2023-12-12 06:43:28,540 [.NET ThreadPool Worker] INFO Microsoft.EntityFrameworkCore.Infrastructure.?[?] - Entity Framework Core 6.0.24 initialized 'CalendarContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.24' with options: None
+2023-12-12 06:43:28,550 [.NET ThreadPool Worker] INFO Microsoft.EntityFrameworkCore.Database.Command.?[?] - Executed DbCommand (3ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT COUNT(*)
+FROM [Users] AS [u]
+2023-12-12 06:43:28,559 [.NET ThreadPool Worker] INFO Microsoft.EntityFrameworkCore.Database.Command.?[?] - Executed DbCommand (1ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [u].[Email], [u].[FirstName], [u].[Key], [u].[LastName], [u].[Password], [u].[Role]
+FROM [Users] AS [u]
+2023-12-12 06:43:39,529 [.NET ThreadPool Worker] INFO Microsoft.EntityFrameworkCore.Infrastructure.?[?] - Entity Framework Core 6.0.24 initialized 'CalendarContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.24' with options: None
+2023-12-12 06:43:39,545 [.NET ThreadPool Worker] INFO Microsoft.EntityFrameworkCore.Database.Command.?[?] - Executed DbCommand (3ms) [Parameters=[@__key_0='?' (Size = 450)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(2) [u].[Email], [u].[FirstName], [u].[Key], [u].[LastName], [u].[Password], [u].[Role]
+FROM [Users] AS [u]
+WHERE [u].[Email] = @__key_0
+2023-12-12 06:43:39,596 [.NET ThreadPool Worker] INFO Microsoft.EntityFrameworkCore.Infrastructure.?[?] - Entity Framework Core 6.0.24 initialized 'CalendarContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.24' with options: None
+2023-12-12 06:43:39,605 [.NET ThreadPool Worker] INFO Microsoft.EntityFrameworkCore.Database.Command.?[?] - Executed DbCommand (1ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT COUNT(*)
+FROM [Events] AS [e]
+2023-12-12 06:43:39,614 [.NET ThreadPool Worker] INFO Microsoft.EntityFrameworkCore.Database.Command.?[?] - Executed DbCommand (2ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [e].[Id], [e].[Access], [e].[Category], [e].[Description], [e].[Email], [e].[EndDateTime], [e].[IsRecurring], [e].[Location], [e].[NotificationDateTime], [e].[Recurring_frequency], [e].[ShareEventWith], [e].[StartDateTime], [e].[Title]
+FROM [Events] AS [e]
+2023-12-12 06:43:39,628 [.NET ThreadPool Worker] INFO EventCalendarApp.Controllers.EventController.Get[34] - Event listed
+2023-12-12 06:43:39,640 [.NET ThreadPool Worker] INFO Microsoft.EntityFrameworkCore.Infrastructure.?[?] - Entity Framework Core 6.0.24 initialized 'CalendarContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.24' with options: None
+2023-12-12 06:43:39,644 [.NET ThreadPool Worker] INFO Microsoft.EntityFrameworkCore.Database.Command.?[?] - Executed DbCommand (0ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT COUNT(*)
+FROM [Events] AS [e]
+2023-12-12 06:43:39,650 [.NET ThreadPool Worker] INFO Microsoft.EntityFrameworkCore.Database.Command.?[?] - Executed DbCommand (1ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [e].[Id], [e].[Access], [e].[Category], [e].[Description], [e].[Email], [e].[EndDateTime], [e].[IsRecurring], [e].[Location], [e].[NotificationDateTime], [e].[Recurring_frequency], [e].[ShareEventWith], [e].[StartDateTime], [e].[Title]
+FROM [Events] AS [e]
+2023-12-12 06:43:39,665 [.NET ThreadPool Worker] INFO EventCalendarApp.Controllers.EventController.Get[34] - Event listed
+2023-12-12 06:43:40,011 [.NET ThreadPool Worker] INFO Microsoft.EntityFrameworkCore.Infrastructure.?[?] - Entity Framework Core 6.0.24 initialized 'CalendarContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.24' with options: None
+2023-12-12 06:43:40,022 [.NET ThreadPool Worker] INFO Microsoft.EntityFrameworkCore.Database.Command.?[?] - Executed DbCommand (0ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT COUNT(*)
+FROM [Events] AS [e]
+2023-12-12 06:43:40,030 [.NET ThreadPool Worker] INFO Microsoft.EntityFrameworkCore.Database.Command.?[?] - Executed DbCommand (1ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [e].[Id], [e].[Access], [e].[Category], [e].[Description], [e].[Email], [e].[EndDateTime], [e].[IsRecurring], [e].[Location], [e].[NotificationDateTime], [e].[Recurring_frequency], [e].[ShareEventWith], [e].[StartDateTime], [e].[Title]
+FROM [Events] AS [e]
+2023-12-12 06:43:40,050 [.NET ThreadPool Worker] INFO EventCalendarApp.Controllers.EventController.Get[34] - Event listed
+2023-12-12 06:43:40,060 [.NET ThreadPool Worker] INFO Microsoft.EntityFrameworkCore.Infrastructure.?[?] - Entity Framework Core 6.0.24 initialized 'CalendarContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.24' with options: None
+2023-12-12 06:43:40,064 [.NET ThreadPool Worker] INFO Microsoft.EntityFrameworkCore.Database.Command.?[?] - Executed DbCommand (0ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT COUNT(*)
+FROM [Events] AS [e]
+2023-12-12 06:43:40,073 [.NET ThreadPool Worker] INFO Microsoft.EntityFrameworkCore.Database.Command.?[?] - Executed DbCommand (2ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [e].[Id], [e].[Access], [e].[Category], [e].[Description], [e].[Email], [e].[EndDateTime], [e].[IsRecurring], [e].[Location], [e].[NotificationDateTime], [e].[Recurring_frequency], [e].[ShareEventWith], [e].[StartDateTime], [e].[Title]
+FROM [Events] AS [e]
+2023-12-12 06:43:40,078 [.NET ThreadPool Worker] INFO EventCalendarApp.Controllers.EventController.Get[34] - Event listed
+2023-12-12 06:44:15,667 [.NET ThreadPool Worker] INFO Microsoft.EntityFrameworkCore.Infrastructure.?[?] - Entity Framework Core 6.0.24 initialized 'CalendarContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.24' with options: None
+2023-12-12 06:44:15,678 [.NET ThreadPool Worker] INFO Microsoft.EntityFrameworkCore.Database.Command.?[?] - Executed DbCommand (2ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT COUNT(*)
+FROM [Events] AS [e]
+2023-12-12 06:44:15,690 [.NET ThreadPool Worker] INFO Microsoft.EntityFrameworkCore.Database.Command.?[?] - Executed DbCommand (3ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [e].[Id], [e].[Access], [e].[Category], [e].[Description], [e].[Email], [e].[EndDateTime], [e].[IsRecurring], [e].[Location], [e].[NotificationDateTime], [e].[Recurring_frequency], [e].[ShareEventWith], [e].[StartDateTime], [e].[Title]
+FROM [Events] AS [e]
+2023-12-12 06:44:15,706 [.NET ThreadPool Worker] INFO Microsoft.EntityFrameworkCore.Database.Command.?[?] - Executed DbCommand (4ms) [Parameters=[@__key_0='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(2) [e].[Id], [e].[Access], [e].[Category], [e].[Description], [e].[Email], [e].[EndDateTime], [e].[IsRecurring], [e].[Location], [e].[NotificationDateTime], [e].[Recurring_frequency], [e].[ShareEventWith], [e].[StartDateTime], [e].[Title]
+FROM [Events] AS [e]
+WHERE [e].[Id] = @__key_0
+2023-12-12 06:44:15,919 [.NET ThreadPool Worker] INFO Microsoft.EntityFrameworkCore.Database.Command.?[?] - Executed DbCommand (167ms) [Parameters=[@p12='?' (DbType = Int32), @p0='?' (Size = 4000), @p1='?' (Size = 4000), @p2='?' (Size = 4000), @p3='?' (Size = 450), @p4='?' (Size = 4000), @p5='?' (DbType = Boolean), @p6='?' (Size = 4000), @p7='?' (Size = 4000), @p8='?' (Size = 4000), @p9='?' (Size = 4000), @p10='?' (Size = 4000), @p11='?' (Size = 4000)], CommandType='Text', CommandTimeout='30']
+SET NOCOUNT ON;
+UPDATE [Events] SET [Access] = @p0, [Category] = @p1, [Description] = @p2, [Email] = @p3, [EndDateTime] = @p4, [IsRecurring] = @p5, [Location] = @p6, [NotificationDateTime] = @p7, [Recurring_frequency] = @p8, [ShareEventWith] = @p9, [StartDateTime] = @p10, [Title] = @p11
+WHERE [Id] = @p12;
+SELECT @@ROWCOUNT;
+2023-12-12 06:44:17,111 [.NET ThreadPool Worker] INFO Microsoft.EntityFrameworkCore.Infrastructure.?[?] - Entity Framework Core 6.0.24 initialized 'CalendarContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.24' with options: None
+2023-12-12 06:44:17,120 [.NET ThreadPool Worker] INFO Microsoft.EntityFrameworkCore.Database.Command.?[?] - Executed DbCommand (2ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT COUNT(*)
+FROM [Events] AS [e]
+2023-12-12 06:44:17,128 [.NET ThreadPool Worker] INFO Microsoft.EntityFrameworkCore.Database.Command.?[?] - Executed DbCommand (2ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [e].[Id], [e].[Access], [e].[Category], [e].[Description], [e].[Email], [e].[EndDateTime], [e].[IsRecurring], [e].[Location], [e].[NotificationDateTime], [e].[Recurring_frequency], [e].[ShareEventWith], [e].[StartDateTime], [e].[Title]
+FROM [Events] AS [e]
+2023-12-12 06:44:17,144 [.NET ThreadPool Worker] INFO EventCalendarApp.Controllers.EventController.Get[34] - Event listed
+2023-12-12 06:44:17,155 [.NET ThreadPool Worker] INFO Microsoft.EntityFrameworkCore.Infrastructure.?[?] - Entity Framework Core 6.0.24 initialized 'CalendarContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.24' with options: None
+2023-12-12 06:44:17,162 [.NET ThreadPool Worker] INFO Microsoft.EntityFrameworkCore.Database.Command.?[?] - Executed DbCommand (0ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT COUNT(*)
+FROM [Events] AS [e]
+2023-12-12 06:44:17,170 [.NET ThreadPool Worker] INFO Microsoft.EntityFrameworkCore.Database.Command.?[?] - Executed DbCommand (1ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [e].[Id], [e].[Access], [e].[Category], [e].[Description], [e].[Email], [e].[EndDateTime], [e].[IsRecurring], [e].[Location], [e].[NotificationDateTime], [e].[Recurring_frequency], [e].[ShareEventWith], [e].[StartDateTime], [e].[Title]
+FROM [Events] AS [e]
+2023-12-12 06:44:17,175 [.NET ThreadPool Worker] INFO EventCalendarApp.Controllers.EventController.Get[34] - Event listed
+2023-12-12 06:44:22,151 [.NET ThreadPool Worker] INFO Microsoft.EntityFrameworkCore.Infrastructure.?[?] - Entity Framework Core 6.0.24 initialized 'CalendarContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.24' with options: None
+2023-12-12 06:44:22,157 [.NET ThreadPool Worker] INFO Microsoft.EntityFrameworkCore.Database.Command.?[?] - Executed DbCommand (1ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT COUNT(*)
+FROM [Events] AS [e]
+2023-12-12 06:44:22,164 [.NET ThreadPool Worker] INFO Microsoft.EntityFrameworkCore.Database.Command.?[?] - Executed DbCommand (1ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [e].[Id], [e].[Access], [e].[Category], [e].[Description], [e].[Email], [e].[EndDateTime], [e].[IsRecurring], [e].[Location], [e].[NotificationDateTime], [e].[Recurring_frequency], [e].[ShareEventWith], [e].[StartDateTime], [e].[Title]
+FROM [Events] AS [e]
+2023-12-12 06:44:22,177 [.NET ThreadPool Worker] INFO EventCalendarApp.Controllers.EventController.Get[34] - Event listed
+2023-12-12 06:44:22,194 [.NET ThreadPool Worker] INFO Microsoft.EntityFrameworkCore.Infrastructure.?[?] - Entity Framework Core 6.0.24 initialized 'CalendarContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.24' with options: None
+2023-12-12 06:44:22,205 [.NET ThreadPool Worker] INFO Microsoft.EntityFrameworkCore.Database.Command.?[?] - Executed DbCommand (1ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT COUNT(*)
+FROM [Events] AS [e]
+2023-12-12 06:44:22,214 [.NET ThreadPool Worker] INFO Microsoft.EntityFrameworkCore.Database.Command.?[?] - Executed DbCommand (1ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [e].[Id], [e].[Access], [e].[Category], [e].[Description], [e].[Email], [e].[EndDateTime], [e].[IsRecurring], [e].[Location], [e].[NotificationDateTime], [e].[Recurring_frequency], [e].[ShareEventWith], [e].[StartDateTime], [e].[Title]
+FROM [Events] AS [e]
+2023-12-12 06:44:22,221 [.NET ThreadPool Worker] INFO EventCalendarApp.Controllers.EventController.Get[34] - Event listed
+2023-12-12 06:46:03,394 [.NET ThreadPool Worker] INFO Microsoft.EntityFrameworkCore.Infrastructure.?[?] - Entity Framework Core 6.0.24 initialized 'CalendarContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.24' with options: None
+2023-12-12 06:46:03,414 [.NET ThreadPool Worker] INFO Microsoft.EntityFrameworkCore.Database.Command.?[?] - Executed DbCommand (12ms) [Parameters=[@p0='?' (Size = 4000), @p1='?' (Size = 4000), @p2='?' (Size = 4000), @p3='?' (Size = 450), @p4='?' (Size = 4000), @p5='?' (DbType = Boolean), @p6='?' (Size = 4000), @p7='?' (Size = 4000), @p8='?' (Size = 4000), @p9='?' (Size = 4000), @p10='?' (Size = 4000), @p11='?' (Size = 4000)], CommandType='Text', CommandTimeout='30']
+SET NOCOUNT ON;
+INSERT INTO [Events] ([Access], [Category], [Description], [Email], [EndDateTime], [IsRecurring], [Location], [NotificationDateTime], [Recurring_frequency], [ShareEventWith], [StartDateTime], [Title])
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7, @p8, @p9, @p10, @p11);
+SELECT [Id]
+FROM [Events]
+WHERE @@ROWCOUNT = 1 AND [Id] = scope_identity();
+2023-12-12 06:46:03,436 [.NET ThreadPool Worker] INFO Microsoft.EntityFrameworkCore.Database.Command.?[?] - Executed DbCommand (3ms) [Parameters=[@__key_0='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(2) [e].[Id], [e].[Access], [e].[Category], [e].[Description], [e].[Email], [e].[EndDateTime], [e].[IsRecurring], [e].[Location], [e].[NotificationDateTime], [e].[Recurring_frequency], [e].[ShareEventWith], [e].[StartDateTime], [e].[Title]
+FROM [Events] AS [e]
+WHERE [e].[Id] = @__key_0
+2023-12-12 06:46:04,749 [.NET ThreadPool Worker] INFO Microsoft.EntityFrameworkCore.Infrastructure.?[?] - Entity Framework Core 6.0.24 initialized 'CalendarContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.24' with options: None
+2023-12-12 06:46:04,756 [.NET ThreadPool Worker] INFO Microsoft.EntityFrameworkCore.Database.Command.?[?] - Executed DbCommand (1ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT COUNT(*)
+FROM [Events] AS [e]
+2023-12-12 06:46:04,773 [.NET ThreadPool Worker] INFO Microsoft.EntityFrameworkCore.Database.Command.?[?] - Executed DbCommand (3ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [e].[Id], [e].[Access], [e].[Category], [e].[Description], [e].[Email], [e].[EndDateTime], [e].[IsRecurring], [e].[Location], [e].[NotificationDateTime], [e].[Recurring_frequency], [e].[ShareEventWith], [e].[StartDateTime], [e].[Title]
+FROM [Events] AS [e]
+2023-12-12 06:46:04,781 [.NET ThreadPool Worker] INFO EventCalendarApp.Controllers.EventController.Get[34] - Event listed
+2023-12-12 06:46:04,792 [.NET ThreadPool Worker] INFO Microsoft.EntityFrameworkCore.Infrastructure.?[?] - Entity Framework Core 6.0.24 initialized 'CalendarContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.24' with options: None
+2023-12-12 06:46:04,798 [.NET ThreadPool Worker] INFO Microsoft.EntityFrameworkCore.Database.Command.?[?] - Executed DbCommand (0ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT COUNT(*)
+FROM [Events] AS [e]
+2023-12-12 06:46:04,804 [.NET ThreadPool Worker] INFO Microsoft.EntityFrameworkCore.Database.Command.?[?] - Executed DbCommand (1ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [e].[Id], [e].[Access], [e].[Category], [e].[Description], [e].[Email], [e].[EndDateTime], [e].[IsRecurring], [e].[Location], [e].[NotificationDateTime], [e].[Recurring_frequency], [e].[ShareEventWith], [e].[StartDateTime], [e].[Title]
+FROM [Events] AS [e]
+2023-12-12 06:46:04,811 [.NET ThreadPool Worker] INFO EventCalendarApp.Controllers.EventController.Get[34] - Event listed
+2023-12-12 06:46:09,741 [.NET ThreadPool Worker] INFO Microsoft.EntityFrameworkCore.Infrastructure.?[?] - Entity Framework Core 6.0.24 initialized 'CalendarContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.24' with options: None
+2023-12-12 06:46:09,751 [.NET ThreadPool Worker] INFO Microsoft.EntityFrameworkCore.Database.Command.?[?] - Executed DbCommand (2ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT COUNT(*)
+FROM [Events] AS [e]
+2023-12-12 06:46:09,762 [.NET ThreadPool Worker] INFO Microsoft.EntityFrameworkCore.Database.Command.?[?] - Executed DbCommand (2ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [e].[Id], [e].[Access], [e].[Category], [e].[Description], [e].[Email], [e].[EndDateTime], [e].[IsRecurring], [e].[Location], [e].[NotificationDateTime], [e].[Recurring_frequency], [e].[ShareEventWith], [e].[StartDateTime], [e].[Title]
+FROM [Events] AS [e]
+2023-12-12 06:46:09,774 [.NET ThreadPool Worker] INFO Microsoft.EntityFrameworkCore.Database.Command.?[?] - Executed DbCommand (3ms) [Parameters=[@__key_0='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(2) [e].[Id], [e].[Access], [e].[Category], [e].[Description], [e].[Email], [e].[EndDateTime], [e].[IsRecurring], [e].[Location], [e].[NotificationDateTime], [e].[Recurring_frequency], [e].[ShareEventWith], [e].[StartDateTime], [e].[Title]
+FROM [Events] AS [e]
+WHERE [e].[Id] = @__key_0
+2023-12-12 06:46:09,815 [.NET ThreadPool Worker] INFO Microsoft.EntityFrameworkCore.Database.Command.?[?] - Executed DbCommand (3ms) [Parameters=[@p0='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SET NOCOUNT ON;
+DELETE FROM [Events]
+WHERE [Id] = @p0;
+SELECT @@ROWCOUNT;
+2023-12-12 06:46:11,507 [.NET ThreadPool Worker] INFO Microsoft.EntityFrameworkCore.Infrastructure.?[?] - Entity Framework Core 6.0.24 initialized 'CalendarContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.24' with options: None
+2023-12-12 06:46:11,514 [.NET ThreadPool Worker] INFO Microsoft.EntityFrameworkCore.Database.Command.?[?] - Executed DbCommand (2ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT COUNT(*)
+FROM [Events] AS [e]
+2023-12-12 06:46:11,525 [.NET ThreadPool Worker] INFO Microsoft.EntityFrameworkCore.Database.Command.?[?] - Executed DbCommand (2ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [e].[Id], [e].[Access], [e].[Category], [e].[Description], [e].[Email], [e].[EndDateTime], [e].[IsRecurring], [e].[Location], [e].[NotificationDateTime], [e].[Recurring_frequency], [e].[ShareEventWith], [e].[StartDateTime], [e].[Title]
+FROM [Events] AS [e]
+2023-12-12 06:46:11,542 [.NET ThreadPool Worker] INFO EventCalendarApp.Controllers.EventController.Get[34] - Event listed
+2023-12-12 06:46:11,558 [.NET ThreadPool Worker] INFO Microsoft.EntityFrameworkCore.Infrastructure.?[?] - Entity Framework Core 6.0.24 initialized 'CalendarContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.24' with options: None
+2023-12-12 06:46:11,567 [.NET ThreadPool Worker] INFO Microsoft.EntityFrameworkCore.Database.Command.?[?] - Executed DbCommand (0ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT COUNT(*)
+FROM [Events] AS [e]
+2023-12-12 06:46:11,573 [.NET ThreadPool Worker] INFO Microsoft.EntityFrameworkCore.Database.Command.?[?] - Executed DbCommand (0ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [e].[Id], [e].[Access], [e].[Category], [e].[Description], [e].[Email], [e].[EndDateTime], [e].[IsRecurring], [e].[Location], [e].[NotificationDateTime], [e].[Recurring_frequency], [e].[ShareEventWith], [e].[StartDateTime], [e].[Title]
+FROM [Events] AS [e]
+2023-12-12 06:46:11,579 [.NET ThreadPool Worker] INFO EventCalendarApp.Controllers.EventController.Get[34] - Event listed
+2023-12-12 06:46:15,926 [.NET ThreadPool Worker] INFO Microsoft.EntityFrameworkCore.Infrastructure.?[?] - Entity Framework Core 6.0.24 initialized 'CalendarContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.24' with options: None
+2023-12-12 06:46:15,937 [.NET ThreadPool Worker] INFO Microsoft.EntityFrameworkCore.Database.Command.?[?] - Executed DbCommand (3ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT COUNT(*)
+FROM [Events] AS [e]
+2023-12-12 06:46:15,961 [.NET ThreadPool Worker] INFO Microsoft.EntityFrameworkCore.Database.Command.?[?] - Executed DbCommand (2ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [e].[Id], [e].[Access], [e].[Category], [e].[Description], [e].[Email], [e].[EndDateTime], [e].[IsRecurring], [e].[Location], [e].[NotificationDateTime], [e].[Recurring_frequency], [e].[ShareEventWith], [e].[StartDateTime], [e].[Title]
+FROM [Events] AS [e]
+2023-12-12 06:46:15,969 [.NET ThreadPool Worker] INFO EventCalendarApp.Controllers.EventController.Get[34] - Event listed
+2023-12-12 06:46:15,979 [.NET ThreadPool Worker] INFO Microsoft.EntityFrameworkCore.Infrastructure.?[?] - Entity Framework Core 6.0.24 initialized 'CalendarContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.24' with options: None
+2023-12-12 06:46:15,992 [.NET ThreadPool Worker] INFO Microsoft.EntityFrameworkCore.Database.Command.?[?] - Executed DbCommand (3ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT COUNT(*)
+FROM [Events] AS [e]
+2023-12-12 06:46:16,003 [.NET ThreadPool Worker] INFO Microsoft.EntityFrameworkCore.Database.Command.?[?] - Executed DbCommand (1ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [e].[Id], [e].[Access], [e].[Category], [e].[Description], [e].[Email], [e].[EndDateTime], [e].[IsRecurring], [e].[Location], [e].[NotificationDateTime], [e].[Recurring_frequency], [e].[ShareEventWith], [e].[StartDateTime], [e].[Title]
+FROM [Events] AS [e]
+2023-12-12 06:46:16,010 [.NET ThreadPool Worker] INFO EventCalendarApp.Controllers.EventController.Get[34] - Event listed
+2023-12-12 06:46:16,781 [.NET ThreadPool Worker] INFO Microsoft.EntityFrameworkCore.Infrastructure.?[?] - Entity Framework Core 6.0.24 initialized 'CalendarContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.24' with options: None
+2023-12-12 06:46:16,799 [.NET ThreadPool Worker] INFO Microsoft.EntityFrameworkCore.Database.Command.?[?] - Executed DbCommand (2ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT COUNT(*)
+FROM [Events] AS [e]
+2023-12-12 06:46:16,815 [.NET ThreadPool Worker] INFO Microsoft.EntityFrameworkCore.Database.Command.?[?] - Executed DbCommand (4ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [e].[Id], [e].[Access], [e].[Category], [e].[Description], [e].[Email], [e].[EndDateTime], [e].[IsRecurring], [e].[Location], [e].[NotificationDateTime], [e].[Recurring_frequency], [e].[ShareEventWith], [e].[StartDateTime], [e].[Title]
+FROM [Events] AS [e]
+2023-12-12 06:46:16,825 [.NET ThreadPool Worker] INFO EventCalendarApp.Controllers.EventController.Get[34] - Event listed
+2023-12-12 06:46:16,861 [.NET ThreadPool Worker] INFO Microsoft.EntityFrameworkCore.Infrastructure.?[?] - Entity Framework Core 6.0.24 initialized 'CalendarContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.24' with options: None
+2023-12-12 06:46:16,878 [.NET ThreadPool Worker] INFO Microsoft.EntityFrameworkCore.Database.Command.?[?] - Executed DbCommand (3ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT COUNT(*)
+FROM [Events] AS [e]
+2023-12-12 06:46:16,887 [.NET ThreadPool Worker] INFO Microsoft.EntityFrameworkCore.Database.Command.?[?] - Executed DbCommand (2ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [e].[Id], [e].[Access], [e].[Category], [e].[Description], [e].[Email], [e].[EndDateTime], [e].[IsRecurring], [e].[Location], [e].[NotificationDateTime], [e].[Recurring_frequency], [e].[ShareEventWith], [e].[StartDateTime], [e].[Title]
+FROM [Events] AS [e]
+2023-12-12 06:46:16,893 [.NET ThreadPool Worker] INFO EventCalendarApp.Controllers.EventController.Get[34] - Event listed
+2023-12-12 06:46:17,060 [.NET ThreadPool Worker] INFO Microsoft.EntityFrameworkCore.Infrastructure.?[?] - Entity Framework Core 6.0.24 initialized 'CalendarContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.24' with options: None
+2023-12-12 06:46:17,077 [.NET ThreadPool Worker] INFO Microsoft.EntityFrameworkCore.Database.Command.?[?] - Executed DbCommand (3ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT COUNT(*)
+FROM [Events] AS [e]
+2023-12-12 06:46:17,096 [.NET ThreadPool Worker] INFO Microsoft.EntityFrameworkCore.Database.Command.?[?] - Executed DbCommand (6ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [e].[Id], [e].[Access], [e].[Category], [e].[Description], [e].[Email], [e].[EndDateTime], [e].[IsRecurring], [e].[Location], [e].[NotificationDateTime], [e].[Recurring_frequency], [e].[ShareEventWith], [e].[StartDateTime], [e].[Title]
+FROM [Events] AS [e]
+2023-12-12 06:46:17,109 [.NET ThreadPool Worker] INFO EventCalendarApp.Controllers.EventController.Get[34] - Event listed
+2023-12-12 06:46:17,155 [.NET ThreadPool Worker] INFO Microsoft.EntityFrameworkCore.Infrastructure.?[?] - Entity Framework Core 6.0.24 initialized 'CalendarContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.24' with options: None
+2023-12-12 06:46:17,172 [.NET ThreadPool Worker] INFO Microsoft.EntityFrameworkCore.Database.Command.?[?] - Executed DbCommand (2ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT COUNT(*)
+FROM [Events] AS [e]
+2023-12-12 06:46:17,186 [.NET ThreadPool Worker] INFO Microsoft.EntityFrameworkCore.Database.Command.?[?] - Executed DbCommand (2ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [e].[Id], [e].[Access], [e].[Category], [e].[Description], [e].[Email], [e].[EndDateTime], [e].[IsRecurring], [e].[Location], [e].[NotificationDateTime], [e].[Recurring_frequency], [e].[ShareEventWith], [e].[StartDateTime], [e].[Title]
+FROM [Events] AS [e]
+2023-12-12 06:46:17,196 [.NET ThreadPool Worker] INFO EventCalendarApp.Controllers.EventController.Get[34] - Event listed
+2023-12-12 06:46:17,501 [.NET ThreadPool Worker] INFO Microsoft.EntityFrameworkCore.Infrastructure.?[?] - Entity Framework Core 6.0.24 initialized 'CalendarContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.24' with options: None
+2023-12-12 06:46:17,524 [.NET ThreadPool Worker] INFO Microsoft.EntityFrameworkCore.Database.Command.?[?] - Executed DbCommand (7ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT COUNT(*)
+FROM [Events] AS [e]
+2023-12-12 06:46:17,560 [.NET ThreadPool Worker] INFO Microsoft.EntityFrameworkCore.Database.Command.?[?] - Executed DbCommand (16ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [e].[Id], [e].[Access], [e].[Category], [e].[Description], [e].[Email], [e].[EndDateTime], [e].[IsRecurring], [e].[Location], [e].[NotificationDateTime], [e].[Recurring_frequency], [e].[ShareEventWith], [e].[StartDateTime], [e].[Title]
+FROM [Events] AS [e]
+2023-12-12 06:46:17,589 [.NET ThreadPool Worker] INFO EventCalendarApp.Controllers.EventController.Get[34] - Event listed
+2023-12-12 06:46:17,775 [.NET ThreadPool Worker] INFO Microsoft.EntityFrameworkCore.Infrastructure.?[?] - Entity Framework Core 6.0.24 initialized 'CalendarContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.24' with options: None
+2023-12-12 06:46:17,864 [.NET ThreadPool Worker] INFO Microsoft.EntityFrameworkCore.Database.Command.?[?] - Executed DbCommand (16ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT COUNT(*)
+FROM [Events] AS [e]
+2023-12-12 06:46:17,912 [.NET ThreadPool Worker] INFO Microsoft.EntityFrameworkCore.Database.Command.?[?] - Executed DbCommand (30ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [e].[Id], [e].[Access], [e].[Category], [e].[Description], [e].[Email], [e].[EndDateTime], [e].[IsRecurring], [e].[Location], [e].[NotificationDateTime], [e].[Recurring_frequency], [e].[ShareEventWith], [e].[StartDateTime], [e].[Title]
+FROM [Events] AS [e]
+2023-12-12 06:46:17,929 [.NET ThreadPool Worker] INFO EventCalendarApp.Controllers.EventController.Get[34] - Event listed
+2023-12-12 06:46:47,380 [.NET ThreadPool Worker] INFO Microsoft.EntityFrameworkCore.Infrastructure.?[?] - Entity Framework Core 6.0.24 initialized 'CalendarContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.24' with options: None
+2023-12-12 06:46:47,393 [.NET ThreadPool Worker] INFO Microsoft.EntityFrameworkCore.Database.Command.?[?] - Executed DbCommand (3ms) [Parameters=[@__key_0='?' (Size = 450)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(2) [u].[Email], [u].[FirstName], [u].[Key], [u].[LastName], [u].[Password], [u].[Role]
+FROM [Users] AS [u]
+WHERE [u].[Email] = @__key_0
+2023-12-12 06:46:47,465 [.NET ThreadPool Worker] INFO Microsoft.EntityFrameworkCore.Infrastructure.?[?] - Entity Framework Core 6.0.24 initialized 'CalendarContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.24' with options: None
+2023-12-12 06:46:47,481 [.NET ThreadPool Worker] INFO Microsoft.EntityFrameworkCore.Database.Command.?[?] - Executed DbCommand (3ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT COUNT(*)
+FROM [Events] AS [e]
+2023-12-12 06:46:47,490 [.NET ThreadPool Worker] INFO Microsoft.EntityFrameworkCore.Database.Command.?[?] - Executed DbCommand (2ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [e].[Id], [e].[Access], [e].[Category], [e].[Description], [e].[Email], [e].[EndDateTime], [e].[IsRecurring], [e].[Location], [e].[NotificationDateTime], [e].[Recurring_frequency], [e].[ShareEventWith], [e].[StartDateTime], [e].[Title]
+FROM [Events] AS [e]
+2023-12-12 06:46:47,500 [.NET ThreadPool Worker] INFO EventCalendarApp.Controllers.EventController.Get[34] - Event listed
+2023-12-12 06:46:47,513 [.NET ThreadPool Worker] INFO Microsoft.EntityFrameworkCore.Infrastructure.?[?] - Entity Framework Core 6.0.24 initialized 'CalendarContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.24' with options: None
+2023-12-12 06:46:47,523 [.NET ThreadPool Worker] INFO Microsoft.EntityFrameworkCore.Database.Command.?[?] - Executed DbCommand (2ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT COUNT(*)
+FROM [Events] AS [e]
+2023-12-12 06:46:47,546 [.NET ThreadPool Worker] INFO Microsoft.EntityFrameworkCore.Database.Command.?[?] - Executed DbCommand (1ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [e].[Id], [e].[Access], [e].[Category], [e].[Description], [e].[Email], [e].[EndDateTime], [e].[IsRecurring], [e].[Location], [e].[NotificationDateTime], [e].[Recurring_frequency], [e].[ShareEventWith], [e].[StartDateTime], [e].[Title]
+FROM [Events] AS [e]
+2023-12-12 06:46:47,557 [.NET ThreadPool Worker] INFO EventCalendarApp.Controllers.EventController.Get[34] - Event listed
+2023-12-12 06:46:47,812 [.NET ThreadPool Worker] INFO Microsoft.EntityFrameworkCore.Infrastructure.?[?] - Entity Framework Core 6.0.24 initialized 'CalendarContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.24' with options: None
+2023-12-12 06:46:47,821 [.NET ThreadPool Worker] INFO Microsoft.EntityFrameworkCore.Database.Command.?[?] - Executed DbCommand (1ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT COUNT(*)
+FROM [Events] AS [e]
+2023-12-12 06:46:47,852 [.NET ThreadPool Worker] INFO Microsoft.EntityFrameworkCore.Database.Command.?[?] - Executed DbCommand (5ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [e].[Id], [e].[Access], [e].[Category], [e].[Description], [e].[Email], [e].[EndDateTime], [e].[IsRecurring], [e].[Location], [e].[NotificationDateTime], [e].[Recurring_frequency], [e].[ShareEventWith], [e].[StartDateTime], [e].[Title]
+FROM [Events] AS [e]
+2023-12-12 06:46:47,867 [.NET ThreadPool Worker] INFO EventCalendarApp.Controllers.EventController.Get[34] - Event listed
+2023-12-12 06:46:47,895 [.NET ThreadPool Worker] INFO Microsoft.EntityFrameworkCore.Infrastructure.?[?] - Entity Framework Core 6.0.24 initialized 'CalendarContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.24' with options: None
+2023-12-12 06:46:47,902 [.NET ThreadPool Worker] INFO Microsoft.EntityFrameworkCore.Database.Command.?[?] - Executed DbCommand (1ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT COUNT(*)
+FROM [Events] AS [e]
+2023-12-12 06:46:47,914 [.NET ThreadPool Worker] INFO Microsoft.EntityFrameworkCore.Database.Command.?[?] - Executed DbCommand (3ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [e].[Id], [e].[Access], [e].[Category], [e].[Description], [e].[Email], [e].[EndDateTime], [e].[IsRecurring], [e].[Location], [e].[NotificationDateTime], [e].[Recurring_frequency], [e].[ShareEventWith], [e].[StartDateTime], [e].[Title]
+FROM [Events] AS [e]
+2023-12-12 06:46:47,922 [.NET ThreadPool Worker] INFO EventCalendarApp.Controllers.EventController.Get[34] - Event listed
+2023-12-12 06:47:34,229 [.NET ThreadPool Worker] INFO Microsoft.EntityFrameworkCore.Infrastructure.?[?] - Entity Framework Core 6.0.24 initialized 'CalendarContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.24' with options: None
+2023-12-12 06:47:34,260 [.NET ThreadPool Worker] INFO Microsoft.EntityFrameworkCore.Database.Command.?[?] - Executed DbCommand (14ms) [Parameters=[@p0='?' (Size = 4000), @p1='?' (Size = 4000), @p2='?' (Size = 4000), @p3='?' (Size = 450), @p4='?' (Size = 4000), @p5='?' (DbType = Boolean), @p6='?' (Size = 4000), @p7='?' (Size = 4000), @p8='?' (Size = 4000), @p9='?' (Size = 4000), @p10='?' (Size = 4000), @p11='?' (Size = 4000)], CommandType='Text', CommandTimeout='30']
+SET NOCOUNT ON;
+INSERT INTO [Events] ([Access], [Category], [Description], [Email], [EndDateTime], [IsRecurring], [Location], [NotificationDateTime], [Recurring_frequency], [ShareEventWith], [StartDateTime], [Title])
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7, @p8, @p9, @p10, @p11);
+SELECT [Id]
+FROM [Events]
+WHERE @@ROWCOUNT = 1 AND [Id] = scope_identity();
+2023-12-12 06:47:34,281 [.NET ThreadPool Worker] INFO Microsoft.EntityFrameworkCore.Database.Command.?[?] - Executed DbCommand (6ms) [Parameters=[@__key_0='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(2) [e].[Id], [e].[Access], [e].[Category], [e].[Description], [e].[Email], [e].[EndDateTime], [e].[IsRecurring], [e].[Location], [e].[NotificationDateTime], [e].[Recurring_frequency], [e].[ShareEventWith], [e].[StartDateTime], [e].[Title]
+FROM [Events] AS [e]
+WHERE [e].[Id] = @__key_0
+2023-12-12 06:47:35,455 [.NET ThreadPool Worker] INFO Microsoft.EntityFrameworkCore.Infrastructure.?[?] - Entity Framework Core 6.0.24 initialized 'CalendarContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.24' with options: None
+2023-12-12 06:47:35,482 [.NET ThreadPool Worker] INFO Microsoft.EntityFrameworkCore.Database.Command.?[?] - Executed DbCommand (2ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT COUNT(*)
+FROM [Events] AS [e]
+2023-12-12 06:47:35,492 [.NET ThreadPool Worker] INFO Microsoft.EntityFrameworkCore.Database.Command.?[?] - Executed DbCommand (2ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [e].[Id], [e].[Access], [e].[Category], [e].[Description], [e].[Email], [e].[EndDateTime], [e].[IsRecurring], [e].[Location], [e].[NotificationDateTime], [e].[Recurring_frequency], [e].[ShareEventWith], [e].[StartDateTime], [e].[Title]
+FROM [Events] AS [e]
+2023-12-12 06:47:35,504 [.NET ThreadPool Worker] INFO EventCalendarApp.Controllers.EventController.Get[34] - Event listed
+2023-12-12 06:47:35,526 [.NET ThreadPool Worker] INFO Microsoft.EntityFrameworkCore.Infrastructure.?[?] - Entity Framework Core 6.0.24 initialized 'CalendarContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.24' with options: None
+2023-12-12 06:47:35,543 [.NET ThreadPool Worker] INFO Microsoft.EntityFrameworkCore.Database.Command.?[?] - Executed DbCommand (8ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT COUNT(*)
+FROM [Events] AS [e]
+2023-12-12 06:47:35,551 [.NET ThreadPool Worker] INFO Microsoft.EntityFrameworkCore.Database.Command.?[?] - Executed DbCommand (2ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [e].[Id], [e].[Access], [e].[Category], [e].[Description], [e].[Email], [e].[EndDateTime], [e].[IsRecurring], [e].[Location], [e].[NotificationDateTime], [e].[Recurring_frequency], [e].[ShareEventWith], [e].[StartDateTime], [e].[Title]
+FROM [Events] AS [e]
+2023-12-12 06:47:35,559 [.NET ThreadPool Worker] INFO EventCalendarApp.Controllers.EventController.Get[34] - Event listed
+2023-12-12 06:47:42,947 [.NET ThreadPool Worker] INFO Microsoft.EntityFrameworkCore.Infrastructure.?[?] - Entity Framework Core 6.0.24 initialized 'CalendarContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.24' with options: None
+2023-12-12 06:47:42,963 [.NET ThreadPool Worker] INFO Microsoft.EntityFrameworkCore.Database.Command.?[?] - Executed DbCommand (7ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT COUNT(*)
+FROM [Events] AS [e]
+2023-12-12 06:47:42,988 [.NET ThreadPool Worker] INFO Microsoft.EntityFrameworkCore.Database.Command.?[?] - Executed DbCommand (3ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [e].[Id], [e].[Access], [e].[Category], [e].[Description], [e].[Email], [e].[EndDateTime], [e].[IsRecurring], [e].[Location], [e].[NotificationDateTime], [e].[Recurring_frequency], [e].[ShareEventWith], [e].[StartDateTime], [e].[Title]
+FROM [Events] AS [e]
+2023-12-12 06:47:42,997 [.NET ThreadPool Worker] INFO EventCalendarApp.Controllers.EventController.Get[34] - Event listed
+2023-12-12 06:47:43,013 [.NET ThreadPool Worker] INFO Microsoft.EntityFrameworkCore.Infrastructure.?[?] - Entity Framework Core 6.0.24 initialized 'CalendarContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.24' with options: None
+2023-12-12 06:47:43,026 [.NET ThreadPool Worker] INFO Microsoft.EntityFrameworkCore.Database.Command.?[?] - Executed DbCommand (2ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT COUNT(*)
+FROM [Events] AS [e]
+2023-12-12 06:47:43,038 [.NET ThreadPool Worker] INFO Microsoft.EntityFrameworkCore.Database.Command.?[?] - Executed DbCommand (2ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [e].[Id], [e].[Access], [e].[Category], [e].[Description], [e].[Email], [e].[EndDateTime], [e].[IsRecurring], [e].[Location], [e].[NotificationDateTime], [e].[Recurring_frequency], [e].[ShareEventWith], [e].[StartDateTime], [e].[Title]
+FROM [Events] AS [e]
+2023-12-12 06:47:43,047 [.NET ThreadPool Worker] INFO EventCalendarApp.Controllers.EventController.Get[34] - Event listed
+2023-12-12 06:50:00,858 [.NET ThreadPool Worker] INFO Microsoft.EntityFrameworkCore.Infrastructure.?[?] - Entity Framework Core 6.0.24 initialized 'CalendarContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.24' with options: None
+2023-12-12 06:50:00,871 [.NET ThreadPool Worker] INFO Microsoft.EntityFrameworkCore.Database.Command.?[?] - Executed DbCommand (3ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT COUNT(*)
+FROM [Events] AS [e]
+2023-12-12 06:50:00,882 [.NET ThreadPool Worker] INFO Microsoft.EntityFrameworkCore.Database.Command.?[?] - Executed DbCommand (3ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [e].[Id], [e].[Access], [e].[Category], [e].[Description], [e].[Email], [e].[EndDateTime], [e].[IsRecurring], [e].[Location], [e].[NotificationDateTime], [e].[Recurring_frequency], [e].[ShareEventWith], [e].[StartDateTime], [e].[Title]
+FROM [Events] AS [e]
+2023-12-12 06:50:00,903 [.NET ThreadPool Worker] INFO Microsoft.EntityFrameworkCore.Database.Command.?[?] - Executed DbCommand (3ms) [Parameters=[@__key_0='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(2) [e].[Id], [e].[Access], [e].[Category], [e].[Description], [e].[Email], [e].[EndDateTime], [e].[IsRecurring], [e].[Location], [e].[NotificationDateTime], [e].[Recurring_frequency], [e].[ShareEventWith], [e].[StartDateTime], [e].[Title]
+FROM [Events] AS [e]
+WHERE [e].[Id] = @__key_0
+2023-12-12 06:50:00,920 [.NET ThreadPool Worker] INFO Microsoft.EntityFrameworkCore.Database.Command.?[?] - Executed DbCommand (4ms) [Parameters=[@p0='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SET NOCOUNT ON;
+DELETE FROM [Events]
+WHERE [Id] = @p0;
+SELECT @@ROWCOUNT;
+2023-12-12 06:50:02,780 [.NET ThreadPool Worker] INFO Microsoft.EntityFrameworkCore.Infrastructure.?[?] - Entity Framework Core 6.0.24 initialized 'CalendarContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.24' with options: None
+2023-12-12 06:50:02,791 [.NET ThreadPool Worker] INFO Microsoft.EntityFrameworkCore.Database.Command.?[?] - Executed DbCommand (2ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT COUNT(*)
+FROM [Events] AS [e]
+2023-12-12 06:50:02,816 [.NET ThreadPool Worker] INFO Microsoft.EntityFrameworkCore.Database.Command.?[?] - Executed DbCommand (1ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [e].[Id], [e].[Access], [e].[Category], [e].[Description], [e].[Email], [e].[EndDateTime], [e].[IsRecurring], [e].[Location], [e].[NotificationDateTime], [e].[Recurring_frequency], [e].[ShareEventWith], [e].[StartDateTime], [e].[Title]
+FROM [Events] AS [e]
+2023-12-12 06:50:02,828 [.NET ThreadPool Worker] INFO EventCalendarApp.Controllers.EventController.Get[34] - Event listed
+2023-12-12 06:50:02,851 [.NET ThreadPool Worker] INFO Microsoft.EntityFrameworkCore.Infrastructure.?[?] - Entity Framework Core 6.0.24 initialized 'CalendarContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.24' with options: None
+2023-12-12 06:50:02,861 [.NET ThreadPool Worker] INFO Microsoft.EntityFrameworkCore.Database.Command.?[?] - Executed DbCommand (1ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT COUNT(*)
+FROM [Events] AS [e]
+2023-12-12 06:50:02,871 [.NET ThreadPool Worker] INFO Microsoft.EntityFrameworkCore.Database.Command.?[?] - Executed DbCommand (1ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [e].[Id], [e].[Access], [e].[Category], [e].[Description], [e].[Email], [e].[EndDateTime], [e].[IsRecurring], [e].[Location], [e].[NotificationDateTime], [e].[Recurring_frequency], [e].[ShareEventWith], [e].[StartDateTime], [e].[Title]
+FROM [Events] AS [e]
+2023-12-12 06:50:02,882 [.NET ThreadPool Worker] INFO EventCalendarApp.Controllers.EventController.Get[34] - Event listed
+2023-12-12 06:50:05,794 [.NET ThreadPool Worker] INFO Microsoft.EntityFrameworkCore.Infrastructure.?[?] - Entity Framework Core 6.0.24 initialized 'CalendarContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.24' with options: None
+2023-12-12 06:50:05,805 [.NET ThreadPool Worker] INFO Microsoft.EntityFrameworkCore.Database.Command.?[?] - Executed DbCommand (1ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT COUNT(*)
+FROM [Events] AS [e]
+2023-12-12 06:50:05,832 [.NET ThreadPool Worker] INFO Microsoft.EntityFrameworkCore.Database.Command.?[?] - Executed DbCommand (2ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [e].[Id], [e].[Access], [e].[Category], [e].[Description], [e].[Email], [e].[EndDateTime], [e].[IsRecurring], [e].[Location], [e].[NotificationDateTime], [e].[Recurring_frequency], [e].[ShareEventWith], [e].[StartDateTime], [e].[Title]
+FROM [Events] AS [e]
+2023-12-12 06:50:05,842 [.NET ThreadPool Worker] INFO EventCalendarApp.Controllers.EventController.Get[34] - Event listed
+2023-12-12 06:50:05,853 [.NET ThreadPool Worker] INFO Microsoft.EntityFrameworkCore.Infrastructure.?[?] - Entity Framework Core 6.0.24 initialized 'CalendarContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.24' with options: None
+2023-12-12 06:50:05,859 [.NET ThreadPool Worker] INFO Microsoft.EntityFrameworkCore.Database.Command.?[?] - Executed DbCommand (1ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT COUNT(*)
+FROM [Events] AS [e]
+2023-12-12 06:50:05,865 [.NET ThreadPool Worker] INFO Microsoft.EntityFrameworkCore.Database.Command.?[?] - Executed DbCommand (2ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [e].[Id], [e].[Access], [e].[Category], [e].[Description], [e].[Email], [e].[EndDateTime], [e].[IsRecurring], [e].[Location], [e].[NotificationDateTime], [e].[Recurring_frequency], [e].[ShareEventWith], [e].[StartDateTime], [e].[Title]
+FROM [Events] AS [e]
+2023-12-12 06:50:05,873 [.NET ThreadPool Worker] INFO EventCalendarApp.Controllers.EventController.Get[34] - Event listed
+2023-12-12 06:50:06,389 [.NET ThreadPool Worker] INFO Microsoft.EntityFrameworkCore.Infrastructure.?[?] - Entity Framework Core 6.0.24 initialized 'CalendarContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.24' with options: None
+2023-12-12 06:50:06,395 [.NET ThreadPool Worker] INFO Microsoft.EntityFrameworkCore.Database.Command.?[?] - Executed DbCommand (1ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT COUNT(*)
+FROM [Events] AS [e]
+2023-12-12 06:50:06,415 [.NET ThreadPool Worker] INFO Microsoft.EntityFrameworkCore.Database.Command.?[?] - Executed DbCommand (6ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [e].[Id], [e].[Access], [e].[Category], [e].[Description], [e].[Email], [e].[EndDateTime], [e].[IsRecurring], [e].[Location], [e].[NotificationDateTime], [e].[Recurring_frequency], [e].[ShareEventWith], [e].[StartDateTime], [e].[Title]
+FROM [Events] AS [e]
+2023-12-12 06:50:06,434 [.NET ThreadPool Worker] INFO EventCalendarApp.Controllers.EventController.Get[34] - Event listed
+2023-12-12 06:50:06,448 [.NET ThreadPool Worker] INFO Microsoft.EntityFrameworkCore.Infrastructure.?[?] - Entity Framework Core 6.0.24 initialized 'CalendarContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.24' with options: None
+2023-12-12 06:50:06,457 [.NET ThreadPool Worker] INFO Microsoft.EntityFrameworkCore.Database.Command.?[?] - Executed DbCommand (0ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT COUNT(*)
+FROM [Events] AS [e]
+2023-12-12 06:50:06,462 [.NET ThreadPool Worker] INFO Microsoft.EntityFrameworkCore.Database.Command.?[?] - Executed DbCommand (1ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [e].[Id], [e].[Access], [e].[Category], [e].[Description], [e].[Email], [e].[EndDateTime], [e].[IsRecurring], [e].[Location], [e].[NotificationDateTime], [e].[Recurring_frequency], [e].[ShareEventWith], [e].[StartDateTime], [e].[Title]
+FROM [Events] AS [e]
+2023-12-12 06:50:06,471 [.NET ThreadPool Worker] INFO EventCalendarApp.Controllers.EventController.Get[34] - Event listed
+2023-12-12 06:50:06,964 [.NET ThreadPool Worker] INFO Microsoft.EntityFrameworkCore.Infrastructure.?[?] - Entity Framework Core 6.0.24 initialized 'CalendarContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.24' with options: None
+2023-12-12 06:50:06,978 [.NET ThreadPool Worker] INFO Microsoft.EntityFrameworkCore.Database.Command.?[?] - Executed DbCommand (3ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT COUNT(*)
+FROM [Events] AS [e]
+2023-12-12 06:50:06,988 [.NET ThreadPool Worker] INFO Microsoft.EntityFrameworkCore.Database.Command.?[?] - Executed DbCommand (3ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [e].[Id], [e].[Access], [e].[Category], [e].[Description], [e].[Email], [e].[EndDateTime], [e].[IsRecurring], [e].[Location], [e].[NotificationDateTime], [e].[Recurring_frequency], [e].[ShareEventWith], [e].[StartDateTime], [e].[Title]
+FROM [Events] AS [e]
+2023-12-12 06:50:06,997 [.NET ThreadPool Worker] INFO EventCalendarApp.Controllers.EventController.Get[34] - Event listed
+2023-12-12 06:50:07,052 [.NET ThreadPool Worker] INFO Microsoft.EntityFrameworkCore.Infrastructure.?[?] - Entity Framework Core 6.0.24 initialized 'CalendarContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.24' with options: None
+2023-12-12 06:50:07,094 [.NET ThreadPool Worker] INFO Microsoft.EntityFrameworkCore.Database.Command.?[?] - Executed DbCommand (1ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT COUNT(*)
+FROM [Events] AS [e]
+2023-12-12 06:50:07,102 [.NET ThreadPool Worker] INFO Microsoft.EntityFrameworkCore.Database.Command.?[?] - Executed DbCommand (1ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [e].[Id], [e].[Access], [e].[Category], [e].[Description], [e].[Email], [e].[EndDateTime], [e].[IsRecurring], [e].[Location], [e].[NotificationDateTime], [e].[Recurring_frequency], [e].[ShareEventWith], [e].[StartDateTime], [e].[Title]
+FROM [Events] AS [e]
+2023-12-12 06:50:07,109 [.NET ThreadPool Worker] INFO EventCalendarApp.Controllers.EventController.Get[34] - Event listed
+2023-12-12 06:50:07,290 [.NET ThreadPool Worker] INFO Microsoft.EntityFrameworkCore.Infrastructure.?[?] - Entity Framework Core 6.0.24 initialized 'CalendarContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.24' with options: None
+2023-12-12 06:50:07,295 [.NET ThreadPool Worker] INFO Microsoft.EntityFrameworkCore.Database.Command.?[?] - Executed DbCommand (1ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT COUNT(*)
+FROM [Events] AS [e]
+2023-12-12 06:50:07,313 [.NET ThreadPool Worker] INFO Microsoft.EntityFrameworkCore.Database.Command.?[?] - Executed DbCommand (4ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [e].[Id], [e].[Access], [e].[Category], [e].[Description], [e].[Email], [e].[EndDateTime], [e].[IsRecurring], [e].[Location], [e].[NotificationDateTime], [e].[Recurring_frequency], [e].[ShareEventWith], [e].[StartDateTime], [e].[Title]
+FROM [Events] AS [e]
+2023-12-12 06:50:07,325 [.NET ThreadPool Worker] INFO EventCalendarApp.Controllers.EventController.Get[34] - Event listed
+2023-12-12 06:50:07,342 [.NET ThreadPool Worker] INFO Microsoft.EntityFrameworkCore.Infrastructure.?[?] - Entity Framework Core 6.0.24 initialized 'CalendarContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.24' with options: None
+2023-12-12 06:50:07,348 [.NET ThreadPool Worker] INFO Microsoft.EntityFrameworkCore.Database.Command.?[?] - Executed DbCommand (0ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT COUNT(*)
+FROM [Events] AS [e]
+2023-12-12 06:50:07,358 [.NET ThreadPool Worker] INFO Microsoft.EntityFrameworkCore.Database.Command.?[?] - Executed DbCommand (0ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [e].[Id], [e].[Access], [e].[Category], [e].[Description], [e].[Email], [e].[EndDateTime], [e].[IsRecurring], [e].[Location], [e].[NotificationDateTime], [e].[Recurring_frequency], [e].[ShareEventWith], [e].[StartDateTime], [e].[Title]
+FROM [Events] AS [e]
+2023-12-12 06:50:07,373 [.NET ThreadPool Worker] INFO EventCalendarApp.Controllers.EventController.Get[34] - Event listed
+2023-12-12 06:50:07,689 [.NET ThreadPool Worker] INFO Microsoft.EntityFrameworkCore.Infrastructure.?[?] - Entity Framework Core 6.0.24 initialized 'CalendarContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.24' with options: None
+2023-12-12 06:50:07,695 [.NET ThreadPool Worker] INFO Microsoft.EntityFrameworkCore.Database.Command.?[?] - Executed DbCommand (1ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT COUNT(*)
+FROM [Events] AS [e]
+2023-12-12 06:50:07,702 [.NET ThreadPool Worker] INFO Microsoft.EntityFrameworkCore.Database.Command.?[?] - Executed DbCommand (2ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [e].[Id], [e].[Access], [e].[Category], [e].[Description], [e].[Email], [e].[EndDateTime], [e].[IsRecurring], [e].[Location], [e].[NotificationDateTime], [e].[Recurring_frequency], [e].[ShareEventWith], [e].[StartDateTime], [e].[Title]
+FROM [Events] AS [e]
+2023-12-12 06:50:07,714 [.NET ThreadPool Worker] INFO EventCalendarApp.Controllers.EventController.Get[34] - Event listed
+2023-12-12 06:50:07,727 [.NET ThreadPool Worker] INFO Microsoft.EntityFrameworkCore.Infrastructure.?[?] - Entity Framework Core 6.0.24 initialized 'CalendarContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.24' with options: None
+2023-12-12 06:50:07,738 [.NET ThreadPool Worker] INFO Microsoft.EntityFrameworkCore.Database.Command.?[?] - Executed DbCommand (0ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT COUNT(*)
+FROM [Events] AS [e]
+2023-12-12 06:50:07,754 [.NET ThreadPool Worker] INFO Microsoft.EntityFrameworkCore.Database.Command.?[?] - Executed DbCommand (3ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [e].[Id], [e].[Access], [e].[Category], [e].[Description], [e].[Email], [e].[EndDateTime], [e].[IsRecurring], [e].[Location], [e].[NotificationDateTime], [e].[Recurring_frequency], [e].[ShareEventWith], [e].[StartDateTime], [e].[Title]
+FROM [Events] AS [e]
+2023-12-12 06:50:07,767 [.NET ThreadPool Worker] INFO EventCalendarApp.Controllers.EventController.Get[34] - Event listed
+2023-12-12 06:50:09,365 [.NET ThreadPool Worker] INFO Microsoft.EntityFrameworkCore.Infrastructure.?[?] - Entity Framework Core 6.0.24 initialized 'CalendarContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.24' with options: None
+2023-12-12 06:50:09,376 [.NET ThreadPool Worker] INFO Microsoft.EntityFrameworkCore.Database.Command.?[?] - Executed DbCommand (3ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT COUNT(*)
+FROM [Events] AS [e]
+2023-12-12 06:50:09,396 [.NET ThreadPool Worker] INFO Microsoft.EntityFrameworkCore.Database.Command.?[?] - Executed DbCommand (2ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [e].[Id], [e].[Access], [e].[Category], [e].[Description], [e].[Email], [e].[EndDateTime], [e].[IsRecurring], [e].[Location], [e].[NotificationDateTime], [e].[Recurring_frequency], [e].[ShareEventWith], [e].[StartDateTime], [e].[Title]
+FROM [Events] AS [e]
+2023-12-12 06:50:09,405 [.NET ThreadPool Worker] INFO EventCalendarApp.Controllers.EventController.Get[34] - Event listed
+2023-12-12 06:50:09,451 [.NET ThreadPool Worker] INFO Microsoft.EntityFrameworkCore.Infrastructure.?[?] - Entity Framework Core 6.0.24 initialized 'CalendarContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.24' with options: None
+2023-12-12 06:50:09,460 [.NET ThreadPool Worker] INFO Microsoft.EntityFrameworkCore.Database.Command.?[?] - Executed DbCommand (2ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT COUNT(*)
+FROM [Events] AS [e]
+2023-12-12 06:50:09,469 [.NET ThreadPool Worker] INFO Microsoft.EntityFrameworkCore.Database.Command.?[?] - Executed DbCommand (2ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [e].[Id], [e].[Access], [e].[Category], [e].[Description], [e].[Email], [e].[EndDateTime], [e].[IsRecurring], [e].[Location], [e].[NotificationDateTime], [e].[Recurring_frequency], [e].[ShareEventWith], [e].[StartDateTime], [e].[Title]
+FROM [Events] AS [e]
+2023-12-12 06:50:09,476 [.NET ThreadPool Worker] INFO EventCalendarApp.Controllers.EventController.Get[34] - Event listed
+2023-12-12 06:52:00,328 [.NET ThreadPool Worker] INFO Microsoft.EntityFrameworkCore.Infrastructure.?[?] - Entity Framework Core 6.0.24 initialized 'CalendarContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.24' with options: None
+2023-12-12 06:52:00,340 [.NET ThreadPool Worker] INFO Microsoft.EntityFrameworkCore.Database.Command.?[?] - Executed DbCommand (2ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT COUNT(*)
+FROM [Events] AS [e]
+2023-12-12 06:52:00,348 [.NET ThreadPool Worker] INFO Microsoft.EntityFrameworkCore.Database.Command.?[?] - Executed DbCommand (2ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [e].[Id], [e].[Access], [e].[Category], [e].[Description], [e].[Email], [e].[EndDateTime], [e].[IsRecurring], [e].[Location], [e].[NotificationDateTime], [e].[Recurring_frequency], [e].[ShareEventWith], [e].[StartDateTime], [e].[Title]
+FROM [Events] AS [e]
+2023-12-12 06:52:00,354 [.NET ThreadPool Worker] INFO EventCalendarApp.Controllers.EventController.Get[34] - Event listed
+2023-12-12 06:52:00,363 [.NET ThreadPool Worker] INFO Microsoft.EntityFrameworkCore.Infrastructure.?[?] - Entity Framework Core 6.0.24 initialized 'CalendarContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.24' with options: None
+2023-12-12 06:52:00,371 [.NET ThreadPool Worker] INFO Microsoft.EntityFrameworkCore.Database.Command.?[?] - Executed DbCommand (2ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT COUNT(*)
+FROM [Events] AS [e]
+2023-12-12 06:52:00,380 [.NET ThreadPool Worker] INFO Microsoft.EntityFrameworkCore.Database.Command.?[?] - Executed DbCommand (0ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [e].[Id], [e].[Access], [e].[Category], [e].[Description], [e].[Email], [e].[EndDateTime], [e].[IsRecurring], [e].[Location], [e].[NotificationDateTime], [e].[Recurring_frequency], [e].[ShareEventWith], [e].[StartDateTime], [e].[Title]
+FROM [Events] AS [e]
+2023-12-12 06:52:00,391 [.NET ThreadPool Worker] INFO EventCalendarApp.Controllers.EventController.Get[34] - Event listed
+2023-12-12 06:52:34,405 [.NET ThreadPool Worker] INFO Microsoft.EntityFrameworkCore.Infrastructure.?[?] - Entity Framework Core 6.0.24 initialized 'CalendarContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.24' with options: None
+2023-12-12 06:52:34,419 [.NET ThreadPool Worker] INFO Microsoft.EntityFrameworkCore.Database.Command.?[?] - Executed DbCommand (2ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT COUNT(*)
+FROM [Events] AS [e]
+2023-12-12 06:52:34,441 [.NET ThreadPool Worker] INFO Microsoft.EntityFrameworkCore.Database.Command.?[?] - Executed DbCommand (12ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [e].[Id], [e].[Access], [e].[Category], [e].[Description], [e].[Email], [e].[EndDateTime], [e].[IsRecurring], [e].[Location], [e].[NotificationDateTime], [e].[Recurring_frequency], [e].[ShareEventWith], [e].[StartDateTime], [e].[Title]
+FROM [Events] AS [e]
+2023-12-12 06:52:34,491 [.NET ThreadPool Worker] INFO EventCalendarApp.Controllers.EventController.Get[34] - Event listed
+2023-12-12 06:52:34,603 [.NET ThreadPool Worker] INFO Microsoft.EntityFrameworkCore.Infrastructure.?[?] - Entity Framework Core 6.0.24 initialized 'CalendarContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.24' with options: None
+2023-12-12 06:52:34,645 [.NET ThreadPool Worker] INFO Microsoft.EntityFrameworkCore.Database.Command.?[?] - Executed DbCommand (24ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT COUNT(*)
+FROM [Events] AS [e]
+2023-12-12 06:52:34,657 [.NET ThreadPool Worker] INFO Microsoft.EntityFrameworkCore.Database.Command.?[?] - Executed DbCommand (5ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [e].[Id], [e].[Access], [e].[Category], [e].[Description], [e].[Email], [e].[EndDateTime], [e].[IsRecurring], [e].[Location], [e].[NotificationDateTime], [e].[Recurring_frequency], [e].[ShareEventWith], [e].[StartDateTime], [e].[Title]
+FROM [Events] AS [e]
+2023-12-12 06:52:34,662 [.NET ThreadPool Worker] INFO EventCalendarApp.Controllers.EventController.Get[34] - Event listed
+2023-12-12 06:52:35,272 [.NET ThreadPool Worker] INFO Microsoft.EntityFrameworkCore.Infrastructure.?[?] - Entity Framework Core 6.0.24 initialized 'CalendarContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.24' with options: None
+2023-12-12 06:52:35,285 [.NET ThreadPool Worker] INFO Microsoft.EntityFrameworkCore.Database.Command.?[?] - Executed DbCommand (6ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT COUNT(*)
+FROM [Events] AS [e]
+2023-12-12 06:52:35,296 [.NET ThreadPool Worker] INFO Microsoft.EntityFrameworkCore.Database.Command.?[?] - Executed DbCommand (5ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [e].[Id], [e].[Access], [e].[Category], [e].[Description], [e].[Email], [e].[EndDateTime], [e].[IsRecurring], [e].[Location], [e].[NotificationDateTime], [e].[Recurring_frequency], [e].[ShareEventWith], [e].[StartDateTime], [e].[Title]
+FROM [Events] AS [e]
+2023-12-12 06:52:35,303 [.NET ThreadPool Worker] INFO EventCalendarApp.Controllers.EventController.Get[34] - Event listed
+2023-12-12 06:52:35,316 [.NET ThreadPool Worker] INFO Microsoft.EntityFrameworkCore.Infrastructure.?[?] - Entity Framework Core 6.0.24 initialized 'CalendarContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.24' with options: None
+2023-12-12 06:52:35,334 [.NET ThreadPool Worker] INFO Microsoft.EntityFrameworkCore.Database.Command.?[?] - Executed DbCommand (1ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT COUNT(*)
+FROM [Events] AS [e]
+2023-12-12 06:52:35,363 [.NET ThreadPool Worker] INFO Microsoft.EntityFrameworkCore.Database.Command.?[?] - Executed DbCommand (1ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [e].[Id], [e].[Access], [e].[Category], [e].[Description], [e].[Email], [e].[EndDateTime], [e].[IsRecurring], [e].[Location], [e].[NotificationDateTime], [e].[Recurring_frequency], [e].[ShareEventWith], [e].[StartDateTime], [e].[Title]
+FROM [Events] AS [e]
+2023-12-12 06:52:35,377 [.NET ThreadPool Worker] INFO EventCalendarApp.Controllers.EventController.Get[34] - Event listed
+2023-12-12 09:14:56,300 [1] INFO Microsoft.Hosting.Lifetime.?[?] - Now listening on: https://localhost:7117
+2023-12-12 09:14:56,400 [1] INFO Microsoft.Hosting.Lifetime.?[?] - Now listening on: http://localhost:5089
+2023-12-12 09:14:56,408 [1] INFO Microsoft.Hosting.Lifetime.OnApplicationStarted[0] - Application started. Press Ctrl+C to shut down.
+2023-12-12 09:14:56,413 [1] INFO Microsoft.Hosting.Lifetime.OnApplicationStarted[0] - Hosting environment: Development
+2023-12-12 09:14:56,422 [1] INFO Microsoft.Hosting.Lifetime.OnApplicationStarted[0] - Content root path: C:\TRAINING\project\EventCalendarSol\Web API\EventCalendarAppSolution\EventCalendarApp\
+2023-12-12 10:03:49,702 [1] INFO Microsoft.Hosting.Lifetime.?[?] - Now listening on: https://localhost:7117
+2023-12-12 10:03:49,809 [1] INFO Microsoft.Hosting.Lifetime.?[?] - Now listening on: http://localhost:5089
+2023-12-12 10:03:49,825 [1] INFO Microsoft.Hosting.Lifetime.OnApplicationStarted[0] - Application started. Press Ctrl+C to shut down.
+2023-12-12 10:03:49,833 [1] INFO Microsoft.Hosting.Lifetime.OnApplicationStarted[0] - Hosting environment: Development
+2023-12-12 10:03:49,836 [1] INFO Microsoft.Hosting.Lifetime.OnApplicationStarted[0] - Content root path: C:\TRAINING\project\EventCalendarSol\Web API\EventCalendarAppSolution\EventCalendarApp\
+2023-12-12 10:15:01,038 [.NET ThreadPool Worker] INFO Microsoft.EntityFrameworkCore.Infrastructure.?[?] - Entity Framework Core 6.0.24 initialized 'CalendarContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.24' with options: None
+2023-12-12 10:15:02,078 [.NET ThreadPool Worker] INFO Microsoft.EntityFrameworkCore.Database.Command.?[?] - Executed DbCommand (180ms) [Parameters=[@__key_0='?' (Size = 450)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(2) [u].[Email], [u].[FirstName], [u].[Key], [u].[LastName], [u].[Password], [u].[Role]
+FROM [Users] AS [u]
+WHERE [u].[Email] = @__key_0
+2023-12-12 10:15:02,577 [.NET ThreadPool Worker] INFO Microsoft.EntityFrameworkCore.Infrastructure.?[?] - Entity Framework Core 6.0.24 initialized 'CalendarContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.24' with options: None
+2023-12-12 10:15:02,721 [.NET ThreadPool Worker] INFO Microsoft.EntityFrameworkCore.Database.Command.?[?] - Executed DbCommand (81ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT COUNT(*)
+FROM [Events] AS [e]
+2023-12-12 10:15:02,765 [.NET ThreadPool Worker] INFO Microsoft.EntityFrameworkCore.Database.Command.?[?] - Executed DbCommand (25ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [e].[Id], [e].[Access], [e].[Category], [e].[Description], [e].[Email], [e].[EndDateTime], [e].[IsRecurring], [e].[Location], [e].[NotificationDateTime], [e].[Recurring_frequency], [e].[ShareEventWith], [e].[StartDateTime], [e].[Title]
+FROM [Events] AS [e]
+2023-12-12 10:15:02,813 [.NET ThreadPool Worker] INFO EventCalendarApp.Controllers.EventController.Get[34] - Event listed
+2023-12-12 10:15:03,030 [.NET ThreadPool Worker] INFO Microsoft.EntityFrameworkCore.Infrastructure.?[?] - Entity Framework Core 6.0.24 initialized 'CalendarContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.24' with options: None
+2023-12-12 10:15:03,041 [.NET ThreadPool Worker] INFO Microsoft.EntityFrameworkCore.Database.Command.?[?] - Executed DbCommand (1ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT COUNT(*)
+FROM [Events] AS [e]
+2023-12-12 10:15:03,050 [.NET ThreadPool Worker] INFO Microsoft.EntityFrameworkCore.Database.Command.?[?] - Executed DbCommand (5ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [e].[Id], [e].[Access], [e].[Category], [e].[Description], [e].[Email], [e].[EndDateTime], [e].[IsRecurring], [e].[Location], [e].[NotificationDateTime], [e].[Recurring_frequency], [e].[ShareEventWith], [e].[StartDateTime], [e].[Title]
+FROM [Events] AS [e]
+2023-12-12 10:15:03,054 [.NET ThreadPool Worker] INFO EventCalendarApp.Controllers.EventController.Get[34] - Event listed
+2023-12-12 10:15:03,082 [.NET ThreadPool Worker] INFO Microsoft.EntityFrameworkCore.Infrastructure.?[?] - Entity Framework Core 6.0.24 initialized 'CalendarContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.24' with options: None
+2023-12-12 10:15:03,105 [.NET ThreadPool Worker] INFO Microsoft.EntityFrameworkCore.Database.Command.?[?] - Executed DbCommand (1ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT COUNT(*)
+FROM [Events] AS [e]
+2023-12-12 10:15:03,109 [.NET ThreadPool Worker] INFO Microsoft.EntityFrameworkCore.Database.Command.?[?] - Executed DbCommand (0ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [e].[Id], [e].[Access], [e].[Category], [e].[Description], [e].[Email], [e].[EndDateTime], [e].[IsRecurring], [e].[Location], [e].[NotificationDateTime], [e].[Recurring_frequency], [e].[ShareEventWith], [e].[StartDateTime], [e].[Title]
+FROM [Events] AS [e]
+2023-12-12 10:15:03,117 [.NET ThreadPool Worker] INFO EventCalendarApp.Controllers.EventController.Get[34] - Event listed
+2023-12-12 10:34:34,545 [1] INFO Microsoft.Hosting.Lifetime.?[?] - Now listening on: https://localhost:7117
+2023-12-12 10:34:34,638 [1] INFO Microsoft.Hosting.Lifetime.?[?] - Now listening on: http://localhost:5089
+2023-12-12 10:34:34,647 [1] INFO Microsoft.Hosting.Lifetime.OnApplicationStarted[0] - Application started. Press Ctrl+C to shut down.
+2023-12-12 10:34:34,652 [1] INFO Microsoft.Hosting.Lifetime.OnApplicationStarted[0] - Hosting environment: Development
+2023-12-12 10:34:34,654 [1] INFO Microsoft.Hosting.Lifetime.OnApplicationStarted[0] - Content root path: C:\TRAINING\project\EventCalendarSol\Web API\EventCalendarAppSolution\EventCalendarApp\
+2023-12-12 10:44:42,047 [1] INFO Microsoft.Hosting.Lifetime.?[?] - Now listening on: https://localhost:7117
+2023-12-12 10:44:42,089 [1] INFO Microsoft.Hosting.Lifetime.?[?] - Now listening on: http://localhost:5089
+2023-12-12 10:44:42,097 [1] INFO Microsoft.Hosting.Lifetime.OnApplicationStarted[0] - Application started. Press Ctrl+C to shut down.
+2023-12-12 10:44:42,100 [1] INFO Microsoft.Hosting.Lifetime.OnApplicationStarted[0] - Hosting environment: Development
+2023-12-12 10:44:42,101 [1] INFO Microsoft.Hosting.Lifetime.OnApplicationStarted[0] - Content root path: C:\TRAINING\project\EventCalendarSol\Web API\EventCalendarAppSolution\EventCalendarApp\
+2023-12-12 10:55:53,408 [.NET ThreadPool Worker] INFO Microsoft.EntityFrameworkCore.Infrastructure.?[?] - Entity Framework Core 6.0.24 initialized 'CalendarContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.24' with options: None
+2023-12-12 10:55:54,472 [.NET ThreadPool Worker] INFO Microsoft.EntityFrameworkCore.Database.Command.?[?] - Executed DbCommand (89ms) [Parameters=[@__key_0='?' (Size = 450)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(2) [u].[Email], [u].[FirstName], [u].[Key], [u].[LastName], [u].[Password], [u].[Role]
+FROM [Users] AS [u]
+WHERE [u].[Email] = @__key_0
+2023-12-12 10:55:54,871 [.NET ThreadPool Worker] INFO Microsoft.EntityFrameworkCore.Infrastructure.?[?] - Entity Framework Core 6.0.24 initialized 'CalendarContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.24' with options: None
+2023-12-12 10:55:54,906 [.NET ThreadPool Worker] INFO Microsoft.EntityFrameworkCore.Database.Command.?[?] - Executed DbCommand (7ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT COUNT(*)
+FROM [Events] AS [e]
+2023-12-12 10:55:54,920 [.NET ThreadPool Worker] INFO Microsoft.EntityFrameworkCore.Database.Command.?[?] - Executed DbCommand (3ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [e].[Id], [e].[Access], [e].[Category], [e].[Description], [e].[Email], [e].[EndDateTime], [e].[IsRecurring], [e].[Location], [e].[NotificationDateTime], [e].[Recurring_frequency], [e].[ShareEventWith], [e].[StartDateTime], [e].[Title]
+FROM [Events] AS [e]
+2023-12-12 10:55:54,959 [.NET ThreadPool Worker] INFO EventCalendarApp.Controllers.EventController.Get[34] - Event listed
+2023-12-12 10:55:55,080 [.NET ThreadPool Worker] INFO Microsoft.EntityFrameworkCore.Infrastructure.?[?] - Entity Framework Core 6.0.24 initialized 'CalendarContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.24' with options: None
+2023-12-12 10:55:55,084 [.NET ThreadPool Worker] INFO Microsoft.EntityFrameworkCore.Database.Command.?[?] - Executed DbCommand (0ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT COUNT(*)
+FROM [Events] AS [e]
+2023-12-12 10:55:55,087 [.NET ThreadPool Worker] INFO Microsoft.EntityFrameworkCore.Database.Command.?[?] - Executed DbCommand (0ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [e].[Id], [e].[Access], [e].[Category], [e].[Description], [e].[Email], [e].[EndDateTime], [e].[IsRecurring], [e].[Location], [e].[NotificationDateTime], [e].[Recurring_frequency], [e].[ShareEventWith], [e].[StartDateTime], [e].[Title]
+FROM [Events] AS [e]
+2023-12-12 10:55:55,090 [.NET ThreadPool Worker] INFO EventCalendarApp.Controllers.EventController.Get[34] - Event listed
+2023-12-12 10:55:55,507 [.NET ThreadPool Worker] INFO Microsoft.EntityFrameworkCore.Infrastructure.?[?] - Entity Framework Core 6.0.24 initialized 'CalendarContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.24' with options: None
+2023-12-12 10:55:55,532 [.NET ThreadPool Worker] INFO Microsoft.EntityFrameworkCore.Database.Command.?[?] - Executed DbCommand (0ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT COUNT(*)
+FROM [Events] AS [e]
+2023-12-12 10:55:55,536 [.NET ThreadPool Worker] INFO Microsoft.EntityFrameworkCore.Database.Command.?[?] - Executed DbCommand (0ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [e].[Id], [e].[Access], [e].[Category], [e].[Description], [e].[Email], [e].[EndDateTime], [e].[IsRecurring], [e].[Location], [e].[NotificationDateTime], [e].[Recurring_frequency], [e].[ShareEventWith], [e].[StartDateTime], [e].[Title]
+FROM [Events] AS [e]
+2023-12-12 10:55:55,539 [.NET ThreadPool Worker] INFO EventCalendarApp.Controllers.EventController.Get[34] - Event listed
+2023-12-12 10:55:55,554 [.NET ThreadPool Worker] INFO Microsoft.EntityFrameworkCore.Infrastructure.?[?] - Entity Framework Core 6.0.24 initialized 'CalendarContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.24' with options: None
+2023-12-12 10:55:55,567 [.NET ThreadPool Worker] INFO Microsoft.EntityFrameworkCore.Database.Command.?[?] - Executed DbCommand (1ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT COUNT(*)
+FROM [Events] AS [e]
+2023-12-12 10:55:55,573 [.NET ThreadPool Worker] INFO Microsoft.EntityFrameworkCore.Database.Command.?[?] - Executed DbCommand (1ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [e].[Id], [e].[Access], [e].[Category], [e].[Description], [e].[Email], [e].[EndDateTime], [e].[IsRecurring], [e].[Location], [e].[NotificationDateTime], [e].[Recurring_frequency], [e].[ShareEventWith], [e].[StartDateTime], [e].[Title]
+FROM [Events] AS [e]
+2023-12-12 10:55:55,585 [.NET ThreadPool Worker] INFO EventCalendarApp.Controllers.EventController.Get[34] - Event listed
+2023-12-12 10:56:05,406 [.NET ThreadPool Worker] INFO Microsoft.EntityFrameworkCore.Infrastructure.?[?] - Entity Framework Core 6.0.24 initialized 'CalendarContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.24' with options: None
+2023-12-12 10:56:05,422 [.NET ThreadPool Worker] INFO Microsoft.EntityFrameworkCore.Database.Command.?[?] - Executed DbCommand (1ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT COUNT(*)
+FROM [Events] AS [e]
+2023-12-12 10:56:05,429 [.NET ThreadPool Worker] INFO Microsoft.EntityFrameworkCore.Database.Command.?[?] - Executed DbCommand (1ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [e].[Id], [e].[Access], [e].[Category], [e].[Description], [e].[Email], [e].[EndDateTime], [e].[IsRecurring], [e].[Location], [e].[NotificationDateTime], [e].[Recurring_frequency], [e].[ShareEventWith], [e].[StartDateTime], [e].[Title]
+FROM [Events] AS [e]
+2023-12-12 10:56:05,433 [.NET ThreadPool Worker] INFO EventCalendarApp.Controllers.EventController.Get[34] - Event listed
+2023-12-12 10:56:05,498 [.NET ThreadPool Worker] INFO Microsoft.EntityFrameworkCore.Infrastructure.?[?] - Entity Framework Core 6.0.24 initialized 'CalendarContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.24' with options: None
+2023-12-12 10:56:05,502 [.NET ThreadPool Worker] INFO Microsoft.EntityFrameworkCore.Database.Command.?[?] - Executed DbCommand (0ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT COUNT(*)
+FROM [Events] AS [e]
+2023-12-12 10:56:05,506 [.NET ThreadPool Worker] INFO Microsoft.EntityFrameworkCore.Database.Command.?[?] - Executed DbCommand (0ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [e].[Id], [e].[Access], [e].[Category], [e].[Description], [e].[Email], [e].[EndDateTime], [e].[IsRecurring], [e].[Location], [e].[NotificationDateTime], [e].[Recurring_frequency], [e].[ShareEventWith], [e].[StartDateTime], [e].[Title]
+FROM [Events] AS [e]
+2023-12-12 10:56:05,512 [.NET ThreadPool Worker] INFO EventCalendarApp.Controllers.EventController.Get[34] - Event listed
+2023-12-12 11:01:23,254 [.NET ThreadPool Worker] INFO Microsoft.EntityFrameworkCore.Infrastructure.?[?] - Entity Framework Core 6.0.24 initialized 'CalendarContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.24' with options: None
+2023-12-12 11:01:23,261 [.NET ThreadPool Worker] INFO Microsoft.EntityFrameworkCore.Database.Command.?[?] - Executed DbCommand (1ms) [Parameters=[@__key_0='?' (Size = 450)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(2) [u].[Email], [u].[FirstName], [u].[Key], [u].[LastName], [u].[Password], [u].[Role]
+FROM [Users] AS [u]
+WHERE [u].[Email] = @__key_0
+2023-12-12 11:01:23,304 [.NET ThreadPool Worker] INFO Microsoft.EntityFrameworkCore.Infrastructure.?[?] - Entity Framework Core 6.0.24 initialized 'CalendarContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.24' with options: None
+2023-12-12 11:01:23,340 [.NET ThreadPool Worker] INFO Microsoft.EntityFrameworkCore.Database.Command.?[?] - Executed DbCommand (1ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT COUNT(*)
+FROM [Events] AS [e]
+2023-12-12 11:01:23,344 [.NET ThreadPool Worker] INFO Microsoft.EntityFrameworkCore.Database.Command.?[?] - Executed DbCommand (1ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [e].[Id], [e].[Access], [e].[Category], [e].[Description], [e].[Email], [e].[EndDateTime], [e].[IsRecurring], [e].[Location], [e].[NotificationDateTime], [e].[Recurring_frequency], [e].[ShareEventWith], [e].[StartDateTime], [e].[Title]
+FROM [Events] AS [e]
+2023-12-12 11:01:23,346 [.NET ThreadPool Worker] INFO EventCalendarApp.Controllers.EventController.Get[34] - Event listed
+2023-12-12 11:01:23,351 [.NET ThreadPool Worker] INFO Microsoft.EntityFrameworkCore.Infrastructure.?[?] - Entity Framework Core 6.0.24 initialized 'CalendarContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.24' with options: None
+2023-12-12 11:01:23,362 [.NET ThreadPool Worker] INFO Microsoft.EntityFrameworkCore.Database.Command.?[?] - Executed DbCommand (0ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT COUNT(*)
+FROM [Events] AS [e]
+2023-12-12 11:01:23,365 [.NET ThreadPool Worker] INFO Microsoft.EntityFrameworkCore.Database.Command.?[?] - Executed DbCommand (0ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [e].[Id], [e].[Access], [e].[Category], [e].[Description], [e].[Email], [e].[EndDateTime], [e].[IsRecurring], [e].[Location], [e].[NotificationDateTime], [e].[Recurring_frequency], [e].[ShareEventWith], [e].[StartDateTime], [e].[Title]
+FROM [Events] AS [e]
+2023-12-12 11:01:23,374 [.NET ThreadPool Worker] INFO EventCalendarApp.Controllers.EventController.Get[34] - Event listed
+2023-12-12 11:01:23,861 [.NET ThreadPool Worker] INFO Microsoft.EntityFrameworkCore.Infrastructure.?[?] - Entity Framework Core 6.0.24 initialized 'CalendarContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.24' with options: None
+2023-12-12 11:01:23,890 [.NET ThreadPool Worker] INFO Microsoft.EntityFrameworkCore.Database.Command.?[?] - Executed DbCommand (1ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT COUNT(*)
+FROM [Events] AS [e]
+2023-12-12 11:01:23,894 [.NET ThreadPool Worker] INFO Microsoft.EntityFrameworkCore.Database.Command.?[?] - Executed DbCommand (1ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [e].[Id], [e].[Access], [e].[Category], [e].[Description], [e].[Email], [e].[EndDateTime], [e].[IsRecurring], [e].[Location], [e].[NotificationDateTime], [e].[Recurring_frequency], [e].[ShareEventWith], [e].[StartDateTime], [e].[Title]
+FROM [Events] AS [e]
+2023-12-12 11:01:23,897 [.NET ThreadPool Worker] INFO EventCalendarApp.Controllers.EventController.Get[34] - Event listed
+2023-12-12 11:01:23,912 [.NET ThreadPool Worker] INFO Microsoft.EntityFrameworkCore.Infrastructure.?[?] - Entity Framework Core 6.0.24 initialized 'CalendarContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.24' with options: None
+2023-12-12 11:01:23,924 [.NET ThreadPool Worker] INFO Microsoft.EntityFrameworkCore.Database.Command.?[?] - Executed DbCommand (3ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT COUNT(*)
+FROM [Events] AS [e]
+2023-12-12 11:01:23,932 [.NET ThreadPool Worker] INFO Microsoft.EntityFrameworkCore.Database.Command.?[?] - Executed DbCommand (1ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [e].[Id], [e].[Access], [e].[Category], [e].[Description], [e].[Email], [e].[EndDateTime], [e].[IsRecurring], [e].[Location], [e].[NotificationDateTime], [e].[Recurring_frequency], [e].[ShareEventWith], [e].[StartDateTime], [e].[Title]
+FROM [Events] AS [e]
+2023-12-12 11:01:23,941 [.NET ThreadPool Worker] INFO EventCalendarApp.Controllers.EventController.Get[34] - Event listed
+2023-12-12 11:01:45,932 [.NET ThreadPool Worker] INFO Microsoft.EntityFrameworkCore.Infrastructure.?[?] - Entity Framework Core 6.0.24 initialized 'CalendarContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.24' with options: None
+2023-12-12 11:01:45,950 [.NET ThreadPool Worker] INFO Microsoft.EntityFrameworkCore.Database.Command.?[?] - Executed DbCommand (9ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT COUNT(*)
+FROM [Users] AS [u]
+2023-12-12 11:01:45,965 [.NET ThreadPool Worker] INFO Microsoft.EntityFrameworkCore.Database.Command.?[?] - Executed DbCommand (3ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [u].[Email], [u].[FirstName], [u].[Key], [u].[LastName], [u].[Password], [u].[Role]
+FROM [Users] AS [u]
+2023-12-12 11:01:45,988 [.NET ThreadPool Worker] INFO Microsoft.EntityFrameworkCore.Infrastructure.?[?] - Entity Framework Core 6.0.24 initialized 'CalendarContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.24' with options: None
+2023-12-12 11:01:45,993 [.NET ThreadPool Worker] INFO Microsoft.EntityFrameworkCore.Database.Command.?[?] - Executed DbCommand (0ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT COUNT(*)
+FROM [Users] AS [u]
+2023-12-12 11:01:45,996 [.NET ThreadPool Worker] INFO Microsoft.EntityFrameworkCore.Database.Command.?[?] - Executed DbCommand (0ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [u].[Email], [u].[FirstName], [u].[Key], [u].[LastName], [u].[Password], [u].[Role]
+FROM [Users] AS [u]
+2023-12-12 11:01:51,259 [.NET ThreadPool Worker] INFO Microsoft.EntityFrameworkCore.Infrastructure.?[?] - Entity Framework Core 6.0.24 initialized 'CalendarContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.24' with options: None
+2023-12-12 11:01:51,265 [.NET ThreadPool Worker] INFO Microsoft.EntityFrameworkCore.Database.Command.?[?] - Executed DbCommand (1ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT COUNT(*)
+FROM [Users] AS [u]
+2023-12-12 11:01:51,274 [.NET ThreadPool Worker] INFO Microsoft.EntityFrameworkCore.Database.Command.?[?] - Executed DbCommand (2ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [u].[Email], [u].[FirstName], [u].[Key], [u].[LastName], [u].[Password], [u].[Role]
+FROM [Users] AS [u]
+2023-12-12 11:01:51,289 [.NET ThreadPool Worker] INFO Microsoft.EntityFrameworkCore.Infrastructure.?[?] - Entity Framework Core 6.0.24 initialized 'CalendarContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.24' with options: None
+2023-12-12 11:01:51,293 [.NET ThreadPool Worker] INFO Microsoft.EntityFrameworkCore.Database.Command.?[?] - Executed DbCommand (0ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT COUNT(*)
+FROM [Users] AS [u]
+2023-12-12 11:01:51,296 [.NET ThreadPool Worker] INFO Microsoft.EntityFrameworkCore.Database.Command.?[?] - Executed DbCommand (0ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [u].[Email], [u].[FirstName], [u].[Key], [u].[LastName], [u].[Password], [u].[Role]
+FROM [Users] AS [u]
+2023-12-12 11:01:52,073 [.NET ThreadPool Worker] INFO Microsoft.EntityFrameworkCore.Infrastructure.?[?] - Entity Framework Core 6.0.24 initialized 'CalendarContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.24' with options: None
+2023-12-12 11:01:52,086 [.NET ThreadPool Worker] INFO Microsoft.EntityFrameworkCore.Database.Command.?[?] - Executed DbCommand (3ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT COUNT(*)
+FROM [Events] AS [e]
+2023-12-12 11:01:52,094 [.NET ThreadPool Worker] INFO Microsoft.EntityFrameworkCore.Database.Command.?[?] - Executed DbCommand (2ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [e].[Id], [e].[Access], [e].[Category], [e].[Description], [e].[Email], [e].[EndDateTime], [e].[IsRecurring], [e].[Location], [e].[NotificationDateTime], [e].[Recurring_frequency], [e].[ShareEventWith], [e].[StartDateTime], [e].[Title]
+FROM [Events] AS [e]
+2023-12-12 11:01:52,097 [.NET ThreadPool Worker] INFO EventCalendarApp.Controllers.EventController.Get[34] - Event listed
+2023-12-12 11:01:52,142 [.NET ThreadPool Worker] INFO Microsoft.EntityFrameworkCore.Infrastructure.?[?] - Entity Framework Core 6.0.24 initialized 'CalendarContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.24' with options: None
+2023-12-12 11:01:52,155 [.NET ThreadPool Worker] INFO Microsoft.EntityFrameworkCore.Database.Command.?[?] - Executed DbCommand (3ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT COUNT(*)
+FROM [Events] AS [e]
+2023-12-12 11:01:52,162 [.NET ThreadPool Worker] INFO Microsoft.EntityFrameworkCore.Database.Command.?[?] - Executed DbCommand (2ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [e].[Id], [e].[Access], [e].[Category], [e].[Description], [e].[Email], [e].[EndDateTime], [e].[IsRecurring], [e].[Location], [e].[NotificationDateTime], [e].[Recurring_frequency], [e].[ShareEventWith], [e].[StartDateTime], [e].[Title]
+FROM [Events] AS [e]
+2023-12-12 11:01:52,171 [.NET ThreadPool Worker] INFO EventCalendarApp.Controllers.EventController.Get[34] - Event listed
+2023-12-12 11:03:23,570 [.NET ThreadPool Worker] INFO Microsoft.EntityFrameworkCore.Infrastructure.?[?] - Entity Framework Core 6.0.24 initialized 'CalendarContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.24' with options: None
+2023-12-12 11:03:23,794 [.NET ThreadPool Worker] INFO Microsoft.EntityFrameworkCore.Database.Command.?[?] - Executed DbCommand (35ms) [Parameters=[@p0='?' (Size = 4000), @p1='?' (Size = 4000), @p2='?' (Size = 4000), @p3='?' (Size = 450), @p4='?' (Size = 4000), @p5='?' (DbType = Boolean), @p6='?' (Size = 4000), @p7='?' (Size = 4000), @p8='?' (Size = 4000), @p9='?' (Size = 4000), @p10='?' (Size = 4000), @p11='?' (Size = 4000)], CommandType='Text', CommandTimeout='30']
+SET NOCOUNT ON;
+INSERT INTO [Events] ([Access], [Category], [Description], [Email], [EndDateTime], [IsRecurring], [Location], [NotificationDateTime], [Recurring_frequency], [ShareEventWith], [StartDateTime], [Title])
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7, @p8, @p9, @p10, @p11);
+SELECT [Id]
+FROM [Events]
+WHERE @@ROWCOUNT = 1 AND [Id] = scope_identity();
+2023-12-12 11:03:23,878 [.NET ThreadPool Worker] INFO Microsoft.EntityFrameworkCore.Database.Command.?[?] - Executed DbCommand (2ms) [Parameters=[@__key_0='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(2) [e].[Id], [e].[Access], [e].[Category], [e].[Description], [e].[Email], [e].[EndDateTime], [e].[IsRecurring], [e].[Location], [e].[NotificationDateTime], [e].[Recurring_frequency], [e].[ShareEventWith], [e].[StartDateTime], [e].[Title]
+FROM [Events] AS [e]
+WHERE [e].[Id] = @__key_0
+2023-12-12 11:03:25,248 [.NET ThreadPool Worker] INFO Microsoft.EntityFrameworkCore.Infrastructure.?[?] - Entity Framework Core 6.0.24 initialized 'CalendarContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.24' with options: None
+2023-12-12 11:03:25,309 [.NET ThreadPool Worker] INFO Microsoft.EntityFrameworkCore.Database.Command.?[?] - Executed DbCommand (1ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT COUNT(*)
+FROM [Events] AS [e]
+2023-12-12 11:03:25,313 [.NET ThreadPool Worker] INFO Microsoft.EntityFrameworkCore.Database.Command.?[?] - Executed DbCommand (1ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [e].[Id], [e].[Access], [e].[Category], [e].[Description], [e].[Email], [e].[EndDateTime], [e].[IsRecurring], [e].[Location], [e].[NotificationDateTime], [e].[Recurring_frequency], [e].[ShareEventWith], [e].[StartDateTime], [e].[Title]
+FROM [Events] AS [e]
+2023-12-12 11:03:25,317 [.NET ThreadPool Worker] INFO EventCalendarApp.Controllers.EventController.Get[34] - Event listed
+2023-12-12 11:03:25,348 [.NET ThreadPool Worker] INFO Microsoft.EntityFrameworkCore.Infrastructure.?[?] - Entity Framework Core 6.0.24 initialized 'CalendarContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.24' with options: None
+2023-12-12 11:03:25,364 [.NET ThreadPool Worker] INFO Microsoft.EntityFrameworkCore.Database.Command.?[?] - Executed DbCommand (1ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT COUNT(*)
+FROM [Events] AS [e]
+2023-12-12 11:03:25,371 [.NET ThreadPool Worker] INFO Microsoft.EntityFrameworkCore.Database.Command.?[?] - Executed DbCommand (2ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [e].[Id], [e].[Access], [e].[Category], [e].[Description], [e].[Email], [e].[EndDateTime], [e].[IsRecurring], [e].[Location], [e].[NotificationDateTime], [e].[Recurring_frequency], [e].[ShareEventWith], [e].[StartDateTime], [e].[Title]
+FROM [Events] AS [e]
+2023-12-12 11:03:25,378 [.NET ThreadPool Worker] INFO EventCalendarApp.Controllers.EventController.Get[34] - Event listed
+2023-12-12 11:03:58,354 [.NET ThreadPool Worker] INFO Microsoft.EntityFrameworkCore.Infrastructure.?[?] - Entity Framework Core 6.0.24 initialized 'CalendarContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.24' with options: None
+2023-12-12 11:03:58,362 [.NET ThreadPool Worker] INFO Microsoft.EntityFrameworkCore.Database.Command.?[?] - Executed DbCommand (3ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT COUNT(*)
+FROM [Events] AS [e]
+2023-12-12 11:03:58,367 [.NET ThreadPool Worker] INFO Microsoft.EntityFrameworkCore.Database.Command.?[?] - Executed DbCommand (1ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [e].[Id], [e].[Access], [e].[Category], [e].[Description], [e].[Email], [e].[EndDateTime], [e].[IsRecurring], [e].[Location], [e].[NotificationDateTime], [e].[Recurring_frequency], [e].[ShareEventWith], [e].[StartDateTime], [e].[Title]
+FROM [Events] AS [e]
+2023-12-12 11:03:58,377 [.NET ThreadPool Worker] INFO Microsoft.EntityFrameworkCore.Database.Command.?[?] - Executed DbCommand (1ms) [Parameters=[@__key_0='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(2) [e].[Id], [e].[Access], [e].[Category], [e].[Description], [e].[Email], [e].[EndDateTime], [e].[IsRecurring], [e].[Location], [e].[NotificationDateTime], [e].[Recurring_frequency], [e].[ShareEventWith], [e].[StartDateTime], [e].[Title]
+FROM [Events] AS [e]
+WHERE [e].[Id] = @__key_0
+2023-12-12 11:03:58,426 [.NET ThreadPool Worker] INFO Microsoft.EntityFrameworkCore.Database.Command.?[?] - Executed DbCommand (25ms) [Parameters=[@p12='?' (DbType = Int32), @p0='?' (Size = 4000), @p1='?' (Size = 4000), @p2='?' (Size = 4000), @p3='?' (Size = 450), @p4='?' (Size = 4000), @p5='?' (DbType = Boolean), @p6='?' (Size = 4000), @p7='?' (Size = 4000), @p8='?' (Size = 4000), @p9='?' (Size = 4000), @p10='?' (Size = 4000), @p11='?' (Size = 4000)], CommandType='Text', CommandTimeout='30']
+SET NOCOUNT ON;
+UPDATE [Events] SET [Access] = @p0, [Category] = @p1, [Description] = @p2, [Email] = @p3, [EndDateTime] = @p4, [IsRecurring] = @p5, [Location] = @p6, [NotificationDateTime] = @p7, [Recurring_frequency] = @p8, [ShareEventWith] = @p9, [StartDateTime] = @p10, [Title] = @p11
+WHERE [Id] = @p12;
+SELECT @@ROWCOUNT;
+2023-12-12 11:03:59,656 [.NET ThreadPool Worker] INFO Microsoft.EntityFrameworkCore.Infrastructure.?[?] - Entity Framework Core 6.0.24 initialized 'CalendarContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.24' with options: None
+2023-12-12 11:03:59,665 [.NET ThreadPool Worker] INFO Microsoft.EntityFrameworkCore.Database.Command.?[?] - Executed DbCommand (1ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT COUNT(*)
+FROM [Events] AS [e]
+2023-12-12 11:03:59,690 [.NET ThreadPool Worker] INFO Microsoft.EntityFrameworkCore.Database.Command.?[?] - Executed DbCommand (2ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [e].[Id], [e].[Access], [e].[Category], [e].[Description], [e].[Email], [e].[EndDateTime], [e].[IsRecurring], [e].[Location], [e].[NotificationDateTime], [e].[Recurring_frequency], [e].[ShareEventWith], [e].[StartDateTime], [e].[Title]
+FROM [Events] AS [e]
+2023-12-12 11:03:59,693 [.NET ThreadPool Worker] INFO EventCalendarApp.Controllers.EventController.Get[34] - Event listed
+2023-12-12 11:03:59,707 [.NET ThreadPool Worker] INFO Microsoft.EntityFrameworkCore.Infrastructure.?[?] - Entity Framework Core 6.0.24 initialized 'CalendarContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.24' with options: None
+2023-12-12 11:03:59,712 [.NET ThreadPool Worker] INFO Microsoft.EntityFrameworkCore.Database.Command.?[?] - Executed DbCommand (1ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT COUNT(*)
+FROM [Events] AS [e]
+2023-12-12 11:03:59,725 [.NET ThreadPool Worker] INFO Microsoft.EntityFrameworkCore.Database.Command.?[?] - Executed DbCommand (1ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [e].[Id], [e].[Access], [e].[Category], [e].[Description], [e].[Email], [e].[EndDateTime], [e].[IsRecurring], [e].[Location], [e].[NotificationDateTime], [e].[Recurring_frequency], [e].[ShareEventWith], [e].[StartDateTime], [e].[Title]
+FROM [Events] AS [e]
+2023-12-12 11:03:59,730 [.NET ThreadPool Worker] INFO EventCalendarApp.Controllers.EventController.Get[34] - Event listed
+2023-12-12 11:04:22,683 [.NET ThreadPool Worker] INFO Microsoft.EntityFrameworkCore.Infrastructure.?[?] - Entity Framework Core 6.0.24 initialized 'CalendarContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.24' with options: None
+2023-12-12 11:04:22,687 [.NET ThreadPool Worker] INFO Microsoft.EntityFrameworkCore.Database.Command.?[?] - Executed DbCommand (1ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT COUNT(*)
+FROM [Events] AS [e]
+2023-12-12 11:04:22,692 [.NET ThreadPool Worker] INFO Microsoft.EntityFrameworkCore.Database.Command.?[?] - Executed DbCommand (1ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [e].[Id], [e].[Access], [e].[Category], [e].[Description], [e].[Email], [e].[EndDateTime], [e].[IsRecurring], [e].[Location], [e].[NotificationDateTime], [e].[Recurring_frequency], [e].[ShareEventWith], [e].[StartDateTime], [e].[Title]
+FROM [Events] AS [e]
+2023-12-12 11:04:22,695 [.NET ThreadPool Worker] INFO EventCalendarApp.Controllers.EventController.GetPublicEvents[51] - Event listed
+2023-12-12 11:04:35,862 [.NET ThreadPool Worker] INFO Microsoft.EntityFrameworkCore.Infrastructure.?[?] - Entity Framework Core 6.0.24 initialized 'CalendarContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.24' with options: None
+2023-12-12 11:04:35,866 [.NET ThreadPool Worker] INFO Microsoft.EntityFrameworkCore.Database.Command.?[?] - Executed DbCommand (1ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT COUNT(*)
+FROM [Events] AS [e]
+2023-12-12 11:04:35,870 [.NET ThreadPool Worker] INFO Microsoft.EntityFrameworkCore.Database.Command.?[?] - Executed DbCommand (1ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [e].[Id], [e].[Access], [e].[Category], [e].[Description], [e].[Email], [e].[EndDateTime], [e].[IsRecurring], [e].[Location], [e].[NotificationDateTime], [e].[Recurring_frequency], [e].[ShareEventWith], [e].[StartDateTime], [e].[Title]
+FROM [Events] AS [e]
+2023-12-12 11:04:35,873 [.NET ThreadPool Worker] INFO EventCalendarApp.Controllers.EventController.GetPublicEvents[51] - Event listed
+2023-12-12 11:04:48,701 [.NET ThreadPool Worker] INFO Microsoft.EntityFrameworkCore.Infrastructure.?[?] - Entity Framework Core 6.0.24 initialized 'CalendarContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.24' with options: None
+2023-12-12 11:04:48,705 [.NET ThreadPool Worker] INFO Microsoft.EntityFrameworkCore.Database.Command.?[?] - Executed DbCommand (1ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT COUNT(*)
+FROM [Events] AS [e]
+2023-12-12 11:04:48,708 [.NET ThreadPool Worker] INFO Microsoft.EntityFrameworkCore.Database.Command.?[?] - Executed DbCommand (1ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [e].[Id], [e].[Access], [e].[Category], [e].[Description], [e].[Email], [e].[EndDateTime], [e].[IsRecurring], [e].[Location], [e].[NotificationDateTime], [e].[Recurring_frequency], [e].[ShareEventWith], [e].[StartDateTime], [e].[Title]
+FROM [Events] AS [e]
+2023-12-12 11:04:48,717 [.NET ThreadPool Worker] INFO EventCalendarApp.Controllers.EventController.Get[34] - Event listed
+2023-12-12 11:04:48,722 [.NET ThreadPool Worker] INFO Microsoft.EntityFrameworkCore.Infrastructure.?[?] - Entity Framework Core 6.0.24 initialized 'CalendarContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.24' with options: None
+2023-12-12 11:04:48,732 [.NET ThreadPool Worker] INFO Microsoft.EntityFrameworkCore.Database.Command.?[?] - Executed DbCommand (0ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT COUNT(*)
+FROM [Events] AS [e]
+2023-12-12 11:04:48,739 [.NET ThreadPool Worker] INFO Microsoft.EntityFrameworkCore.Database.Command.?[?] - Executed DbCommand (0ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [e].[Id], [e].[Access], [e].[Category], [e].[Description], [e].[Email], [e].[EndDateTime], [e].[IsRecurring], [e].[Location], [e].[NotificationDateTime], [e].[Recurring_frequency], [e].[ShareEventWith], [e].[StartDateTime], [e].[Title]
+FROM [Events] AS [e]
+2023-12-12 11:04:48,754 [.NET ThreadPool Worker] INFO EventCalendarApp.Controllers.EventController.Get[34] - Event listed
+2023-12-12 11:06:50,610 [.NET ThreadPool Worker] INFO Microsoft.EntityFrameworkCore.Infrastructure.?[?] - Entity Framework Core 6.0.24 initialized 'CalendarContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.24' with options: None
+2023-12-12 11:06:50,616 [.NET ThreadPool Worker] INFO Microsoft.EntityFrameworkCore.Database.Command.?[?] - Executed DbCommand (2ms) [Parameters=[@__key_0='?' (Size = 450)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(2) [u].[Email], [u].[FirstName], [u].[Key], [u].[LastName], [u].[Password], [u].[Role]
+FROM [Users] AS [u]
+WHERE [u].[Email] = @__key_0
+2023-12-12 11:06:50,690 [.NET ThreadPool Worker] INFO Microsoft.EntityFrameworkCore.Infrastructure.?[?] - Entity Framework Core 6.0.24 initialized 'CalendarContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.24' with options: None
+2023-12-12 11:06:50,700 [.NET ThreadPool Worker] INFO Microsoft.EntityFrameworkCore.Database.Command.?[?] - Executed DbCommand (6ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT COUNT(*)
+FROM [Events] AS [e]
+2023-12-12 11:06:50,704 [.NET ThreadPool Worker] INFO Microsoft.EntityFrameworkCore.Database.Command.?[?] - Executed DbCommand (1ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [e].[Id], [e].[Access], [e].[Category], [e].[Description], [e].[Email], [e].[EndDateTime], [e].[IsRecurring], [e].[Location], [e].[NotificationDateTime], [e].[Recurring_frequency], [e].[ShareEventWith], [e].[StartDateTime], [e].[Title]
+FROM [Events] AS [e]
+2023-12-12 11:06:50,709 [.NET ThreadPool Worker] INFO EventCalendarApp.Controllers.EventController.Get[34] - Event listed
+2023-12-12 11:06:50,720 [.NET ThreadPool Worker] INFO Microsoft.EntityFrameworkCore.Infrastructure.?[?] - Entity Framework Core 6.0.24 initialized 'CalendarContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.24' with options: None
+2023-12-12 11:06:50,749 [.NET ThreadPool Worker] INFO Microsoft.EntityFrameworkCore.Database.Command.?[?] - Executed DbCommand (6ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT COUNT(*)
+FROM [Events] AS [e]
+2023-12-12 11:06:50,756 [.NET ThreadPool Worker] INFO Microsoft.EntityFrameworkCore.Database.Command.?[?] - Executed DbCommand (1ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [e].[Id], [e].[Access], [e].[Category], [e].[Description], [e].[Email], [e].[EndDateTime], [e].[IsRecurring], [e].[Location], [e].[NotificationDateTime], [e].[Recurring_frequency], [e].[ShareEventWith], [e].[StartDateTime], [e].[Title]
+FROM [Events] AS [e]
+2023-12-12 11:06:50,759 [.NET ThreadPool Worker] INFO EventCalendarApp.Controllers.EventController.Get[34] - Event listed
+2023-12-12 11:06:51,035 [.NET ThreadPool Worker] INFO Microsoft.EntityFrameworkCore.Infrastructure.?[?] - Entity Framework Core 6.0.24 initialized 'CalendarContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.24' with options: None
+2023-12-12 11:06:51,039 [.NET ThreadPool Worker] INFO Microsoft.EntityFrameworkCore.Database.Command.?[?] - Executed DbCommand (0ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT COUNT(*)
+FROM [Events] AS [e]
+2023-12-12 11:06:51,045 [.NET ThreadPool Worker] INFO Microsoft.EntityFrameworkCore.Database.Command.?[?] - Executed DbCommand (0ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [e].[Id], [e].[Access], [e].[Category], [e].[Description], [e].[Email], [e].[EndDateTime], [e].[IsRecurring], [e].[Location], [e].[NotificationDateTime], [e].[Recurring_frequency], [e].[ShareEventWith], [e].[StartDateTime], [e].[Title]
+FROM [Events] AS [e]
+2023-12-12 11:06:51,049 [.NET ThreadPool Worker] INFO EventCalendarApp.Controllers.EventController.Get[34] - Event listed
+2023-12-12 11:06:51,070 [.NET ThreadPool Worker] INFO Microsoft.EntityFrameworkCore.Infrastructure.?[?] - Entity Framework Core 6.0.24 initialized 'CalendarContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.24' with options: None
+2023-12-12 11:06:51,083 [.NET ThreadPool Worker] INFO Microsoft.EntityFrameworkCore.Database.Command.?[?] - Executed DbCommand (1ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT COUNT(*)
+FROM [Events] AS [e]
+2023-12-12 11:06:51,101 [.NET ThreadPool Worker] INFO Microsoft.EntityFrameworkCore.Database.Command.?[?] - Executed DbCommand (0ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [e].[Id], [e].[Access], [e].[Category], [e].[Description], [e].[Email], [e].[EndDateTime], [e].[IsRecurring], [e].[Location], [e].[NotificationDateTime], [e].[Recurring_frequency], [e].[ShareEventWith], [e].[StartDateTime], [e].[Title]
+FROM [Events] AS [e]
+2023-12-12 11:06:51,105 [.NET ThreadPool Worker] INFO EventCalendarApp.Controllers.EventController.Get[34] - Event listed
+2023-12-12 11:07:00,392 [.NET ThreadPool Worker] INFO Microsoft.EntityFrameworkCore.Infrastructure.?[?] - Entity Framework Core 6.0.24 initialized 'CalendarContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.24' with options: None
+2023-12-12 11:07:00,399 [.NET ThreadPool Worker] INFO Microsoft.EntityFrameworkCore.Database.Command.?[?] - Executed DbCommand (3ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT COUNT(*)
+FROM [Users] AS [u]
+2023-12-12 11:07:00,403 [.NET ThreadPool Worker] INFO Microsoft.EntityFrameworkCore.Database.Command.?[?] - Executed DbCommand (1ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [u].[Email], [u].[FirstName], [u].[Key], [u].[LastName], [u].[Password], [u].[Role]
+FROM [Users] AS [u]
+2023-12-12 11:07:00,414 [.NET ThreadPool Worker] INFO Microsoft.EntityFrameworkCore.Infrastructure.?[?] - Entity Framework Core 6.0.24 initialized 'CalendarContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.24' with options: None
+2023-12-12 11:07:00,418 [.NET ThreadPool Worker] INFO Microsoft.EntityFrameworkCore.Database.Command.?[?] - Executed DbCommand (0ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT COUNT(*)
+FROM [Users] AS [u]
+2023-12-12 11:07:00,421 [.NET ThreadPool Worker] INFO Microsoft.EntityFrameworkCore.Database.Command.?[?] - Executed DbCommand (0ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [u].[Email], [u].[FirstName], [u].[Key], [u].[LastName], [u].[Password], [u].[Role]
+FROM [Users] AS [u]
+2023-12-12 11:07:05,475 [.NET ThreadPool Worker] INFO Microsoft.EntityFrameworkCore.Infrastructure.?[?] - Entity Framework Core 6.0.24 initialized 'CalendarContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.24' with options: None
+2023-12-12 11:07:05,481 [.NET ThreadPool Worker] INFO Microsoft.EntityFrameworkCore.Database.Command.?[?] - Executed DbCommand (1ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT COUNT(*)
+FROM [Users] AS [u]
+2023-12-12 11:07:05,486 [.NET ThreadPool Worker] INFO Microsoft.EntityFrameworkCore.Database.Command.?[?] - Executed DbCommand (0ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [u].[Email], [u].[FirstName], [u].[Key], [u].[LastName], [u].[Password], [u].[Role]
+FROM [Users] AS [u]
+2023-12-12 11:07:05,513 [.NET ThreadPool Worker] INFO Microsoft.EntityFrameworkCore.Infrastructure.?[?] - Entity Framework Core 6.0.24 initialized 'CalendarContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.24' with options: None
+2023-12-12 11:07:05,518 [.NET ThreadPool Worker] INFO Microsoft.EntityFrameworkCore.Database.Command.?[?] - Executed DbCommand (0ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT COUNT(*)
+FROM [Users] AS [u]
+2023-12-12 11:07:05,522 [.NET ThreadPool Worker] INFO Microsoft.EntityFrameworkCore.Database.Command.?[?] - Executed DbCommand (0ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [u].[Email], [u].[FirstName], [u].[Key], [u].[LastName], [u].[Password], [u].[Role]
+FROM [Users] AS [u]
+2023-12-12 11:07:06,415 [.NET ThreadPool Worker] INFO Microsoft.EntityFrameworkCore.Infrastructure.?[?] - Entity Framework Core 6.0.24 initialized 'CalendarContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.24' with options: None
+2023-12-12 11:07:06,420 [.NET ThreadPool Worker] INFO Microsoft.EntityFrameworkCore.Database.Command.?[?] - Executed DbCommand (1ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT COUNT(*)
+FROM [Events] AS [e]
+2023-12-12 11:07:06,435 [.NET ThreadPool Worker] INFO Microsoft.EntityFrameworkCore.Database.Command.?[?] - Executed DbCommand (8ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [e].[Id], [e].[Access], [e].[Category], [e].[Description], [e].[Email], [e].[EndDateTime], [e].[IsRecurring], [e].[Location], [e].[NotificationDateTime], [e].[Recurring_frequency], [e].[ShareEventWith], [e].[StartDateTime], [e].[Title]
+FROM [Events] AS [e]
+2023-12-12 11:07:06,439 [.NET ThreadPool Worker] INFO EventCalendarApp.Controllers.EventController.Get[34] - Event listed
+2023-12-12 11:07:06,449 [.NET ThreadPool Worker] INFO Microsoft.EntityFrameworkCore.Infrastructure.?[?] - Entity Framework Core 6.0.24 initialized 'CalendarContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.24' with options: None
+2023-12-12 11:07:06,457 [.NET ThreadPool Worker] INFO Microsoft.EntityFrameworkCore.Database.Command.?[?] - Executed DbCommand (0ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT COUNT(*)
+FROM [Events] AS [e]
+2023-12-12 11:07:06,469 [.NET ThreadPool Worker] INFO Microsoft.EntityFrameworkCore.Database.Command.?[?] - Executed DbCommand (0ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [e].[Id], [e].[Access], [e].[Category], [e].[Description], [e].[Email], [e].[EndDateTime], [e].[IsRecurring], [e].[Location], [e].[NotificationDateTime], [e].[Recurring_frequency], [e].[ShareEventWith], [e].[StartDateTime], [e].[Title]
+FROM [Events] AS [e]
+2023-12-12 11:07:06,472 [.NET ThreadPool Worker] INFO EventCalendarApp.Controllers.EventController.Get[34] - Event listed
+2023-12-12 11:08:18,438 [.NET ThreadPool Worker] INFO Microsoft.EntityFrameworkCore.Infrastructure.?[?] - Entity Framework Core 6.0.24 initialized 'CalendarContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.24' with options: None
+2023-12-12 11:08:18,442 [.NET ThreadPool Worker] INFO Microsoft.EntityFrameworkCore.Database.Command.?[?] - Executed DbCommand (1ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT COUNT(*)
+FROM [Events] AS [e]
+2023-12-12 11:08:18,447 [.NET ThreadPool Worker] INFO Microsoft.EntityFrameworkCore.Database.Command.?[?] - Executed DbCommand (1ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [e].[Id], [e].[Access], [e].[Category], [e].[Description], [e].[Email], [e].[EndDateTime], [e].[IsRecurring], [e].[Location], [e].[NotificationDateTime], [e].[Recurring_frequency], [e].[ShareEventWith], [e].[StartDateTime], [e].[Title]
+FROM [Events] AS [e]
+2023-12-12 11:08:18,450 [.NET ThreadPool Worker] INFO EventCalendarApp.Controllers.EventController.GetPublicEvents[51] - Event listed
+2023-12-12 11:08:29,709 [.NET ThreadPool Worker] INFO Microsoft.EntityFrameworkCore.Infrastructure.?[?] - Entity Framework Core 6.0.24 initialized 'CalendarContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.24' with options: None
+2023-12-12 11:08:29,712 [.NET ThreadPool Worker] INFO Microsoft.EntityFrameworkCore.Database.Command.?[?] - Executed DbCommand (0ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT COUNT(*)
+FROM [Events] AS [e]
+2023-12-12 11:08:29,715 [.NET ThreadPool Worker] INFO Microsoft.EntityFrameworkCore.Database.Command.?[?] - Executed DbCommand (0ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [e].[Id], [e].[Access], [e].[Category], [e].[Description], [e].[Email], [e].[EndDateTime], [e].[IsRecurring], [e].[Location], [e].[NotificationDateTime], [e].[Recurring_frequency], [e].[ShareEventWith], [e].[StartDateTime], [e].[Title]
+FROM [Events] AS [e]
+2023-12-12 11:08:29,717 [.NET ThreadPool Worker] INFO EventCalendarApp.Controllers.EventController.GetPublicEvents[51] - Event listed
+2023-12-12 11:12:20,992 [1] INFO Microsoft.Hosting.Lifetime.?[?] - Now listening on: https://localhost:7117
+2023-12-12 11:12:21,089 [1] INFO Microsoft.Hosting.Lifetime.?[?] - Now listening on: http://localhost:5089
+2023-12-12 11:12:21,098 [1] INFO Microsoft.Hosting.Lifetime.OnApplicationStarted[0] - Application started. Press Ctrl+C to shut down.
+2023-12-12 11:12:21,104 [1] INFO Microsoft.Hosting.Lifetime.OnApplicationStarted[0] - Hosting environment: Development
+2023-12-12 11:12:21,107 [1] INFO Microsoft.Hosting.Lifetime.OnApplicationStarted[0] - Content root path: C:\TRAINING\project\EventCalendarSol\Web API\EventCalendarAppSolution\EventCalendarApp\
+2023-12-12 11:13:17,103 [.NET ThreadPool Worker] INFO Microsoft.EntityFrameworkCore.Infrastructure.?[?] - Entity Framework Core 6.0.24 initialized 'CalendarContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.24' with options: None
+2023-12-12 11:13:18,072 [.NET ThreadPool Worker] INFO Microsoft.EntityFrameworkCore.Database.Command.?[?] - Executed DbCommand (54ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT COUNT(*)
+FROM [Events] AS [e]
+2023-12-12 11:13:18,219 [.NET ThreadPool Worker] INFO Microsoft.EntityFrameworkCore.Database.Command.?[?] - Executed DbCommand (8ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [e].[Id], [e].[Access], [e].[Category], [e].[Description], [e].[Email], [e].[EndDateTime], [e].[IsRecurring], [e].[Location], [e].[NotificationDateTime], [e].[Recurring_frequency], [e].[ShareEventWith], [e].[StartDateTime], [e].[Title]
+FROM [Events] AS [e]
+2023-12-12 11:13:18,318 [.NET ThreadPool Worker] INFO EventCalendarApp.Controllers.EventController.GetPublicEvents[51] - Event listed
+2023-12-12 11:32:29,711 [.NET ThreadPool Worker] INFO Microsoft.EntityFrameworkCore.Infrastructure.?[?] - Entity Framework Core 6.0.24 initialized 'CalendarContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.24' with options: None
+2023-12-12 11:32:29,722 [.NET ThreadPool Worker] INFO Microsoft.EntityFrameworkCore.Database.Command.?[?] - Executed DbCommand (1ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT COUNT(*)
+FROM [Events] AS [e]
+2023-12-12 11:32:29,728 [.NET ThreadPool Worker] INFO Microsoft.EntityFrameworkCore.Database.Command.?[?] - Executed DbCommand (2ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [e].[Id], [e].[Access], [e].[Category], [e].[Description], [e].[Email], [e].[EndDateTime], [e].[IsRecurring], [e].[Location], [e].[NotificationDateTime], [e].[Recurring_frequency], [e].[ShareEventWith], [e].[StartDateTime], [e].[Title]
+FROM [Events] AS [e]
+2023-12-12 11:32:29,731 [.NET ThreadPool Worker] INFO EventCalendarApp.Controllers.EventController.GetPublicEvents[51] - Event listed
+2023-12-12 11:32:31,298 [.NET ThreadPool Worker] INFO Microsoft.EntityFrameworkCore.Infrastructure.?[?] - Entity Framework Core 6.0.24 initialized 'CalendarContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.24' with options: None
+2023-12-12 11:32:31,302 [.NET ThreadPool Worker] INFO Microsoft.EntityFrameworkCore.Database.Command.?[?] - Executed DbCommand (1ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT COUNT(*)
+FROM [Events] AS [e]
+2023-12-12 11:32:31,306 [.NET ThreadPool Worker] INFO Microsoft.EntityFrameworkCore.Database.Command.?[?] - Executed DbCommand (1ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [e].[Id], [e].[Access], [e].[Category], [e].[Description], [e].[Email], [e].[EndDateTime], [e].[IsRecurring], [e].[Location], [e].[NotificationDateTime], [e].[Recurring_frequency], [e].[ShareEventWith], [e].[StartDateTime], [e].[Title]
+FROM [Events] AS [e]
+2023-12-12 11:32:31,310 [.NET ThreadPool Worker] INFO EventCalendarApp.Controllers.EventController.GetPublicEvents[51] - Event listed
+2023-12-12 11:32:31,893 [.NET ThreadPool Worker] INFO Microsoft.EntityFrameworkCore.Infrastructure.?[?] - Entity Framework Core 6.0.24 initialized 'CalendarContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.24' with options: None
+2023-12-12 11:32:31,899 [.NET ThreadPool Worker] INFO Microsoft.EntityFrameworkCore.Database.Command.?[?] - Executed DbCommand (0ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT COUNT(*)
+FROM [Events] AS [e]
+2023-12-12 11:32:31,905 [.NET ThreadPool Worker] INFO Microsoft.EntityFrameworkCore.Database.Command.?[?] - Executed DbCommand (1ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [e].[Id], [e].[Access], [e].[Category], [e].[Description], [e].[Email], [e].[EndDateTime], [e].[IsRecurring], [e].[Location], [e].[NotificationDateTime], [e].[Recurring_frequency], [e].[ShareEventWith], [e].[StartDateTime], [e].[Title]
+FROM [Events] AS [e]
+2023-12-12 11:32:31,910 [.NET ThreadPool Worker] INFO EventCalendarApp.Controllers.EventController.GetPublicEvents[51] - Event listed
+2023-12-13 09:25:44,401 [1] INFO Microsoft.Hosting.Lifetime.?[?] - Now listening on: https://localhost:7117
+2023-12-13 09:25:44,614 [1] INFO Microsoft.Hosting.Lifetime.?[?] - Now listening on: http://localhost:5089
+2023-12-13 09:25:44,626 [1] INFO Microsoft.Hosting.Lifetime.OnApplicationStarted[0] - Application started. Press Ctrl+C to shut down.
+2023-12-13 09:25:44,634 [1] INFO Microsoft.Hosting.Lifetime.OnApplicationStarted[0] - Hosting environment: Development
+2023-12-13 09:25:44,636 [1] INFO Microsoft.Hosting.Lifetime.OnApplicationStarted[0] - Content root path: C:\TRAINING\project\EventCalendarSol\Web API\EventCalendarAppSolution\EventCalendarApp\
+2023-12-13 09:50:05,219 [1] INFO Microsoft.Hosting.Lifetime.?[?] - Now listening on: https://localhost:7117
+2023-12-13 09:50:05,298 [1] INFO Microsoft.Hosting.Lifetime.?[?] - Now listening on: http://localhost:5089
+2023-12-13 09:50:05,304 [1] INFO Microsoft.Hosting.Lifetime.OnApplicationStarted[0] - Application started. Press Ctrl+C to shut down.
+2023-12-13 09:50:05,307 [1] INFO Microsoft.Hosting.Lifetime.OnApplicationStarted[0] - Hosting environment: Development
+2023-12-13 09:50:05,309 [1] INFO Microsoft.Hosting.Lifetime.OnApplicationStarted[0] - Content root path: C:\TRAINING\project\EventCalendarSol\Web API\EventCalendarAppSolution\EventCalendarApp\
+2023-12-13 09:50:45,640 [1] INFO Microsoft.Hosting.Lifetime.?[?] - Now listening on: https://localhost:7117
+2023-12-13 09:50:45,684 [1] INFO Microsoft.Hosting.Lifetime.?[?] - Now listening on: http://localhost:5089
+2023-12-13 09:50:45,693 [1] INFO Microsoft.Hosting.Lifetime.OnApplicationStarted[0] - Application started. Press Ctrl+C to shut down.
+2023-12-13 09:50:45,698 [1] INFO Microsoft.Hosting.Lifetime.OnApplicationStarted[0] - Hosting environment: Development
+2023-12-13 09:50:45,701 [1] INFO Microsoft.Hosting.Lifetime.OnApplicationStarted[0] - Content root path: C:\TRAINING\project\EventCalendarSol\Web API\EventCalendarAppSolution\EventCalendarApp\
+2023-12-13 09:51:51,674 [1] INFO Microsoft.Hosting.Lifetime.?[?] - Now listening on: https://localhost:7117
+2023-12-13 09:51:51,712 [1] INFO Microsoft.Hosting.Lifetime.?[?] - Now listening on: http://localhost:5089
+2023-12-13 09:51:51,721 [1] INFO Microsoft.Hosting.Lifetime.OnApplicationStarted[0] - Application started. Press Ctrl+C to shut down.
+2023-12-13 09:51:51,724 [1] INFO Microsoft.Hosting.Lifetime.OnApplicationStarted[0] - Hosting environment: Development
+2023-12-13 09:51:51,726 [1] INFO Microsoft.Hosting.Lifetime.OnApplicationStarted[0] - Content root path: C:\TRAINING\project\EventCalendarSol\Web API\EventCalendarAppSolution\EventCalendarApp\
+2023-12-13 09:55:51,302 [1] INFO Microsoft.Hosting.Lifetime.?[?] - Now listening on: https://localhost:7117
+2023-12-13 09:55:51,342 [1] INFO Microsoft.Hosting.Lifetime.?[?] - Now listening on: http://localhost:5089
+2023-12-13 09:55:51,350 [1] INFO Microsoft.Hosting.Lifetime.OnApplicationStarted[0] - Application started. Press Ctrl+C to shut down.
+2023-12-13 09:55:51,354 [1] INFO Microsoft.Hosting.Lifetime.OnApplicationStarted[0] - Hosting environment: Development
+2023-12-13 09:55:51,356 [1] INFO Microsoft.Hosting.Lifetime.OnApplicationStarted[0] - Content root path: C:\TRAINING\project\EventCalendarSol\Web API\EventCalendarAppSolution\EventCalendarApp\
+2023-12-13 09:56:08,201 [.NET ThreadPool Worker] INFO Microsoft.EntityFrameworkCore.Infrastructure.?[?] - Entity Framework Core 6.0.24 initialized 'CalendarContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.24' with options: None
+2023-12-13 09:56:09,966 [.NET ThreadPool Worker] INFO Microsoft.EntityFrameworkCore.Database.Command.?[?] - Executed DbCommand (142ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT COUNT(*)
+FROM [Events] AS [e]
+2023-12-13 09:56:10,090 [.NET ThreadPool Worker] INFO Microsoft.EntityFrameworkCore.Database.Command.?[?] - Executed DbCommand (16ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [e].[Id], [e].[Access], [e].[Category], [e].[Description], [e].[Email], [e].[EndDateTime], [e].[IsRecurring], [e].[Location], [e].[NotificationDateTime], [e].[Recurring_frequency], [e].[ShareEventWith], [e].[StartDateTime], [e].[Title]
+FROM [Events] AS [e]
+2023-12-13 09:56:10,168 [.NET ThreadPool Worker] INFO EventCalendarApp.Controllers.EventController.Get[68] - Event listed

@@ -24,7 +24,6 @@ function GetAccess() {
         // Separate events into public and private based on the 'access' property
         const publicEvents = posts.filter(event => event.access === 'public');
         const privateEvents = posts.filter(event => event.access === 'private');
-
         setPublicEvents(publicEvents);
         setPrivateEvents(privateEvents);
       })
@@ -40,7 +39,7 @@ function GetAccess() {
         <br />
         <label className="form-control"  htmlFor="paccess">Access</label>
             <select className="form-select" value={access} onChange={(e) => setAccess(e.target.value)}>
-            <option>--- Choose Access --- </option>  
+            <option>..Choose Access...</option>  
             <option value="public">Public</option>
             <option value="private">Private</option>
             </select>

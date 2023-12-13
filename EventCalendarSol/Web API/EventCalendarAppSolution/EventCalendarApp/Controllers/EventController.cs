@@ -58,6 +58,23 @@ namespace EventCalendarApp.Controllers
             }
             return BadRequest(errorMessage);
         }
+        [HttpGet("All")]
+        public ActionResult Get()   
+        {
+            string errorMessage = string.Empty; 
+            try
+            {
+                var result = _eventService.GetEvents();
+                _logger.LogInformation("Event listed");
+                return Ok(result);
+            }
+            catch (NoEventsAvailableException e)
+            {
+                errorMessage = e.Message;
+                _logger.LogError(errorMessage);
+            }
+            return BadRequest(errorMessage);
+        }
         [Authorize (Roles ="User")]
         [HttpPost]
         public ActionResult Create(Event events)
@@ -73,18 +90,6 @@ namespace EventCalendarApp.Controllers
                 errorMessage = e.Message;
             }
             return BadRequest(errorMessage);
-        }
-        [HttpPost("ShareEvent")]
-        public IActionResult ShareEvent(int eventId, [FromBody] List<string> recipientEmails)
-        {
-            var isShared = _eventService.ShareEvent(eventId, recipientEmails);
-
-            if (isShared)
-            {
-                return Ok("Event shared successfully.");
-            }
-
-            return NotFound("Event not found or unable to share.");
         }
         [HttpPut]
          public ActionResult Update(Event events)

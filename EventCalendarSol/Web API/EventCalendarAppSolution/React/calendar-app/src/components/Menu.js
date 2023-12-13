@@ -21,6 +21,9 @@ function Menu(){
               <Link className="nav-link" to="/GetAccess" >GetAccess</Link>
             </li> : "" }
             {localStorage.getItem("token")? <li className="nav-item">
+              <Link className="nav-link" to="/Schedules" >Schedules</Link>
+            </li> : "" }
+            {localStorage.getItem("token")? <li className="nav-item">
               <Link className="nav-link" to="/profile" >Profile</Link>
             </li> : "" }
             {localStorage.getItem("token")? <li className="nav-item">

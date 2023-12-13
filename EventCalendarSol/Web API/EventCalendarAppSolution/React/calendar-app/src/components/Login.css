@@ -1,6 +1,6 @@
 
 .login-form {
-    max-width: 280px;
+    /* max-width: 280px;
     margin: auto;
     padding: 20px;
     border: 1px solid #ccc;
@@ -12,16 +12,20 @@
     background-position: center;
     background-repeat: no-repeat;
     padding: 20px; /* Adjust as needed */
-    height: 420px;
+    height: 420px; 
+    max-width: 320px;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
 } 
 
 .login{
     background-image: url('C:\TRAINING\project\EventCalendarSol\Web API\EventCalendarAppSolution\React\calendar-app\public\Images\Calendar.jpg'); 
     background-repeat: no-repeat;
-  background-size: cover;
+    background-size: cover;
   /* Filter:blur(2px); */
-  Height:800px;
-    
+    Height:800px;
 }
 .form-group {
     max-width: 300px;

@@ -27,7 +27,6 @@ function MyCalendar({ events }) {
 
   const handleAddEvent = () => {
     closePopup();
-    // Add logic for handling new events if needed
   };
 
   const handleSearchChange = (e) => {
@@ -108,7 +107,6 @@ function MyCalendar({ events }) {
 
   return (
     <div className="calendar">
-     {/* <h1 className="alert alert-success">Event Calendar</h1> */}
       <div
         className="search-container">
         <input type="text" placeholder="Search Events" value={searchTerm} onChange={handleSearchChange} />
@@ -131,8 +129,6 @@ function MyCalendar({ events }) {
         eventPropGetter={(event) => eventStyle(event)}
         style={{ height: 500, width: 1000 }}
         views={{
-          day: true,
-          week: true,
           month: true,
           year: Year,
         }}

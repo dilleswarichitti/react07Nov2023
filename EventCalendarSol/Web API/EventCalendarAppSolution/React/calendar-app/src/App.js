@@ -6,6 +6,7 @@ import Menu from './components/Menu';
 import Login from './components/Login';
 import UserProfile from './components/UserProfile';
 import GetAccess from './components/GetAccess';
+import Schedules from './components/Schedules';
 
 function App() {
 
@@ -19,6 +20,7 @@ function App() {
           <Route path="login" element={<Login/>} /> 
           <Route path="events" element={<Events/>} />
           <Route path="profile" element={<UserProfile/>} />
+          <Route path="Schedules" element={<Schedules/>} /> 
           <Route path="GetAccess" element={<GetAccess/>} /> 
         </Routes> 
       </div>
