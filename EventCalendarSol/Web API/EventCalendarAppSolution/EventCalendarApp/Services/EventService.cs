@@ -13,18 +13,17 @@ namespace EventCalendarApp.Services
     public class EventService : IEventService
     {
         private readonly IRepository<int, Event> _eventRepository;
-        public EventService(IRepository<int, Event> eventRepository)
+        public EventService(IRepository<int, Event> eventRepository) 
         {
             _eventRepository = eventRepository;
         }
-        /// <summary>
+        /// <summary> 
         /// add the event to the database
         /// </summary>
-        /// <param name="events">event to be added</param>
+        /// <param name="events">event to be added</param> 
         /// <returns>returns event</returns>
-        public Event Add(Event events)
+        public Event Add(Event events) 
         {
-
             var result = _eventRepository.Add(events);
             // Assuming ScheduleAndSendEmail has a signature like: void ScheduleAndSendEmail(DateTime notificationDateTime, EventResult result)
             ScheduleAndSendEmail(result.NotificationDateTime, result);
@@ -48,7 +47,6 @@ namespace EventCalendarApp.Services
 
                 SendNotificationEmail(to, subject, body);
             }, null, delayMilliseconds, Timeout.Infinite);
-
         }
 
         public void SendNotificationEmail(string recipientEmail, string subject, string body)
